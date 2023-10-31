@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.listagem { 
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.listagem .data label {
+    font-weight: bold;
+}
+
+.main-title {
+    color: #000;
+    font-size: 350%;
+    text-align: center;
+}
+
+.but-editar{
+    background-color: rgb(13, 212, 212);
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    text-transform: uppercase;
+    margin-left: 78%;
+}
+
+.but-editar:hover{
+    background-color: rgb(10, 156, 156);
+}
+
+.but-excluir{
+    background-color: red;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.but-excluir:hover{
+    background-color: rgb(158, 10, 10);
+}
+
+.but-salvar{
+    background-color: red;
+}
+
+.pop_up_excluir{
+    background-color: #ffffff;
+    position: relative;
+    top: -50%;
+    -webkit-box-shadow: -1px 3px 8px 5px #1a1a1ac4, 2px 5px 16px 0px #1a1a1ac4, 5px -13px 9px 5px rgba(0,0,0,0); 
+    box-shadow: -1px 3px 8px 5px #1a1a1ac4, 2px 5px 16px 0px #1a1a1ac4, 5px -13px 9px 5px rgba(0,0,0,0);
+    border-radius: 10px;
+    text-align: center;
+    padding: 16px;
+}
+
+.buttons-edit button{
+    width: 50px;
+}
+
+.buttons-edit{
+    margin-top: 10px;
+}
+
+#butt1{
+    background-color: rgb(13, 212, 212);
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
+
+#butt1:hover{
+    background-color: rgb(10, 156, 156);
+
+}
+
+
+#butt2{
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
+
+#butt2:hover{
+    background-color: rgb(158, 10, 10);
+
+}
+
+#comment-edit{
+    min-height: 150px;
+    height: 150px;
+    max-height: 250px;
+}
+
+/* 
+
+@media only screen and (min-width: 768px) {
+     For desktop: 
+    .listagem {
+        width: 30%;
+    }
+} */

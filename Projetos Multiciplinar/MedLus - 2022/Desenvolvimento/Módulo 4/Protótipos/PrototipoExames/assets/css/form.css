@@ -1,0 +1,125 @@
+*, *:before, *:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+}
+
+form {
+    background-color: #fff;
+    width: 20%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid #ccc;
+    padding: 50px 35px;
+}
+
+form * {
+    font-family: 'Poppins',sans-serif;
+    color: #000 ;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+form h3 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+form a {
+    text-align: center;
+    text-decoration: none;
+    color: #3A9C97;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder{
+    color: #000;
+}
+
+.forgot-password {
+    padding-top: 10px;
+}
+
+button[type=submit] {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #2BB8B1;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 200ms;
+}
+button[type=submit]:hover {
+    color: #fff;
+    background: #3A9C97;
+}
+
+.sign-up {
+    display: block  ;
+    margin-top: 20px;
+    width: 100%;
+    color: #000;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #fff;
+    border: solid 2px #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 200ms;
+}
+.sign-up:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+/* @media only screen and (max-width: 1500px) {
+    form {
+        width: 40%;
+        box-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    body {
+        background-color: #fff;
+    }
+
+    form {
+        transform: translate(-50%,0%);
+        padding-top: 10px;
+        top: 0%;
+        width: 100%;
+        border: none;
+    }
+} */
