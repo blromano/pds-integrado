@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cadastro</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../CSS/cadastro.css">
+    </head>
+    <body>
+
+      <div id="paralelogramo"></div>
+
+       <section>
+           <form action="#" method="post">
+               <h1>Criar sua conta</h1>
+               <fieldset>
+                   <div class="area">
+                     <input type="text" required name="nome" autofocus>
+                     <label>Nome</label>
+                   </div>
+                   <div class="area">
+                     <input type="text" required name="lastname">
+                     <label>Sobrenome</label>
+                   </div>
+               </fieldset>
+              
+               <fieldset>
+                   <div class="area">
+                     <input type="email" required name="email">
+                     <label>E-mail</label>
+                   </div>
+               </fieldset>
+               
+               <fieldset>
+                   <div class="area">
+                     <input type="password" required name="password">
+                     <label>Senha</label>
+                   </div>
+                   <div class="area">
+                     <input type="password" required name="confirm">
+                     <label>Confirmar senha</label>
+                   </div>
+                </fieldset>
+
+                <fieldset>
+                    <div id="check">
+                        <input type="checkbox" required name="accept">
+                        <label>Aceitar os termos de uso</label>
+                    </div>
+
+                    <button>Criar conta</button>
+                </fieldset>
+
+                <a href="#">Ler termos de uso</a>
+           </form>
+
+           <a href="../index.html"><img src="../Imagens/logo.png" width="350" height="auto"></a>
+       </section>
+    </body>
+</html>

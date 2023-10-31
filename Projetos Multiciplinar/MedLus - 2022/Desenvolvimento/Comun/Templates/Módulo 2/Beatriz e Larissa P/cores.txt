@@ -1,0 +1,8 @@
+ #7ad5e6 --> mais escuro
+ #9de2eb --> mais claro
+ #70acd4 --> titulo 
+ #aefdf3 --> mais claro ainda
+ #58c7c1 --> hover botao
+ #c8e6ee --> iconezinhos
+
+nao esqyecer de colocar a logo na barar de navegação!!!!!1 

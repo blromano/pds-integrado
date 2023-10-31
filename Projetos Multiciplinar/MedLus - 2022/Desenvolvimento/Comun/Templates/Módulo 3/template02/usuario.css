@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.listagem { 
+    border-radius: 10px;
+    border: 2px solid #ccc;
+}
+
+.listagem .data label {
+    font-weight: bold;
+}
+
+.main-title {
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 350%;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .listagem {
+        width: 30%;
+    }
+}
