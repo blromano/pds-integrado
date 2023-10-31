@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<?php
+    if(isset($_GET['status'])){
+        $status = $_GET['status'];
+        echo "<script>alert('Feedback enviado com sucesso!');</script>";
+    }
+?>
+
+<html>
+    <head>
+        <title>Fale conosco</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="../css/estilo.css" rel="stylesheet" type="text/css"/>
+        <script src="../js/js.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="container-fluid">
+                    
+                    <a href="#" class="navbar-brand">
+                        <img class="logo" src="../img/Logo-2-Transparente.png">
+                    </a>
+                    
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="nav-principal">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="../../index.php" class="nav-link">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="Enviar_Feedback.php" class="nav-link active ml-3">Fale conosco</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ml-3">Planos</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="Cadastro.html" class="btn btn-outline-light">Cadastrar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>               
+            </nav>     
+        </header>
+        
+        <section>
+            <div class="container py-3">
+                <form class="border" id="formulario-cadastro" action="Cadastrar_Feedback.php" method="post" name="formulario">
+                    <h3>Deixe sua opinião e suas dúvidas</h3>
+                    <small id="passwordHelpBlock" class="form-text text-muted">
+                        Seu feedback é de grande importância para melhorias na plataforma
+                    </small>
+                    <br>
+                    <div class="form-group">
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" name="FEE_EMAIL" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Assunto" name="FEE_ASSUNTO" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deixe sua opinião e/ou suas dúvidas" name="FEE_MENSAGEM" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Enviar</button>
+                </form>
+            </div>
+        </section>
+        
+        <footer class="mt-5">
+            <div class="container-fluid bg-dark">
+                <div class="row">
+                    <div class="col">
+                        <p class="lead text-center text-white">
+                            © Copyright 4° ano de infomática do ano de 2020. Todos os Direitos Reservados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    </body>
+</html>
