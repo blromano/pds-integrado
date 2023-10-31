@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.listagem { 
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    padding-bottom: 1rem!important;
+    padding-top: 1rem!important;
+}
+
+.listagem .data label {
+    font-weight: bold;
+}
+
+.main-title {
+    color: #000;
+    font-size: 350%;
+    text-align: center;
+}
+
+#bt {
+    width: 220px;
+    height: 32px;
+    background-color: #2BB8B1;
+    color: #fff;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 200ms;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#bt:hover {
+    color: #fff;
+    background: #3A9C97;
+}
+
+/* 
+
+@media only screen and (min-width: 768px) {
+     For desktop: 
+    .listagem {
+        width: 30%;
+    }
+} */
