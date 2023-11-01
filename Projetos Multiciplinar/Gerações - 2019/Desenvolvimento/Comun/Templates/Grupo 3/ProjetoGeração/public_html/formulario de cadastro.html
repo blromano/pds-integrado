@@ -1,0 +1,125 @@
+<html><head>
+        <title>Tela de Cadastro </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css2.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"></font></font></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="navbar-collapse collapse show" id="navbarResponsive" style="">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cadastro
+                           </font></font><span class="sr-only"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(atual)</font></font></span>
+                        </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Login</font></font></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tela inicial</font></font></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sair</font></font></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        
+        
+        
+        
+    <br>
+        
+    <div class="container">
+            <div class="py-5 text-center col-md-6 d-none d-md-block">
+                <img class="img-fluid" src="image/logo2.png" alt="200px"/>
+              
+            </div>
+        <div class="col-md-8 order-md-1">
+          <form class="needs-validation" novalidate="">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName" style="position: relative;left: -10px;"> Nome Completo: </label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="" style="
+    position: relative;
+    left: -10px;
+">
+                <div class="invalid-feedback">
+                   Insira nome por favor.
+                </div>
+              </div>
+              </div>
+        </form></div>
+
+            <div class="mb-3">
+              <label for="email">E-mail: <span class="text-muted"></span></label>
+              <input type="email" class="form-control" id="email" placeholder="">
+              <div class="invalid-feedback">
+                Insira e-mail por favor.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address"> Endereço: </label>
+              <input type="text" class="form-control" id="address" placeholder="" required="">
+              <div class="invalid-feedback">
+                Campo em branco, insira o endereço.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2"> Complemento:<span class="text-muted">(Opicional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="">
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Cidade:</label>
+                <select class="custom-select d-block w-100" id="cidade" required="">
+                  <option value="">carregando...</option>
+                  <option> São João da Boa Vista  </option>
+                </select>
+                <div class="invalid-feedback">
+                 Selecione uma cidade .
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state"> Estado </label>
+                <select class="custom-select d-block w-100" id="state" required="">
+                  <option value="">Choose...</option>
+                  <option> São Paulo</option>
+                </select>
+                <div class="invalid-feedback">
+                Estado não inserido.              
+
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip"> CEP </label>
+                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                <div class="invalid-feedback">
+                 cep não inserido.
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit"> Cadastrar </button>
+            </div>
+        
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+
+
+</body></html>
