@@ -1,0 +1,214 @@
+<?php
+session_start();
+require_once('../../conexao/request.class.php');
+
+$id = $_SESSION['id'];
+
+$conexao = new Receita();
+
+$est = $conexao->listEstoque();
+
+?>
+
+<!DOCTYPE html>
+<html style="position: relative; min-height: 100%;">
+    <head>
+        <title>Brewing Space -</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="includes/css/estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body style="margin: 0 0 60px">
+    <script>
+
+        function myFunction($id) {
+
+            var resp;
+            if (confirm("Deseja realmente excluir este item do seu estoque?")) {
+                resp = $id;
+                window.location.href = "deletar.php?estoque="+resp;
+            }else{
+                resp = null;
+            }
+
+            document.getElementById("demo").innerHTML = resp;
+        }
+    </script>
+
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="container-fluid">
+                    
+                    <a href="#" class="navbar-brand">
+                        <img class="logo" src="includes/img/Logo-2-Transparente.png">
+                    </a>
+                    
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="nav-principal">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ml-3">Dúvidas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ml-3">Planos</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="#" class="btn btn-outline-light">Bem-Vindo, Administrador</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>               
+            </nav>
+        </header>
+        <main>
+            <p id="demo"></p>
+            <br />
+            <br />
+
+            <div class="container">
+                <div class="alert alert-success alert-dimissible fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Atenção!</strong> alerta para fazer alguma coisa<strong> palavra en negrito</stronga>, aperte
+                    <a href="#" class="alert-link"> neste link</a> para ver a notificação
+                </div>
+
+                <div class="alert alert-warning alert-dimissible fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Atenção!</strong> alerta para fazer alguma coisa<strong> palavra en negrito</stronga>, aperte
+                    <a href="#" class="alert-link"> neste link</a> para ver a notificação
+                </div>
+
+                <div class="alert alert-danger alert-dimissible fade show">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <strong>Atenção!</strong> alerta para fazer alguma coisa<strong> palavra en negrito</stronga>, aperte
+                    <a href="#" class="alert-link"> neste link</a> para ver a notificação
+                </div>
+            </div>
+            
+            <?php
+                if (isset($_GET['delete']) && !empty($_GET['delete'])) {
+                    $resp = $_GET['delete'];
+
+                    if ($resp == 1) {
+                        echo '
+                            <div class="container">
+                                <div class="alert alert-success alert-dimissible fade show">
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                    <strong>Sucesso!</strong> O administrador aprovou a sua exclusão da cerveja
+                                </div>
+                            </div>
+                            ';
+                    }else{
+                        echo '
+                            <div class="container">
+                                <div class="alert alert-danger alert-dimissible fade show">
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                    <Strong>Falha!</Strong> O administrador não aprovou a sua exclusao da cerveja
+                                </div>
+                            </div>
+                        ';
+                    }
+                }
+            ?>
+            <div id="deletar"></div>
+            <br>
+
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col"> 
+                        <a href="../../usuario/menu.php" class="btn btn-outline-dark float-left">Voltar ao menu anterior</a>
+                   </div>
+                </div>
+            </div>
+            <br>
+            <div class="container content-main">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <div class="name_title">
+                            Itens no estoque
+                        </div>
+                        <input type="text" id="txtBusca" placeholder=" Buscar..." class="maxwidth input">
+                        <a href="../Listagem de Estoque/adicionar.html" class="btn btn-outline-dark float-right">Adicionar item</a>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">ingrediente</th>
+                                    <th scope="col">preço unitário</th>
+                                    <th scope="col">quantidade</th>
+                                    <th scope="col">Data de validade</th>
+                                    <th scope="col">Ações</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <?php
+                                if($est){
+                                    foreach ($est as $key => $value) {
+                                    
+                                        $nome_usu = $value->FK_USUARIOS_USU_ID;
+                                        $nome_usu = $conexao->infoUser($nome_usu);
+
+                                        $nome_ing = $value->FK_INGREDIENTES_ING_ID;
+                                        $nome_ing = $conexao->infoIngredientes($nome_ing);
+                                        
+                                        echo '<tr>';
+                                            echo '<td scope="row">'.$nome_ing->ING_NOME.'</td>';
+                                            echo '<td>'.$value->EST_PRECO_UNI.'</td>';
+                                            echo '<td>'.$value->EST_QUANTIDADE.'</td>';
+                                            echo '<td>'.$value->EST_DATA_VALID.'</td>';
+                                            echo '<td>';
+                                                echo '<div class="d-flex justify-content-around">';
+                                                    echo '<a href="editar.php?id='.$value->EST_ID.'">Editar</a>';
+                                                    echo '<a href="#" onclick="myFunction('.$value->EST_ID.')">Excluir</a>';
+                                                echo '</div>';
+                                            echo '</td>';
+                                        echo '</tr>';
+                                    }
+                                } else{
+                                    echo '<td colspan="5">Não há registros</td>';
+                                }
+                                ?>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        	
+        </main>
+        
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+        <footer class="mt-5">
+            <div class="container-fluid bg-dark" style="position: absolute; bottom: 0px;">
+                <div class="row">
+                    <div class="col">
+                        <p class="lead text-center text-white">
+                            © Copyright 4° ano de infomática do ano de 2020. Todos os Direitos Reservados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+        
+    </body>
+</html>

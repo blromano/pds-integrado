@@ -1,0 +1,98 @@
+<!--/*<?php/*
+session_start();
+require_once('../../conexao/request.class.php');
+
+$conexao = new Receita();
+
+$info = $conexao->listEstilos();
+
+*/?>-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brewing Space</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="includes/css/estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="container-fluid">
+                    
+                    <a href="#" class="navbar-brand">
+                        <img class="logo" src="includes/img/Logo-2-Transparente.png">
+                    </a>
+                    
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="nav-principal">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ml-3">Dúvidas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ml-3">Planos</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="#" class="btn btn-outline-light">Bem-Vindo, Administrador</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>               
+            </nav>
+        </header>
+        <main>
+            <div class="container content-main">
+                <div class="row">
+                    <div class="col">
+                        <div class="containerLg ">
+                            <a href="../IPA/Cervejas/index.php" class="btn-lg btn-block btn-primary active " role="button" aria-pressed="true">Cervejas</a>
+                            <br />
+                            <a href="../IPA/Harmonização/index.php" class="btn-lg btn-block btn-primary active" role="button" aria-pressed="true">Harmonizações</a>
+                            <br />
+                            <a href="../IPA/Listagem de ingrediente/index.php" class="btn-lg btn-block btn-primary active" role="button" aria-pressed="true">Listagem de ingredientes</a>
+                            <br />
+                            <a href="../IPA/Microcervejarias/index.php" class="btn-lg btn-block btn-primary active" role="button" aria-pressed="true">Microcervejarias</a>
+                            <br />
+                            <a href="../Weiss - Trial/Estilos de cerveja/index.php" class="btn-lg btn-block btn-primary active" role="button" aria-pressed="true">Estilos de cerveja</a>
+                            <br />
+                            <a href="../Weiss - Trial/Listagem de Estoque/index.php" class="btn-lg btn-block btn-primary active" role="button" aria-pressed="true">Listagem de estoque</a>
+                            <br />
+                            <a href="../Weiss - Trial/Receita de cerveja/index.php" class="btn-lg btn-block btn-primary active" role="button" aria-pressed="true">Receita de Cerveja</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+        <footer style="position: absolute; bottom: 0px; width: 100%;">
+            <div class="container-fluid bg-dark">
+                <div class="row">
+                    <div class="col">
+                        <p class="lead text-center text-white">
+                            © Copyright 4° ano de infomática do ano de 2020. Todos os Direitos Reservados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+        
+    </body>
+</html>

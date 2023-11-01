@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brewing Space</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="includes/css/estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+    <!-- JQuery hehe -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+
+    function myFunction() {
+        var resp;
+        if (confirm("Deseja realmente excluir esta receita?")) {
+            resp = 1;
+        }else{
+            resp = 0;
+        }
+
+        document.getElementById("demo").innerHTML = resp;
+    }
+    </script>
+
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="container-fluid">
+                    
+                    <a href="#" class="navbar-brand">
+                        <img class="logo" src="includes/img/Logo-2-Transparente.png">
+                    </a>
+                    
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="nav-principal">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ml-3">Dúvidas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ml-3">Planos</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="#" class="btn btn-outline-light">Bem-Vindo, Administrador</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>               
+            </nav>            
+        </header>
+        <main>
+            <br />
+            <div class="container">
+                <div class="row">
+                    <div class="col"> 
+                        <a href="index.html" class="btn btn-outline-dark float-left">Voltar ao menu anterior</a>
+                   </div>
+                </div>
+            </div>
+            <br />
+            <div class="container content-main">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <div class="name_title">
+                            Receita de Cerveja
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <center>
+                            <img src="https://img.itdg.com.br/tdg/images/recipes/000/011/021/64360/64360_original.jpg?">
+                            <h2>CERVEJA ALE (ALTA FERMENTAÇÃO - 25L)</h2>
+                            Criado por:<a href="#"> Maria Luiza</a>
+                        </center>
+                        <hr/>
+                        <div>
+                            <div class="ingredientes">
+                                <h2>Ingredientes</h2>
+                                <p>
+                                    <ul>
+                                        <li>Malte Pilsen BWS - 5kg</li>
+                                        <li>Lúpulo Spalter Select (5,4% Ácido Alfa) - 24g</li>
+                                        <li>Fermento Fermentis S-04 (alta fermentação) - 11,5g</li>
+                                        <li>Água para adicionar o malte - 18l</li>
+                                        <li>Água para Extração do Extrato Residual - 20l</li>
+                                    </ul>
+                                </p>
+                            </div>
+
+                            <div class="preparo">
+                                <h2>Modo de preparo</h2>
+                                <ol>
+                                    <li>Moer os 5kg de malte. Para isso, utilize um moinho de disco ou um moinho de rolo.<br/>
+                                    Dica: moer o suficiente para abrir o grão de malte e expor o amido sem prejudicar a casca do malte. A casca triturada dificulta a filtração do mosto.</li>
+
+                                    <li>Pesar 24g de lúpulo.</li>
+
+                                    <li>Aquecer 18 litros de água até 68ºC em uma panela de Inox ou alumínio.</li>
+
+                                    <li>Preparar mais 20 litros de água em outra panela. Aquecer a mesma até 76ºC.</li>
+                                </ol>
+                            </div>
+                            <div>
+                                <h2>Harmonização </h2>
+                                <div class="d-flex justify-content-center">
+                                    <img src="https://www.dicasdemulher.com.br/wp-content/uploads/2020/02/petiscos-capa.jpg" width="300" height="300">
+                                    <img src="https://t1.rg.ltmcdn.com/pt/images/1/7/0/petisco_sacanagem_3071_600.jpg" width="300" height="300">
+                                    <img src="https://img.cybercook.com.br/receitas/32/pao-petisco-de-churrasco-1-623x350.jpeg" width="300" height="300">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div> 
+                <br />
+
+                <!-- Botao collapse Gerar preço de custo-->
+                <section id="presso">
+                    <input type="button" data-toggle="collapse" data-target="#preco" class="btn func btn-lg btn-block btn-outline-dark" value="Gerar preço de custo">
+                     <div id="preco" class="collapse" >
+                         <table class="table table-bordered">
+                             <thead class="thead">
+                                 <tr>
+                                     <th scope="col">Item</th>
+                                     <th scope="col">Quantidade</th>
+                                     <th scope="col">Preço</th>
+                                 </tr>
+                             </thead>
+                             <tbody>
+                                 <tr>
+                                     <td>Malte Pilsen BWS</td>
+                                     <td>5,0kg</td>
+                                     <td style="text-align: right;">R$ 20,00</td>
+                                 </tr>
+                                 <tr>
+                                     <td>Lúpulo Spalter Select (5,4% Ácido Alfa)</td>
+                                     <td>24,0g</td>
+                                     <td style="text-align: right;">R$ 20,00</td>
+                                 </tr>
+                                 <tr>
+                                     <td>Fermento Fermentis S-04 (alta fermentação)</td>
+                                     <td>11,5g</td>
+                                     <td style="text-align: right;">R$  7,00</td>
+                                 </tr>
+                                 <tr>
+                                     <td>Água para adicionar o malte</td>
+                                     <td>18,0L</td>
+                                     <td style="text-align: right;">R$ 18,00</td>
+                                 </tr>
+                                 <tr>
+                                     <td>Água para Extração do Extrato Residual</td>
+                                     <td>20,0L</td>
+                                     <td style="text-align: right;">R$ 20,00</td>
+                                 </tr>
+ 
+                                 <tr>
+                                     <td colspan="3" style="text-align: right; background-color: lightgray;">Total: R$ 85,00</td>
+                                 </tr>
+                             </tbody>
+                         </table>
+                     </div>
+                 </section>
+
+                 <br />
+                 <!-- botoes editar e excluir-->
+                <div>
+                    <a href="editar.html" class="btn btn-primary active">Editar</a>
+                    <a href="#" class="btn red01 btn-secondary active" onclick="myFunction()">Excluir</a>
+                </div>
+
+            </div>
+        	<br />
+        </main>
+        
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+        <footer class="mt-5">
+            <div class="container-fluid bg-dark">
+                <div class="row">
+                    <div class="col">
+                        <p class="lead text-center text-white">
+                            © Copyright 4° ano de infomática do ano de 2020. Todos os Direitos Reservados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+        
+    </body>
+</html>
