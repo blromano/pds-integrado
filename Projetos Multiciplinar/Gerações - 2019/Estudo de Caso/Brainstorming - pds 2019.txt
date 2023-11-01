@@ -1,0 +1,27 @@
+Módulos
+01 - USUARIOS (Geral)
+02 - PRONTUÁRIO DOS PACIENTES (Enfermeiros)
+03 - ACOMPANHAMENTO PELOS FAMILIARES (Responsável pelo Paciente)
+
+04 - CUIDADOS DIÁRIOS DOS PACIENTES (Enfermeiros)
+05 - PRESCRIÇÕES MÉDICAS (Médicos/Enfermeiros)
+	. vacinacao
+06 - NUTRIÇÃO (Nutricionistas)
+	. 6 refeicoes diarias
+07 - ATIVIDADES FÍSICAS/RECREATIVAS (Educadores Físicos)
+08 - CONTROLE DE INCIDENTES/PATOLOGIAS
+
+09 - LIMPEZA DOS AMBIENTES (Limpeza)
+10 - CONTROLE FINANCEIRO (Gestor)
+11 - RELATÓRIOS ESPECIALIZADOS (Gestor)
+12 - FERRAMENTAS ADMINISTRATIVAS
+
+47 alunos / 12 = 12 grupos de 5
+12 Analistas
+2 DBAs
+2 Desenvolvedores
+-----------------
+1 dos 6 devem virar lider do grupo
+
+
+
