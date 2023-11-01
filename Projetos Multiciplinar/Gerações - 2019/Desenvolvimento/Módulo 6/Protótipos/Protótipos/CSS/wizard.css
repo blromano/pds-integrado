@@ -1,0 +1,21 @@
+#md6 .m-progress-bar {
+    min-height: 1em;
+    background: #5de043;
+    width: 5%;
+}
+
+#md6 .plus{
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#md6 .tab{
+    overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
