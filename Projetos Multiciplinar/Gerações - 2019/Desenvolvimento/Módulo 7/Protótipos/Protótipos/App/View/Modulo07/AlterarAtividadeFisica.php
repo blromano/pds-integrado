@@ -1,0 +1,55 @@
+<section id="md7" style="width:100%">
+<div class="text-center">
+ 
+        <img src="../../../img/atv_fisica.jpeg" class="rounded" alt="cerebro levantando peso" height="200px" width="320px"/>
+        </div>
+        <br>
+        <br>
+      
+        <br>
+        <br>
+      
+        <form>
+  <div class="form-row">
+       <div class="form-group col-md-3">
+     
+    </div>
+    <div class="form-group col-md-6">
+      <label for="nomeatv" text-align="center" >Nome da Atividade:</label>
+      <input type="text" class="form-control" id="nomeatv" placeholder="Digite o Nome da Atividade">
+    </div>
+
+  </div>
+       <div class="form-row">       
+       <div class="form-group2 col-md-3">
+     
+    </div>
+<div class="form-group2 col-md-6">
+      <label for="inputState">Tipo de Atividade</label>
+      <select id="inputState" class="form-control">
+          <option>Selecione o Tipo da Atividade</option>
+        <option>Tipo de atividade 1</option>
+        <option>Tipo de atividade 2</option>
+      
+      </select>
+    </div>
+  </div>
+            <br>
+            <br>
+            <br>
+               <div class="row">       
+                   <div class="form-group2 col-md-3">
+                   </div>
+       <div class="form-group2 col-md-5">
+                <a class="btn btn-outline-dark" href="/md7/ListarAtividadeFisica">Cancelar</a>
+       </div>
+                   <div class="form-group2 col-md-3">
+                  <a class="btn btn-outline-dark" href="/md7/ListarAtividadeFisica">Confirmar</a>
+                   </div>
+            </div>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+</section>

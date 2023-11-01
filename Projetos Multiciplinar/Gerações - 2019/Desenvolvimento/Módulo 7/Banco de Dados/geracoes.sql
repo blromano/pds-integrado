@@ -1,0 +1,23 @@
+CREATE DATABASE geracoes;
+USE geracoes;
+
+
+
+CREATE TABLE `tipos_atividades_fisicas` (
+  `TAF_ID` INTEGER AUTO_INCREMENT PRIMARY KEY,
+  `TAF_NOME` varchar(100) DEFAULT NULL,
+  UNIQUE (TAF_ID)
+);
+
+CREATE TABLE `atividades_fisicas` (
+  `AFI_ID` INTEGER AUTO_INCREMENT PRIMARY KEY,
+  `AFI_NOME` varchar(100) DEFAULT NULL,
+  `FK_TIPOS_ATIVIDADES_FISICAS_TAF_ID` int(11) DEFAULT NULL,
+  UNIQUE (AFI_ID)
+); 
+
+ALTER TABLE `atividades_fisicas`
+    ADD CONSTRAINT FK_atividades_fisicas
+    FOREIGN KEY (FK_TIPOS_ATIVIDADES_FISICAS_TAF_ID)
+    REFERENCES tipos_atividades_fisicas (TAF_ID)
+    ON DELETE CASCADE;
