@@ -1,0 +1,30 @@
+{
+    "name": "geracoes",
+    "requier": {
+        "php": ">=7.0"
+    },
+    "authors": [
+        {
+            "name": "Prof. Breno Lisi Romano",
+            "email": "blromano@gmail.com"
+        },
+        {
+            "name": "Prof. Luiz Angelo Valota Francisco",
+            "email": "lavfrancisco@gmail.com"
+        },
+        {
+            "name": "Marcelo Ciacco de Almeida",
+            "email": "m.ciacco@gmail.com"
+        },
+        {
+            "name": "Turma 4 Ano",
+            "email": "turma4ano2019@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "FW\\": "vendor/FW/"
+        }
+    }
+}

@@ -1,0 +1,81 @@
+-- phpMyAdmin SQL Dump
+-- version 4.8.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: 01-Jul-2019 às 20:55
+-- Versão do servidor: 10.1.34-MariaDB
+-- PHP Version: 7.2.8
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+CREATE DATABASE geracoes;
+USE geracoes;
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `geracoes`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `idosos`
+--
+
+CREATE TABLE `idosos` (
+  `IDS_DATA_NASCIMENTO` date DEFAULT NULL,
+  `IDS_ATIVO` tinyint(1) DEFAULT NULL,
+  `IDS_USA_FRALDA_OU_FORRINHO` tinyint(1) DEFAULT NULL,
+  `IDS_NOME_COMPLETO` varchar(255) DEFAULT NULL,
+  `IDS_CPF` varchar(12) DEFAULT NULL,
+  `IDS_PRONTUARIO` int(11) NOT NULL,
+  `IDS_RG` varchar(9) DEFAULT NULL,
+  `IDS_SEXO` tinyint(1) DEFAULT NULL,
+  `IDS_FOTO` varchar(255) DEFAULT NULL,
+  `IDS_DATA_INGRESSO` date DEFAULT NULL,
+  `IDS_DATA_FALECIMENTO` datetime DEFAULT NULL,
+  `IDS_DATA_SAIDA` date DEFAULT NULL,
+  `FK_RESPONSAVEIS_ID_RESP_COD` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `idosos`
+--
+
+INSERT INTO `idosos` (`IDS_DATA_NASCIMENTO`, `IDS_ATIVO`, `IDS_USA_FRALDA_OU_FORRINHO`, `IDS_NOME_COMPLETO`, `IDS_CPF`, `IDS_PRONTUARIO`, `IDS_RG`, `IDS_SEXO`, `IDS_FOTO`, `IDS_DATA_INGRESSO`, `IDS_DATA_FALECIMENTO`, `IDS_DATA_SAIDA`, `FK_RESPONSAVEIS_ID_RESP_COD`) VALUES
+('2001-04-26', 1, 1, 'Teste', 'Teste', 1, 'Teste', 1, NULL, '2003-05-27', NULL, NULL, 1),
+('2000-02-20', 1, 1, 'Pedro', '123456789123', 2, '123456789', 1, NULL, '2005-05-24', NULL, NULL, 3),
+('2000-04-26', 1, 1, 'Teste2', 'Teste', 3, 'Teste', 1, NULL, '2001-02-24', NULL, NULL, 4);
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `idosos`
+--
+ALTER TABLE `idosos`
+  ADD PRIMARY KEY (`IDS_PRONTUARIO`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `idosos`
+--
+ALTER TABLE `idosos`
+  MODIFY `IDS_PRONTUARIO` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
