@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brewing Space</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="includes/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="includes/css/estilo.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="container-fluid">
+                    
+                    <a href="#" class="navbar-brand">
+                        <img class="logo" src="includes/img/Logo-2-Transparente.png">
+                    </a>
+                    
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="nav-principal">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">Início</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ml-3">Dúvidas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ml-3">Planos</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a href="#" class="btn btn-outline-light">Cadastrar</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>               
+            </nav>            
+        </header>
+        
+        <br>
+
+        <form method="POST" action="">
+	        <table  align="center">
+				<thead>
+				 <th>
+				 	Cálculo quantidade de garrafas
+				 </th>
+				 <tr>&nbsp;</tr>
+				  <tr>
+				    <th>Quantidade (ml) de cerveja a ser envasada:</th>
+				    <td><input type="text" id="qC" name="qC" value=""></td>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+				    <th>Volume da garrafa (ml):</th>
+				    <td><input type="text" id="tE" name="tE" value=""></td>
+				  </tr>
+				</tbody>
+			</table>
+		</form>	
+			<a align="center" href="#">Calcular</a>
+        <footer class="mt-5">
+            <div class="container-fluid bg-dark">
+                <div class="row">
+                    <div class="col">
+                        <p class="lead text-center text-white">
+                            © Copyright 4° ano de infomática do ano de 2020. Todos os Direitos Reservados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>        
+    </body>
+</html>

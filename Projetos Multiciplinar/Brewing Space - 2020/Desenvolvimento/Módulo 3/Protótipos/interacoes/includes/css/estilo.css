@@ -1,0 +1,29 @@
+.imagemDeMadeira{
+    background-image: url('../img/fundo.jpg');
+}
+
+.imagensVejaMais{
+    width: 170px;
+}
+
+.imagensSaibaMais{
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 130px;
+}
+
+.form{
+    background-image: url('../img/cervejaria.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 580px;   
+}
+
+#formulario-login{
+    background-color: rgba(255,255,255,0.4);
+    padding: 20px;
+}

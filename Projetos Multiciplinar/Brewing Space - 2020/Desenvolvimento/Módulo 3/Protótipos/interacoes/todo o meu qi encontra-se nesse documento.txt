@@ -1,0 +1,28 @@
+LÓGICA BDD -> tabela de processo de cerveja
+cada processo leva uma foreign key dessa tabela
+a tabela de cerveja tem uma foreign key da tabela de processos
+a tabela usuário tem uma foreign key da tabela de receita de cerveja
+
+
+COMANDOS SQL ->
+
+Caso #01:
+
+2.	Exibir opções de “criar” e uma 
+lista com cervejas já criadas anteriormente, todas com uma opção de “excluir”.
+
+SELECT RECEITAS_CERVEJA.REC_NOME
+FROM RECEITAS_CERVEJA INNER JOIN USUARIOS_RECEITAS ON 
+RECEITAS_CERVEJA.REC_ID = USUARIOS_RECEITAS.FK_RECEITAS_CERVEJA_REC_ID
+INNER JOIN USUARIOS ON 
+USUARIOS.USU_ID = USUARIOS_RECEITAS.FK_USUARIOS_USU_ID
+
+
+Caso #01 parte dois
+
+Mostrar menu de cerveja
+mostrar nome da cerveja, então precisa mostrar o nome da cerveja + id da cerverja (SELECT RECEITAS_CERVEJA.REC_NOME as receita,
+RECEITAS_CERVEJA.REC_ID AS idReceita FROM RECEITAS_CERVEJA INNER JOIN USUARIOS_RECEITAS ON 
+RECEITAS_CERVEJA.REC_ID = USUARIOS_RECEITAS.FK_RECEITAS_CERVEJA_REC_ID
+INNER JOIN USUARIOS ON 
+USUARIOS.USU_ID = USUARIOS_RECEITAS.FK_USUARIOS_USU_ID)
