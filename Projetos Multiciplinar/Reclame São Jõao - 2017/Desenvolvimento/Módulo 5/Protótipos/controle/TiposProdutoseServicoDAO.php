@@ -1,0 +1,107 @@
+<?php
+	
+	require_once 'Conexao.php';
+	
+	
+	class TiposProdutoseServicoDAO {
+	
+	private $conexao;
+	private $sql;
+	private $tiposestabelecimentos;
+	private $resultado;
+	private $tabela;
+        private $id;
+	
+		
+	public function __construct()
+    {
+        $conn = new Conexao();
+		$this->conexao = $conn->getConexao();
+		$this->tabela = "tipos_produtos";
+    }
+	
+	public function inserir($des)
+	{
+		$this->tiposestabelecimentos = $des;		
+		$this->sql="insert into $this->tabela (TPR_DESCRICAO) values (:des)";		
+		$this->resultado = $this->conexao->prepare($this->sql);
+		
+		$this->resultado->bindParam(':des',$this->tiposestabelecimentos->getDescricao());
+
+		$this->resultado->execute();
+		
+		return $this->resultado;
+	}
+	
+	public function editar($up)
+	{
+		$this->tiposestabelecimentos = $up;
+                
+		$this->sql="update $this->tabela set TPR_DESCRICAO=:categoria where TPR_ID=:id";		
+		
+		$this->resultado = $this->conexao->prepare($this->sql);
+                
+		$this->resultado->bindParam(':id',$this->tiposestabelecimentos->getId());
+		$this->resultado->bindParam(':categoria',$this->tiposestabelecimentos->getDescricao());
+		
+		$this->resultado->execute();
+		
+		return $this->resultado;
+	}
+	
+	public function excluir($id)
+	{		
+                          
+		$this->sql="DELETE FROM $this->tabela where TPR_ID=:id";		
+		
+		$this->resultado = $this->conexao->prepare($this->sql);
+                
+		$this->resultado->bindParam(':id',$id);
+		try {
+			$this->resultado->execute();
+			echo "<script>alert('Produto/Servico deletado com sucesso!')</script><script>window.location='../../../index.php?pagina=11';</script>";
+		} catch(PDOException $e) {
+                   // mostra o erro gerado 
+                  //echo "Error: " . $e->getMessage();
+			echo "<script>alert(' Erro ao deletar Produto/Servico!')</script><script>window.location='../../../index.php?pagina=11';</script>";
+		}
+		
+		return $this->resultado ;
+	}
+        
+        public function pesquisar_igual($nome)
+        {      
+             $this->tiposestabelecimentos = $nome;
+                
+               $this->sql="select * from $this->tabela WHERE TPR_DESCRICAO=:categoria";
+               
+		$this->resultado= $this->conexao->prepare($this->sql);
+                
+                $this->resultado->bindParam(':categoria',$this->tiposestabelecimentos);
+                
+		$this->resultado->execute();
+                 if(($this->resultado->rowCount()) > 0){ 
+                   return 1;
+                } else {
+                    return 0;
+                }
+                
+			
+	}
+        
+
+                public function listar()
+	{
+		$this->sql="select * from $this->tabela";
+		$this->resultado= $this->conexao->prepare($this->sql);
+		$this->resultado->execute();
+		return $this->resultado->fetchAll();	
+	}
+
+	
+	}
+	   
+
+  
+?>
+
