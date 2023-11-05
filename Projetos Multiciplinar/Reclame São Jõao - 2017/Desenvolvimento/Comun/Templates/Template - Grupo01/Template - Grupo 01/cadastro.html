@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<!--Jéssica e Lilian-->
+<html>
+	<head>
+		<title>Cadastrar</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+	
+	
+	<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Reclame</strong> <span>São João</span></a>
+					</header>
+	
+	
+	 <br /><br /> <br /><br /> <br /><br />
+	 
+	 <!-- Formulário -->   
+	 <div id="formulariologin">
+        <form action = "cadastro.php" method="get">           
+	  <label>Preencha os campos abaixo para cadastrar usuário:</label>
+	  <br /><br />
+	 
+	 
+	 
+	 
+  
+	
+      <label> Nome <br /><input type = "text" name ="nome"/><br/> <br /></label> 
+	  <label> Sobrenome <br /><input type = "text" name ="sobrenome"/><br/> <br /></label> 
+	  <label> Cpf <br /><input type = "text" name ="cpf"/><br/> <br /></label> 
+	  
+	  <!-- Data de nascimento -->
+         <label>Data de Nascimento</label> <br> 			
+	     <input type="date" name="data de nascimento">
+      <!-- Fim Data de nascimento -->
+	  
+	  <!-- Sexo -->
+	     <br /> <br />
+             <label>Sexo</label> <br> 
+            <input type="radio" name="sexo" value="masculino" />Masculino<br/>
+			<input type="radio" name="sexo" value="feminino" />Feminino
+         <br /> <br />
+      <!-- Fim Sexo -->
+	  
+	  <!-- Telefone -->
+         <label>Telefone</label> <br>
+    <input type="tel" required="required" maxlength="15" name="phone" pattern="\([0-9]{2}\) [0-9]{4,6}-[0-9]{3,4}$" />
+         <br/>
+      <!-- Fim Telefone -->
+	  
+	   <!-- cpf -->
+	  <div class="col-sm-6"> 
+	  <label>CPF</label> 
+	  <input type="text" name="cpf" class="form-control input-lg ng-dirty ng-invalid ng-invalid-cpf ng-touched ng-valid-mask ng-valid-parse ng-empty ng-invalid-required" ng-model="main.cpf" ui-mask="999.999.999-99" ng-blur="main.isValidateCPF(main.cpf)" required="" placeholder="___.___.___-__" style=""> 
+	  <p style="margin-top: 5px;" ng-show="!main.validateCPF" class="form-error-alert no-padding ng-binding" ng-bind-html="main.validateCPFMsg">CPF inválido!</p> 
+	  </div>
+	   <!-- Fim cpf -->
+	  
+	  <label> Senha <br /><input type = "text" name ="Senha"/><br/> <br /></label>
+	  <label> Confirmar senha<br /><input type = "text" name ="Confirmar senha"/><br/> <br /></label> 
+	  <label> Pergunta de segurança: <br /><br />
+	  <select id ="dropdown" name = "pergunta">
+	    <option value="mae">Qual é o nome inteiro da sua mãe</option>
+		<option value="pai">Qual é o nome inteiro do seu pai </option>
+		<option value="prof">Qual é o nome da sua primeira professora </option>
+		<option value="animal">Qual é o nome do seu primeiro animal de estimação</option>
+		<option value="materia">Qual é a sua matéria favorita</option>
+	  </select>
+	  
+	  <br /><textarea cols="30" >  </textarea> <br/><br /></label>
+		
+	
+	  <input type = "button" value ="Cadastrar"/>
+    </form>
+	
+	Já é cadastrado? clique <a href="login.html"> aqui </a>
+	<br /><br />
+	Clique <a href="index.html"> aqui </a> para voltar a página inicial
+	</div>                           
+	 <br/><br /> <br/><br />
+	 
+	 
+	 <!-- Contact -->
+	    <div id = "Email123">
+	        <div class="contact-method">
+		         <span class="icon alt fa-envelope"></span>
+			     <h3>Email</h3>
+			     <a href="#">information@untitled.tld</a>
+			</div>
+		</div>
+		
+		<div id = "Phone123">			
+			<div class="contact-method">
+			     <span class="icon alt fa-phone"></span>
+			     <h3>Phone</h3>
+			     <span>(000) 000-0000 x12387</span>
+			</div>
+		</div>
+		
+		<div id = "Address123">
+			<div class="contact-method">
+				<span class="icon alt fa-home"></span>
+				<h3>Address</h3>
+				<span>1234 Somewhere Road #5432<br>
+				Nashville, TN 00000<br>
+				United States of America</span>
+			</div>
+		</div>
+			
+    <br /><br /><br /><br />	
+	
+	
+	
+	
+								
+							
+							
+	<!-- Footer -->
+				<div id = "rodape123" >
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://twitter.com/login" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/?hl=pt-br" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+							</ul>
+							
+							<p class="copyright">
+								<a href="index.html"> Reclame São Jõao</a>, seu portal de reclamação!
+							</p>
+						</div>
+					</footer>
+                </div>
+	</body>
+</html>

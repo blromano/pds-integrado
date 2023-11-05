@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Theme CSS -->
+     <link href="css/agency.css" rel="stylesheet"> 
+
+</head>
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Reclame São João</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- MODAL LOGIN -->
+<div id="la" class="modal2">
+  
+  <form class="modal2-content animate" action="/action_page.php">
+    <div class="img2container">
+      <span onclick="document.getElementById('la').style.display='none'" class="close2" title="Close Modal">&times;</span>
+      <img src="img/logo.png" class="avatar2">
+    </div>
+
+    <div class="container2">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname2" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw2" required>
+        
+      <button class="btndologin"type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container2" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('la').style.display='none'" class="cancelbtn2">Cancel</button>
+      <span class="psw2">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal2
+var modal2 = document.getElementById('la');
+
+// When the user clicks anywhere outside of the modal, close2 it
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+</script>
+
+
+<!-- MODAL CADASTRO -->
+<div id="la2" class="modal3">
+  
+  <form class="modal3-content animate" action="/action_page.php">
+    <div class="img2container">
+      <span onclick="document.getElementById('la2').style.display='none'" class="close2" title="Close Modal">&times;</span>
+      <img src="img/logo.png" class="avatar2">
+    </div>
+
+    <div class="container2">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname2" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw2" required>
+	  
+	  <label><b>Confirm Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw2" required>
+	  
+	  <label><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="uname2" required>
+	  
+	  <label><b>CPF</b></label>
+      <input type="text" placeholder="Enter CPF" name="uname2" required>
+	  
+	  <label><b>Telefone</b></label>
+      <input type="text" placeholder="Enter Telefone" name="uname2" required>
+        
+      <button class="btndologin"type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container2" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('la2').style.display='none'" class="cancelbtn2">Cancel</button>
+      <span class="psw2">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+<!--  por algum motivo o js do cadastro buga o do login
+<script>
+// Get the modal3
+var modal3 = document.getElementById('la2');
+
+// When the user clicks anywhere outside of the modal, close2 it
+window.onclick = function(event) {
+    if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+}
+</script>
+-->
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle" style="margin-left: auto"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="index.html" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            
+					
+<li>			
+<a onclick="document.getElementById('la').style.display='block'" style="width:auto;">Login</a>
+
+</li>
+			
+            <li>
+                <a href="#about" onclick="document.getElementById('la2').style.display='block'".click();>Cadastro</a>
+            </li>
+            <li>
+                <a href="reclame.html" onclick=$("#menu-close").click();>Reclame</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick=$("#menu-close").click();>Estabelecimentos</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Sobre Nos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+	
+    <header id="top" class="header">
+	
+	<div class="text-vertical-center">
+		
+		<img src="img/logo.png" width="600" class="img-responsive" height:"400px">
+            <h3 class="text-center">Seu Portal de reclamações</h3>
+            <br>
+            <form class="destinations-form">
+                     <div class="input-line">
+                        <input type="text" name="destination" value="" class="form-input check-value" placeholder="Descubra sobre um estabelecimento ou faça uma reclamação!" />
+                        <button type="button" name="destination-submit" class="form-submit btn btn-special">BUSCAR</button>
+                     </div>
+                  </form>
+                  <br><br><br><br>
+            <a href="#about" class="btn btn-dark btn-lg">Veja Mais</a>
+        </div>
+    </header>
+
+
+    <!-- About -->
+	
+<section id="reclamacao" class="reclamacao">
+<aside class="call-to-action bg-primary">
+        <div class="reclamacao">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                   <form action="#" method="get">
+    <fieldset>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" style="width: 35em" value="Nome cadastrado" />
+            </div>
+            <div class="campo">
+                <label for="snome">Sobrenome</label>
+                <input type="text" id="snome" name="snome" style="width: 35em" value="Sobrenome cadastrado" />
+            </div>
+        </fieldset>
+		<fieldset class="grupo">
+        <div class="campo">
+            <label>Sexo</label>
+            <label>
+                <input type="radio" name="sexo" value="masculino"> Masculino
+            
+                <input type="radio" name="sexo" value="feminino"> Feminino
+            </label>
+        </div>
+		</fieldset>
+		<fieldset class="grupo">
+        <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="email" style="width: 70em" value="Email se desejar" />
+        </div>
+		</fieldset>
+		<fieldset class="grupo">
+        <div class="campo">
+            <label for="telefone">Empresa</label>
+            <input type="text" id="empresa" name="empresa" style="width: 70em"  value="Empresa escolhida" />
+        </div>
+		</fieldset>
+		<fieldset class="grupo">
+        <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea rows="10" style="width: 90em" id="mensagem" name="mensagem"></textarea>
+        </div>
+		</fieldset>
+		<fieldset class="grupo">
+        <div class="campo">
+            <label>
+                <input type="checkbox" name="newsletter" value="1"> Gostaria de receber a resposta da empresa
+            </label>
+        </div>
+		</fieldset>
+		<fieldset class="grupo">
+        <button class="botao" type="submit" name="submit">Enviar</button>
+	</fieldset>
+    </fieldset>
+</form>
+                </div>
+            </div>
+        </div>
+    </aside>
+	</section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading" style="font-weight: 700; font-family: Montserrat; text-transform: uppercase;">Compare</h2>
+                    <h3 class="section-subheading text-muted">Compare o melhor estabelecimento da categoria, com o selecionado por você</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img  src="img/portfolio/portfolio-1.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>#??</h4>
+                        <p id="s" class="text-muted">Melhor da categoria</p>
+                    </div>
+                </div>
+				
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/portfolio-1.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>#??</h4>
+                        <p id="s" class="text-muted">Selecionado</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+	<section id="" class="map" style="margin-top: -15%; margin-bottom: 15%;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d35198.46706831087!2d-46.798648061336!3d-21.981286231990907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1487614392594" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+    </section>
+
+   <!-- Footer -->
+    <footer>
+
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Reclame São João</strong>
+                    </h4>
+                    <p>IFSP
+                        <br>São João da Boa Vista </p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#" ><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Reclame São João 2017</p>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!--meta do slishow--><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reclame São João</title>
+    <!--<link href="css/bootstrap2.css" rel="stylesheet">-->
+   <link href="css/flexslider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" >
+  <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+  <link href="css/animate.min.css" rel="stylesheet"> 
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet">
+  <link href="css/testes.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/depoimentos.css" rel="stylesheet">
+  <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
+	 <link href="css/responsive.css" rel="stylesheet">
+	  <link href="css/smoothbox.css" rel="stylesheet">
+	  <!--link do slidshow testemunho-->
+	  <link rel="stylesheet" href="css/w3.css">
+	   <!--fim do link do slidshow testemunho-->
+	   
+	<!-- Yeti theme boostrap -->
+	
+	<link href="https://bootswatch.com/yeti/bootstrap.min.css" rel="stylesheet">
+  
+
+
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+  
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+</head><!--/head-->
+
+<!--SLIDSHOW TESTEMUNHO-->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge { height:13px;width:13px;padding:0}
+</style>
+<!--FIM SLIDSHOW TESTEMUNHO-->
+
+<!-- MODAL LOGIN -->
+<!--
+<div id="la" class="modal2">
+  
+  <form class="modal2-content animate" action="/action_page.php">
+    <div class="img2container">
+      <span onclick="document.getElementById('la').style.display='none'" class="close2" title="Close Modal">&times;</span>
+      <img src="images/favicon.ico" class="avatar2">
+    </div>
+
+    <div class="container2">
+      <label><b>Username</b></label>
+      <input class="inputlogin" type="text" placeholder="Enter Username" name="uname2" required>
+
+      <label><b>Password</b></label>
+      <input class="inputlogin" type="password" placeholder="Enter Password" name="psw2" required>
+        
+      <button class="btndologin"type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container2" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('la').style.display='none'" class="cancelbtn2">Cancel</button>
+      <span class="psw2">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>-->
+<!-- Modal -->
+<div id="login" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body">
+		<form>
+			<div class="form-group">
+				<label for="login">Usuário:</label>
+				<input type="text" class="form-control" placeholder="Digite seu login" id="login" required>
+			</div>
+			<div class="form-group">
+				<label for="pwd">Senha:</label>
+				<input type="password" class="form-control" placeholder="Digite sua senha" id="pwd" required>
+			</div>
+			
+			<button class="btndologin"type="submit">Logar</button>
+			<input type="checkbox" checked="checked"> Lembrar-me
+
+			<span class="pull-right"><a href="#">Esqueceu sua senha?</a></span>
+		</form>
+      </div>
+      <!--<div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>-->
+    </div>
+
+  </div>
+</div>
+
+<script>
+// Get the modal2
+var modal2 = document.getElementById('la');
+
+// When the user clicks anywhere outside of the modal, close2 it
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+</script>
+
+
+<!-- MODAL CADASTRO -->
+<div id="la2" class="modal3">
+  
+  <form class="modal3-content animate" action="/action_page.php">
+    <div class="img2container">
+      <span onclick="document.getElementById('la2').style.display='none'" class="close2" title="Close Modal">&times;</span>
+      <img src="images/favicon.ico" class="avatar2">
+    </div>
+
+    <div class="container2">
+      <label><b>Username</b></label>
+      <input class="inputlogin" type="text" placeholder="Enter Username" name="uname2" required>
+
+      <label><b>Password</b></label>
+      <input class="inputlogin" type="password" placeholder="Enter Password" name="psw2" required>
+	  
+	  <label><b>Confirm Password</b></label>
+      <input class="inputlogin" type="password" placeholder="Enter Password" name="psw2" required>
+	  
+	  <label><b>Email</b></label>
+      <input class="inputlogin" type="text" placeholder="Enter Email" name="uname2" required>
+	  
+	  <label><b>CPF</b></label>
+      <input class="inputlogin" type="text" placeholder="Enter CPF" name="uname2" required>
+	  
+	  <label><b>Telefone</b></label>
+      <input class="inputlogin" type="text" placeholder="Enter Telefone" name="uname2" required>
+        
+      <button class="btndologin"type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container2" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('la2').style.display='none'" class="cancelbtn2">Cancel</button>
+      <span class="psw2">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+<!--  por algum motivo o js do cadastro buga o do login
+<script>
+// Get the modal3
+var modal3 = document.getElementById('la2');
+
+// When the user clicks anywhere outside of the modal, close2 it
+window.onclick = function(event) {
+    if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+}
+</script>
+-->
+
+
+
+<body>
+
+  <!--.preloader-->
+  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+  <!--/.preloader-->
+
+   <header id="home">
+    <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url(images/slider/Mockup-Generated-by-Dunnnk.jpg)">
+          <div class="caption">
+		  <div class="caption2">
+<button id="loginecadastro" class="loginecadastro" type="submit" data-toggle="modal" data-target="#login">Login</button>
+<button id="cadastroelogin" class="cadastroelogin" type="submit" onclick="document.getElementById('la2').style.display='block'".click();>Cadastre</button>
+</div>
+            <h1 class="animated fadeInLeftBig">Bem Vindo ao </br><span>RECLAME SÃO JOÃO</span></h1>
+            <form class="destinations-form animated fadeInLeftBig">
+                     <div class="input-line">
+                        <input type="text" name="destination" value="" class="form-input check-value" placeholder="Buscar" />
+                        <button type="submit" name="destination-submit" class="form-submit btn btn-special"><i class="fa fa-search fa-2x"></i> </button>
+                     </div>
+                  </form>
+                  <!--<a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Veja mais</a>-->
+            <p id="textobloco1" class="animated fadeInRightBig"><br>FAÇA SUAS RECLAMAÇÕES E VEJA A REPUTAÇÃO DOS ESTABELECIMENTOS</p>
+          </div>
+        </div>
+        </div>
+	   </div>
+
+    </div>
+	<!--/#home-slider-->
+    <div class="main-nav" style="background-color: #64594f">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <h1><img class="img-responsive" src="images/logo.png" alt="logo"></h1>
+          </a>                    
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">                 
+            <li class="scroll active"><a href="#home">Home</a></li>
+            <li class="scroll"><a href="#serviços">Serviços</a></li> 
+            <li class="scroll"><a href="#about-us">Sobre Nós</a></li>                     
+            <li class="scroll"><a href="#portfolio">Dev</a></li>
+			<li ><a href="contato.html">Contato</a></li>
+                  
+          </ul>
+        </div>
+      </div>
+    </div><!--/#main-nav-->
+  </header><!--/#home-->
+  
+
+  <section id="serviços">
+    <div class="container">
+      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="row">
+          <div class="text-center col-sm-8 col-sm-offset-2">
+            <h2>Nosso Serviços</h2>
+            <p>Buscamos oferecer suporte para problemas que possam ocorrer no relacionamento Cliente x Estabelecimento em São João da Boa Vista.</p>
+          </div>
+        </div> 
+      </div>
+      <div class="text-center our-services">
+        <div class="row">
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="service-icon">
+              <a style="color: white;"href="reclamar.html"><i  class="fa fa-comments"></i></a>
+            </div>
+            <div class="service-info">
+              <h3>Reclamar</h3>
+              <p>Criar reclamações contra determinado estabelecimento</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
+            <div class="service-icon"> 
+              <i class="fa fa-truck"></i>
+            </div>
+            <div class="service-info">
+              <h3>Avisar ao estabelecimento</h3>
+              <p>Informar o estabelecimento sobre a reclamação criada à seu respeito</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
+            <div class="service-icon">
+              <i class="fa fa-handshake-o"></i>
+            </div>
+            <div class="service-info">
+              <h3>Buscar um acordo</h3>
+              <p>Fazer o possível para que o estabelecimento entre em um acordo com o cliente</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
+            <div class="service-icon">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="service-info">
+              <h3>Informar novos status</h3>
+              <p>Informar sempre que houver um novo status em relação à reclamação feita</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
+            <div class="service-icon">
+              <i class="fa fa-bar-chart"></i>
+            </div>
+            <div class="service-info">
+              <h3>Exibir rankings</h3>
+              <p>Exibir rankings com diversos critérios sobre os estabelecimentos, as reclamações feitas e atendidas</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
+            <div class="service-icon">
+              <i class="fa fa-check-square"></i>
+            </div>
+            <div class="service-info">
+              <h3>Verificar satisfação</h3>
+              <p>Concluir reclamação e verificar satisfação com a resolução do problema</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	</section> <!--FIM DO SECTION SERVIÇOS-->
+
+<!--mapa-->
+        <!-- Hiring -->
+        <div id="hiring" class="parallax2-bg3 text-light" style="background-position: 50% 0%;" data-stellar-background-ratio="0.5">
+		<br/><br/>
+            <div class="container" >
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="mapaletra wow fadeIn" style="text-align: center;">Mapa das Empresas</h2>
+						<div class="row"><div class="col-md-4 col-md-offset-4">
+                        <hr class="mapaletra">
+						</div></div>
+                        <p class="mapaletra wow fadeIn" style="text-align: center;">Possibilidade de ver as empresas cadastradas no mapa da cidade </p>
+                        <p class="mapaletra wow fadeInUp" style="text-align: center;">
+                            <button class="buttonmap" type="button">Ver Empresas</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+			<br/><br/>
+        </div>
+        <!-- End Hiring -->
+  
+  <section id="features" class="parallax">
+    <div class="container">
+      <div class="row count">
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="11000ms" data-wow-delay="300ms">
+          <i class="fa fa-user"></i>
+          <h3 class="timer">25000</h3>
+          <p>Reclamações Atendidas</p>
+        </div>
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="10000ms" data-wow-delay="500ms">
+          <i class="fa fa-desktop"></i>
+          <h3 class="timer">1000</h3>                    
+          <p>Estabelecimentos Cadastrados</p>
+        </div> 
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="700ms">
+          <i class="fa fa-trophy"></i>
+          <h3 class="timer">500</h3>                    
+          <p>Clientes Satisfeitos</p>
+        </div> 
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="900ms">
+          <i class="fa fa-comment-o"></i>                    
+          <h3>24/7</h3>
+          <p>Rápido Atendimento</p>
+        </div>                 
+      </div>
+    </div>
+  </section>
+  
+  <!--/#features-->
+
+  <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 id="txtma" class="selectionma">Melhores Avaliados</h2>
+                    <h3 class="section-subheading text-muted" style="margin-bottom: 5%;">Estabelecimentos com as melhores avaliações</h3>
+                </div>
+            </div>
+			
+			
+			
+			
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#imagem" class="portfolio-link" data-toggle="modal" >
+                      
+						<div class="hoverempresa">						
+                            <div class="portfolio-hover-content">
+                        </div>
+						</div>
+						
+                        <img  src="img/portfolio/portfolio-1.jpg" class="img-responsive" alt="">
+						
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>#1</h4>
+                        <p id="s" class="text-muted">Hills</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                       
+					   <div class="hoverempresa2">
+                            <div class="portfolio-hover-content">  
+                            </div>
+                        </div>
+						
+                        <img src="img/portfolio/portfolio-2.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>#2</h4>
+                        <p id="s" class="text-muted">San Genaro</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+					
+                        <div class="hoverempresa3">
+                            <div class="portfolio-hover-content">                     
+							</div>
+                        </div>
+						
+                        <img src="img/portfolio/portfolio-3.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>#3</h4>
+                        <p id="s" class="text-muted">Burguer King</p>
+                    </div>
+                </div>
+              <a href="#veja"> Veja o ranking completo </a>
+            </div>
+        </div>
+    </section>
+	
+	
+	  <section id="about-us" class="parallax"style="padding: 0px;">
+
+ <div class="row">
+    <div class='col-md-offset-2 col-md-8 text-center'>
+    <br><h2>Depoimentos</h2>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-md-offset-2 col-md-8'>
+      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+        <!-- Bottom Carousel Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#quote-carousel" data-slide-to="1"></li>
+          <li data-target="#quote-carousel" data-slide-to="2"></li>
+        </ol>
+        
+        <!-- Carousel Slides / Quotes -->
+        <div class="carousel-inner">
+        
+          <!-- Quote 1 -->
+          <div class="item active">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="http://www.reactiongifs.com/r/overbite.gif" style="width: 100px;height:100px;">
+                  <!--<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/kolage/128.jpg" style="width: 100px;height:100px;">-->
+                </div>
+                <div class="col-sm-9">
+                  <p> Fui almoçar ontem no dilino e concorri a um sorteio que acabei sendo campeao!! Estou muito grato.</p>
+                  <small>Tiuzinho do Juju</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 2 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/mijustin/128.jpg" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p>Adorei comer no Dilino e a sobremesa estava sensacional!!!</p>
+                  <small>Mc Livinha do Paraguai</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+          <!-- Quote 3 -->
+          <div class="item">
+            <blockquote>
+              <div class="row">
+                <div class="col-sm-3 text-center">
+                  <img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/keizgoesboom/128.jpg" style="width: 100px;height:100px;">
+                </div>
+                <div class="col-sm-9">
+                  <p>Fui almoçar na churrascaria Dilino e realmente achei a comida divinaaaa!!! </p>
+                  <small>Mina Tumblr</small>
+                </div>
+              </div>
+            </blockquote>
+          </div>
+        </div>
+        
+        <!-- Carousel Buttons Next/Prev -->
+        <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
+        <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+      </div>                          
+    </div>
+  </div>
+	  </section><!--/#about-us-->
+    
+	
+  <footer id="footer" style="background-color: #232323;">
+    <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="container text-center">
+	  <div class="tudo">
+        
+		<div class="logo">
+        <a href="index.html"><img style="margin-left: 30%; margin-top: 4%;"  class="img-responsive" src="images/logo.png" alt=""></a> 
+        <div id=icons" class="social-icons" style="margin-top: 5%;" >
+          <ul>
+            <li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li> 
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>
+          </ul>
+        </div>
+		</div>
+						
+		<div class="texto">
+		<h3>Sobre nós</h3>
+		<p>
+		Somos uma equipe de alunos do Instituto Federal de São Paulo- Campus São João da Boa Vista, que buscam finalizar o projeto proposto em uma das disciplinas 
+		com o maior sucesso possível. <br/>
+		Ao se alcançar esses sucesso, estaremos proporcionando para a cidade um novo sistema que pode impulsionar o comércio justo e maior comprometimento 
+		por parte dos estabelecimentos presentes na cidade.
+		</p>
+		</div>	
+						
+		</div>
+						
+						
+      </div>
+    </div>
+    <div class="footer-bottom" style="background-color: #191919;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6" style=" color: white">
+            <p>&copy; 2017 IFSP-SBV</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="pull-right" style="color: white;">Contruído por <a style="color: white;" href="http://sbv.ifsp.edu.br/">Equipe IFSP</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/mousescroll.js"></script>
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
+  <script type="text/javascript" src="js/jquery.countTo.js"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  
+  
+  <!-- start-smoth-scrolling
+				<script type="text/javascript" src="js/move-top.js"></script>
+				<script type="text/javascript" src="js/easing.js"></script>
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+				</script>
+  <!-- start-smoth-scrolling -->
+
+  
+  <!-- smooth scrolling-bottom-to-top -->
+				<script type="text/javascript">
+					$(document).ready(function() {
+					/*
+						var defaults = {
+						containerID: 'toTop', // fading element id
+						containerHoverID: 'toTopHover', // fading element hover id
+						scrollSpeed: 1200,
+						easingType: 'linear' 
+						};
+					*/								
+					$().UItoTop({ easingType: 'easeOutQuart' });
+					});
+				</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		<!-- //smooth scrolling-bottom-to-top -->
+	
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--meta do slishow-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--fim do meta do slishow-->
+	<title>Reclame São João</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet"> 
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/testes.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/btnInfo.css" rel="stylesheet">
+	<link href="css/login.css" rel="stylesheet">
+	<link href="css/sidebar.css" rel="stylesheet">
+	<link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<!--link do slidshow testemunho-->
+	<link rel="stylesheet" href="css/w3.css">
+	<!--fim do link do slidshow testemunho-->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+</head><!--/head-->
+
+<!-- MODAL LOGIN -->
+<div id="la" class="modal2">
+
+<form class="modal2-content animate" action="/action_page.php">
+<div class="img2container">
+<span onclick="document.getElementById('la').style.display='none'" class="close2" title="Close Modal">&times;</span>
+<img src="images/favicon.ico" class="avatar2">
+</div>
+
+<div class="container2">
+<label><b>Username</b></label>
+<input class="inputlogin" type="text" placeholder="Enter Username" name="uname2" required>
+
+<label><b>Password</b></label>
+<input class="inputlogin" type="password" placeholder="Enter Password" name="psw2" required>
+
+<button class="btndologin"type="submit">Login</button>
+<input type="checkbox" checked="checked"> Remember me
+</div>
+
+<div class="container2" style="background-color:#f1f1f1">
+<button type="button" onclick="document.getElementById('la').style.display='none'" class="cancelbtn2">Cancel</button>
+<span class="psw2">Forgot <a href="#">password?</a></span>
+</div>
+</form>
+</div>
+
+<script>
+// Get the modal2
+var modal2 = document.getElementById('la');
+
+// When the user clicks anywhere outside of the modal, close2 it
+window.onclick = function(event) {
+if (event.target == modal2) {
+modal2.style.display = "none";
+}
+}
+</script>
+<!-- FIM DO MODAL LOGIN -->
+
+<!-- MODAL CADASTRO -->
+<div id="la2" class="modal3">
+
+<form class="modal3-content animate" action="/action_page.php">
+<div class="img2container">
+<span onclick="document.getElementById('la2').style.display='none'" class="close2" title="Close Modal">&times;</span>
+<img src="images/favicon.ico" class="avatar2">
+</div>
+
+<div class="container2">
+<label><b>Username</b></label>
+<input class="inputlogin" type="text" placeholder="Enter Username" name="uname2" required>
+
+<label><b>Password</b></label>
+<input class="inputlogin" type="password" placeholder="Enter Password" name="psw2" required>
+
+<label><b>Confirm Password</b></label>
+<input class="inputlogin" type="password" placeholder="Enter Password" name="psw2" required>
+
+<label><b>Email</b></label>
+<input class="inputlogin" type="text" placeholder="Enter Email" name="uname2" required>
+
+<label><b>CPF</b></label>
+<input class="inputlogin" type="text" placeholder="Enter CPF" name="uname2" required>
+
+<label><b>Telefone</b></label>
+<input class="inputlogin" type="text" placeholder="Enter Telefone" name="uname2" required>
+
+<button class="btndologin"type="submit">Login</button>
+<input type="checkbox" checked="checked"> Remember me
+</div>
+
+<div class="container2" style="background-color:#f1f1f1">
+<button type="button" onclick="document.getElementById('la2').style.display='none'" class="cancelbtn2">Cancel</button>
+<span class="psw2">Forgot <a href="#">password?</a></span>
+</div>
+</form>
+</div>
+
+<!--  por algum motivo o js do cadastro buga o do login
+<script>
+// Get the modal3
+var modal3 = document.getElementById('la2');
+
+// When the user clicks anywhere outside of the modal, close2 it
+window.onclick = function(event) {
+if (event.target == modal3) {
+modal3.style.display = "none";
+}
+}
+</script>
+-->
+<!-- FIM DO MODAL CADASTRO -->
+
+<body>
+
+  <!--.preloader-->
+  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+  <!--/.preloader-->
+
+   <header id="home">
+
+    </div>
+	<!--/#home-slider-->
+    <div class="main-nav" >
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="mod01-paginaBoasVindasADM.html">
+            <h1><img class="img-responsive" src="images/logo.png" alt="logo"></h1>
+          </a>                    
+        </div>
+       <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">   
+			<li class="scroll active"><a href="#estabelecimentosCadastrados">Estabelecimentos Cadastrados</a></li>
+            <li class="scroll"><a href="mod01-paginaBoasVindasADM.html">Home</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Administrador
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+          <li><a href="mod01-editarInformacoes.html"><span class="glyphicon glyphicon-pencil"></span> Meu Perfil</a></li>
+		  <li><a href="#" style="margin-top: -20%;"><span class="glyphicon glyphicon-comment"></span> Reclamações</a></li>
+          <li><a href="mod01-paginaBoasVindasADM.html.html" style="margin-top: -20%;"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
+				</ul>
+			</li>
+                  
+          </ul>
+        </div>
+      </div>
+    </div><!--/#main-nav-->
+  </header><!--/#home-->
+   <!--nav sidebar -->
+ <aside>
+    <nav class="navbar navbar-inverse sidebar navbar-fixed-top" role="navigation">
+
+        <div class="nav-side-menu">
+            <div class="brand">Rankings e Relatórios</div>
+            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+            <div class="menu-list">
+
+                <ul id="menu-content" class="menu-content collapse out">
+
+
+                    <!-- <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                  <a href="#"><i class="fa fa-file-text-o fa-lg"></i> Relatórios <i class="fa fa-file-text fa-lg btn pull-right" style="margin-top:5px"></i></a>
+                </li> -->
+                    <!-- <ul class="sub-menu collapse" id="products">
+                    <li class="active"><a href="#">CSS3 Animation</a></li>
+                    <li><a href="#">General</a></li>
+                    <li><a href="#">Buttons</a></li>
+                    <li><a href="#">Tabs e Accordions</a></li>
+                    <li><a href="#">Typography</a></li>
+                    <li><a href="#">FontAwesome</a></li>
+                    <li><a href="#">Slider</a></li>
+                    <li><a href="#">Panels</a></li>
+                    <li><a href="#">Widgets</a></li>
+                    <li><a href="#">Bootstrap Model</a></li>
+                </ul> -->
+
+
+                    <li data-toggle="collapse" data-target="#service" class="collapsed">
+                        <a href="#"><i class="fa fa-caret-down fa-lg"></i> Rankings <i class="fa fa-bar-chart-o fa-lg btn pull-right" style="margin-top:5px; margin-right:4px;"></i></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="service">
+                        <li>Ranking completo dos estabelecimentos</li>
+                        <li>Problemas solucionados</li>
+                        <li>Número de reclamações nos últimos tempos</li>
+                        <li>Estabelecimentos tendenciosos</li>
+                    </ul>
+
+
+
+                    <li data-toggle="collapse" data-target="#new" class="collapsed">
+                        <a href="#"><i class="fa fa-caret-down fa-lg"></i> Relatórios <i class="fa fa-file-text fa-lg btn pull-right" style="margin-top:5px; margin-right:2px;"></i></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="new">
+                        <li>Feedback das reuniões</li>
+                        <li>Relatório tabular das avaliações</li>
+                        <li>Reclamação das últimas semanas</li>
+                    </ul>
+
+
+                    <!-- <li>
+                  <a href="#">
+                  <i class="fa fa-user fa-lg"></i> Profile
+                  </a>
+                  </li>
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-users fa-lg"></i> Users
+                  </a>
+                </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</aside>
+
+
+  <!-- INSERIR CONTEUDO AQUI -->
+  <!-- INSERIR CONTEUDO AQUI -->
+  <!-- INSERIR CONTEUDO AQUI -->
+  <!-- INSERIR CONTEUDO AQUI -->
+  <!-- INSERIR CONTEUDO AQUI -->
+  <!-- INSERIR CONTEUDO AQUI -->
+  <!-- INSERIR CONTEUDO AQUI -->
+  
+ <section id="contact" style="margin-top: 15%;">
+    <!--mapa-->
+
+      <div class="container">
+	  <div class="container">
+        
+		 <table class="table table-striped table-hover">
+			<thead>
+			  <tr>
+				<th>ID</th>
+				<th>Nome</th>
+				<th>Ações</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>1</td>
+				<td>Subway</td>
+						<td>
+							<button type="button" class="btn btn-info">Visualizar Perfil</button>
+			  </tr>
+			  <tr>
+				<td>2</td>
+				<td>San Genaro</td>
+						<td>
+							<button type="button" class="btn btn-info">Visualizar Perfil</button>
+			  </tr>
+			  <tr>
+				<td>3</td>
+				<td>Tekinfin</td>
+						<td>
+							<button type="button" class="btn btn-info">Visualizar Perfil</button>
+			  </tr>
+			  <tr>
+				<td>4</td>
+				<td>Burger King</td>
+						<td>
+							<button type="button" class="btn btn-info">Visualizar Perfil</button>
+			  </tr>
+			</tbody>
+  </table>
+  <style>
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #64594f;
+    border-color: #64594f;
+}
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #000000;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+  </style>
+</div>
+      </div>
+    
+  </section><!--/#contact-->
+  
+  <!--/#about-us-->
+
+<!--RODAPÉ-->
+	<footer id="footer" style="background-color: #232323; margin-bottom: -10%; margin-top: 18%;" >
+		<div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+		<div class="container text-center">
+		<div class="tudo">
+
+			<div class="logo">
+			<a href="../../index.html"><img style="margin-left: 30%; margin-top: 4%;"  class="img-responsive" src="images/logo.png" alt=""></a> 
+				<div id=icons" class="social-icons" style="margin-top: 5%;" >
+				<ul>
+				<li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
+				<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li> 
+				<li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+				<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>
+				</ul>
+				</div>
+			</div>
+
+			<div class="texto">
+				<h3>Sobre o IFSP e o projeto</h3>
+				<p>Somos uma equipe de alunos do Instituto Federal de São Paulo - Campus São João da Boa Vista, que buscam finalizar o projeto proposto em uma das disciplinas 
+				com o maior sucesso possível. <br/>
+				Ao alcançar esse sucesso, estaremos proporcionando para a cidade um novo sistema que pode impulsionar o comércio justo e maior comprometimento 
+				por parte dos estabelecimentos presentes na cidade.  <a href="mod01-SobreProjeto.html">Saiba mais...</a></p>
+			</div>	
+			</div>
+			</div>
+			</div>
+			
+				<div class="footer-bottom" style="background-color: #191919;">
+				<div class="container" >
+				<div class="row" >
+					<div class="col-sm-6" style=" color: white">
+						<p>&copy; 2017 IFSP-SBV</p>
+					</div>
+					<div class="col-sm-6">
+						<p class="pull-right" style="color: white;">Construído por <a style="color: white;" href="http://sbv.ifsp.edu.br/">Equipe IFSP</a></p>
+					</div>
+				</div>
+				</div>
+				</div>
+	</footer>
+<!--FIM DO RODAPÉ--> 
+  
+<!--script em geral-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/mousescroll.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.countTo.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<!--fim do script em geral-->
+  
+
+  <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Confirmação</h4>
+      </div>
+      <div class="modal-body">
+        <p>Você realmente deseja alterar essa(s) informações de seu perfil ?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancelar</button>
+		<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Confirmar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+  
+</body>
+</html>

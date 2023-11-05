@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Reclame São João</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/animate.min.css" rel="stylesheet"> 
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/lightbox.css" rel="stylesheet">
+  <link href="css/testes.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+  
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+</head><!--/head-->
+
+<!-- MODAL LOGIN -->
+<div id="la" class="modal2">
+  
+  <form class="modal2-content animate" action="/action_page.php">
+    <div class="img2container">
+      <span onclick="document.getElementById('la').style.display='none'" class="close2" title="Close Modal">&times;</span>
+      <img src="images/favicon.ico" class="avatar2">
+    </div>
+
+    <div class="container2">
+      <label><b>Username</b></label>
+      <input class="inputlogin" type="text" placeholder="Enter Username" name="uname2" required>
+
+      <label><b>Password</b></label>
+      <input class="inputlogin" type="password" placeholder="Enter Password" name="psw2" required>
+        
+      <button class="btndologin"type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container2" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('la').style.display='none'" class="cancelbtn2">Cancel</button>
+      <span class="psw2">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal2
+var modal2 = document.getElementById('la');
+
+// When the user clicks anywhere outside of the modal, close2 it
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+}
+</script>
+
+
+<!-- MODAL CADASTRO -->
+<div id="la2" class="modal3">
+  
+  <form class="modal3-content animate" action="/action_page.php">
+    <div class="img2container">
+      <span onclick="document.getElementById('la2').style.display='none'" class="close2" title="Close Modal">&times;</span>
+      <img src="images/favicon.ico" class="avatar2">
+    </div>
+
+    <div class="container2">
+      <label><b>Username</b></label>
+      <input class="inputlogin" type="text" placeholder="Enter Username" name="uname2" required>
+
+      <label><b>Password</b></label>
+      <input class="inputlogin" type="password" placeholder="Enter Password" name="psw2" required>
+	  
+	  <label><b>Confirm Password</b></label>
+      <input class="inputlogin" type="password" placeholder="Enter Password" name="psw2" required>
+	  
+	  <label><b>Email</b></label>
+      <input class="inputlogin" type="text" placeholder="Enter Email" name="uname2" required>
+	  
+	  <label><b>CPF</b></label>
+      <input class="inputlogin" type="text" placeholder="Enter CPF" name="uname2" required>
+	  
+	  <label><b>Telefone</b></label>
+      <input class="inputlogin" type="text" placeholder="Enter Telefone" name="uname2" required>
+        
+      <button class="btndologin"type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container2" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('la2').style.display='none'" class="cancelbtn2">Cancel</button>
+      <span class="psw2">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+<!--  por algum motivo o js do cadastro buga o do login
+<script>
+// Get the modal3
+var modal3 = document.getElementById('la2');
+
+// When the user clicks anywhere outside of the modal, close2 it
+window.onclick = function(event) {
+    if (event.target == modal3) {
+        modal3.style.display = "none";
+    }
+}
+</script>
+-->
+
+
+<body>
+
+  <!--.preloader-->
+  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+  <!--/.preloader-->
+
+   <header id="home">
+    <div id="home-slider" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url(images/slider/1.jpg)">
+          <div class="caption">
+		  <div class="caption2">
+<button class="loginecadastro" type="submit" onclick="document.getElementById('la').style.display='block'".click();>Login</button>
+<button class="cadastroelogin" type="submit" onclick="document.getElementById('la2').style.display='block'".click();>Cadastre</button>
+</div>
+            <h1 class="animated fadeInLeftBig">Bem Vindo ao <span>RECLAME SÃO JOÃO</span></h1>
+            <form class="destinations-form animated fadeInLeftBig">
+                     <div class="input-line">
+                        <input type="text" name="destination" value="" class="form-input check-value" placeholder="Buscar" />
+                        <button type="submit" name="destination-submit" class="form-submit btn btn-special"><i class="fa fa-search fa-2x"></i> </button>
+                     </div>
+                  </form>
+                  <!--<a data-scroll class="btn btn-start animated fadeInUpBig" href="#services">Veja mais</a>-->
+            <p class="animated fadeInRightBig"><br>FAÇA SUAS RECLAMAÇÕES E VEJA A REPUTAÇÃO DOS ESTABELECIMENTOS</p>
+          </div>
+        </div>
+        </div>
+	   </div>
+
+    </div><!--/#home-slider-->
+    <div class="main-nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <h1><img class="img-responsive" src="images/logo.png" alt="logo"></h1>
+          </a>                    
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">                 
+            <li class="scroll active"><a href="#home">Home</a></li>
+            <li class="scroll"><a href="#serviços">Serviços</a></li> 
+            <li class="scroll"><a href="#about-us">Sobre Nós</a></li>                     
+            <li class="scroll"><a href="#team">Equipe</a></li>
+            <li class="scroll"><a href="#portfolio">Dev</a></li>
+            <li class="scroll"><a href="#contact">Contato</a></li>       
+          </ul>
+        </div>
+      </div>
+    </div><!--/#main-nav-->
+  </header><!--/#home-->
+  
+
+  <section id="serviços">
+    <div class="container">
+      <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+        <div class="row">
+          <div class="text-center col-sm-8 col-sm-offset-2">
+            <h2>Nosso Serviços</h2>
+            <p>Buscamos oferecer suporte para problemas que possam ocorrer no relacionamento Cliente x Estabelecimento em São João da Boa Vista.</p>
+          </div>
+        </div> 
+      </div>
+      <div class="text-center our-services">
+        <div class="row">
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="service-icon">
+              <i class="fa fa-comments"></i>
+            </div>
+            <div class="service-info">
+              <h3>Reclamar</h3>
+              <p>Criar reclamações contra determinado estabelecimento</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
+            <div class="service-icon">
+              <i class="fa fa-truck"></i>
+            </div>
+            <div class="service-info">
+              <h3>Avisar ao estabelecimento</h3>
+              <p>Informar o estabelecimento sobre a reclamação criada à seu respeito</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
+            <div class="service-icon">
+              <i class="fa fa-handshake-o"></i>
+            </div>
+            <div class="service-info">
+              <h3>Buscar um acordo</h3>
+              <p>Fazer o possível para que o estabelecimento entre em um acordo com o cliente</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="650ms">
+            <div class="service-icon">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="service-info">
+              <h3>Informar novos status</h3>
+              <p>Informar sempre que houver um novo status em relação à reclamação feita</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="750ms">
+            <div class="service-icon">
+              <i class="fa fa-bar-chart"></i>
+            </div>
+            <div class="service-info">
+              <h3>Exibir rankings</h3>
+              <p>Exibir rankings com diversos critérios sobre os estabelecimentos, as reclamações feitas e atendidas</p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="850ms">
+            <div class="service-icon">
+              <i class="fa fa-check-square"></i>
+            </div>
+            <div class="service-info">
+              <h3>Verificar satisfação</h3>
+              <p>Concluir reclamação e verificar satisfação com a resolução do problema</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/#services-->
+  <section id="about-us" class="parallax">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <h2>Sobre nós</h2>
+            <p>Somos uma equipe de alunos do Instituto Federal de São Paulo - Campus São João da Boa Vista, que buscam finalizar o projeto proposto em uma das disciplinas com o maior sucesso possível.</p>
+            <p>Ao se alcançar esses sucesso, estaremos proporcionando para a cidade um novo sistema que pode impulsionar o comércio justo e maior comprometimento por parte dos estabelecimentos presentes na cidade.</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="our-skills wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <p class="lead">Comprometimento</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="95">95%</div>
+              </div>
+            </div>
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
+              <p class="lead">Progresso atual</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="10">10%</div>
+              </div>
+            </div>
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
+              <p class="lead">Dificuldade</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="60">60%</div>
+              </div>
+            </div>
+            <div class="single-skill wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+              <p class="lead">Diversão</p>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary six-sec-ease-in-out" role="progressbar"  aria-valuetransitiongoal="85">85%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/#about-us-->
+
+  
+  <!--mapa-->
+  <!--
+  <div style="width:100%; height: 40%; margin-top: 5%;">
+  <div id="google-map" class="wow fadeIn" data-latitude="-21.971237" data-longitude="-46.7983457" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
+  </div>
+  -->
+  <!--FIMmapa-->
+  
+  <!--Quem Somos-->
+  <section id="team">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+          <h2>Quem somos?</h2>
+          <p>Uma equipe de alunos do IFSP - SBV focados em concluir o projeto, cada um cumprindo sua função básica<br>Analistas - Administradores de Banco de Dados - Desenvolvedores.</p>
+        </div>
+      </div>
+      <div class="team-members">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <div class="member-image">
+                <img class="img-responsive" src="images/team/1.jpg" alt="">
+              </div>
+              <div class="member-info">
+                <h3>Breno Lisi &amp; Luiz Angelo</h3>
+                <h4>Idealizadores</h4>
+                <p>Atualmente professores na instituição que buscam o máximo dos alunos</p>
+              </div>
+              <div class="social-icons">
+                <ul>
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
+              <div class="member-image">
+                <img class="img-responsive" src="images/team/2.jpg" alt="">
+              </div>
+              <div class="member-info">
+                <h3>Desenvolvedores e Testadores</h3>
+                <h4>Front-End &amp; Back-End</h4>
+                <p>Buscam pela integração e teste das funções do Sistema</p>
+              </div>
+              <div class="social-icons">
+                <ul>
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
+              <div class="member-image">
+                <img class="img-responsive" src="images/team/3.jpg" alt="">
+              </div>
+              <div class="member-info">
+                <h3>Analistas de Sistemas</h3>
+                <h4>Analista &amp; Documentação</h4>
+                <p>Criam de planos e documentação para o seguimento do Sistema</p>
+              </div>
+              <div class="social-icons">
+                <ul>
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
+              <div class="member-image">
+                <img class="img-responsive" src="images/team/4.jpg" alt="">
+              </div>
+              <div class="member-info">
+                <h3>Analistas de Banco de Dados</h3>
+                <h4>Support Manager</h4>
+                <p>Realizar a análise, o desenvolvimento e manutenção do Banco de Dados</p>
+              </div>
+              <div class="social-icons">
+                <ul>
+                  <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>            
+    </div>
+  </section><!--/#team-->
+  <!--FIMQuem Somos-->
+  
+  <section id="features" class="parallax">
+    <div class="container">
+      <div class="row count">
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="11000ms" data-wow-delay="300ms">
+          <i class="fa fa-user"></i>
+          <h3 class="timer">25000</h3>
+          <p>Reclamações Atendidas</p>
+        </div>
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="10000ms" data-wow-delay="500ms">
+          <i class="fa fa-desktop"></i>
+          <h3 class="timer">1000</h3>                    
+          <p>Estabelecimentos Cadastrados</p>
+        </div> 
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="700ms">
+          <i class="fa fa-trophy"></i>
+          <h3 class="timer">500</h3>                    
+          <p>Clientes Satisfeitos</p>
+        </div> 
+        <div class="col-sm-3 col-xs-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="900ms">
+          <i class="fa fa-comment-o"></i>                    
+          <h3>24/7</h3>
+          <p>Rápido Atendimento</p>
+        </div>                 
+      </div>
+    </div>
+  </section>
+  
+  <!--/#features-->
+
+  <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 id="txtma" class="selectionma">Melhores Avaliados</h2>
+                    <h3 class="section-subheading text-muted" style="margin-bottom: 5%;">Estabelecimentos com as melhores avaliações</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                               
+                            </div>
+                        </div>
+                        <img  src="img/portfolio/portfolio-1.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>#1</h4>
+                        <p id="s" class="text-muted">Hills</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                
+                            </div>
+                        </div>
+                        <img src="img/portfolio/portfolio-2.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>#2</h4>
+                        <p id="s" class="text-muted">San Genaro</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">                            </div>
+                        </div>
+                        <img src="img/portfolio/portfolio-3.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>#3</h4>
+                        <p id="s" class="text-muted">Burguer King</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                            </div>
+                        </div>
+                        <img src="img/portfolio/portfolio-4.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>#4</h4>
+                        <p id="s" class="text-muted">Dilino</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                            </div>
+                        </div>
+                        <img src="img/portfolio/portfolio-5.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>#5</h4>
+                        <p id="s" class="text-muted">Subway</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                            </div>
+                        </div>
+                        <img src="img/portfolio/portfolio-6.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>#6</h4>
+                        <p id="s" class="text-muted">J.Mahfuz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  
+  <!--pricing
+  <section id="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+          <h2>Pricing Table</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+        </div>
+      </div>
+      <div class="pricing-table">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
+              <h3>Basic</h3>
+              <div class="price">
+                $9<span>/Month</span>                          
+              </div>
+              <ul>
+                <li>Free Setup</li>
+                <li>10GB Storage</li>
+                <li>100GB Bandwith</li>
+                <li>5 Products</li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-primary">Sign up</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="500ms">
+              <h3>Standard</h3>
+              <div class="price">
+                $19<span>/Month</span>                                
+              </div>
+              <ul>
+                <li>Free Setup</li>
+                <li>10GB Storage</li>
+                <li>100GB Bandwith</li>
+                <li>5 Products</li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-primary">Sign up</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="single-table featured wow flipInY" data-wow-duration="1000ms" data-wow-delay="800ms">
+              <h3>Featured</h3>
+              <div class="price">
+                $29<span>/Month</span>                                
+              </div>
+              <ul>
+                <li>Free Setup</li>
+                <li>10GB Storage</li>
+                <li>100GB Bandwith</li>
+                <li>5 Products</li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-primary">Sign up</a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="single-table wow flipInY" data-wow-duration="1000ms" data-wow-delay="1100ms">
+              <h3>Professional</h3>
+              <div class="price">
+                $49<span>/Month</span>                    
+              </div>
+              <ul>
+                <li>Free Setup</li>
+                <li>10GB Storage</li>
+                <li>100GB Bandwith</li>
+                <li>5 Products</li>
+              </ul>
+              <a href="#" class="btn btn-lg btn-primary">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/#pricing-->
+
+ <!-- <section id="twitter" class="parallax">
+    <div>
+     
+      <a class="twitter-left-control" href="#twitter-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+      <a class="twitter-right-control" href="#twitter-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="twitter-icon text-center">
+              <i class="fa fa-twitter"></i>
+              <h4>Themeum</h4>
+            </div>
+            <div id="twitter-carousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="item active wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                  <p>Introducing Shortcode generator for Helix V2 based templates <a href="#"><span>#helixframework #joomla</span> http://bit.ly/1qlgwav</a></p>
+                </div>
+                <div class="item">
+                  <p>Introducing Shortcode generator for Helix V2 based templates <a href="#"><span>#helixframework #joomla</span> http://bit.ly/1qlgwav</a></p>
+                </div>
+                <div class="item">                                
+                  <p>Introducing Shortcode generator for Helix V2 based templates <a href="#"><span>#helixframework #joomla</span> http://bit.ly/1qlgwav</a></p>
+                </div>
+              </div>                        
+            </div>                 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!--/#twitter-->
+
+  <!--<section id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+          <!--<h2>Blog Posts</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+        </div>
+      </div>
+      <div class="blog-posts">
+        <div class="row">
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+            <div class="post-thumb">
+              <a href="#"><img class="img-responsive" src="images/blog/1.jpg" alt=""></a> 
+              <div class="post-meta">
+                <span><i class="fa fa-comments-o"></i> 3 Comments</span>
+                <span><i class="fa fa-heart"></i> 0 Likes</span> 
+              </div>
+              <div class="post-icon">
+                <i class="fa fa-pencil"></i>
+              </div>
+            </div>
+            <div class="entry-header">
+              <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h3>
+              <span class="date">June 26, 2014</span>
+              <span class="cetagory">in <strong>Photography</strong></span>
+            </div>
+            <div class="entry-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="post-thumb">
+              <div id="post-carousel"  class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#post-carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#post-carousel" data-slide-to="1"></li>
+                  <li data-target="#post-carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <a href="#"><img class="img-responsive" src="images/blog/2.jpg" alt=""></a>
+                  </div>
+                  <div class="item">
+                    <a href="#"><img class="img-responsive" src="images/blog/1.jpg" alt=""></a>
+                  </div>
+                  <div class="item">
+                    <a href="#"><img class="img-responsive" src="images/blog/3.jpg" alt=""></a>
+                  </div>
+                </div>                               
+                <a class="blog-left-control" href="#post-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                <a class="blog-right-control" href="#post-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+              </div>                            
+              <div class="post-meta">
+                <span><i class="fa fa-comments-o"></i> 3 Comments</span>
+                <span><i class="fa fa-heart"></i> 0 Likes</span> 
+              </div>
+              <div class="post-icon">
+                <i class="fa fa-picture-o"></i>
+              </div>
+            </div>
+            <div class="entry-header">
+              <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h3>
+              <span class="date">June 26, 2014</span>
+              <span class="cetagory">in <strong>Photography</strong></span>
+            </div>
+            <div class="entry-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+          </div>
+          <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
+            <div class="post-thumb">
+              <a href="#"><img class="img-responsive" src="images/blog/3.jpg" alt=""></a>
+              <div class="post-meta">
+                <span><i class="fa fa-comments-o"></i> 3 Comments</span>
+                <span><i class="fa fa-heart"></i> 0 Likes</span> 
+              </div>
+              <div class="post-icon">
+                <i class="fa fa-video-camera"></i>
+              </div>
+            </div>
+            <div class="entry-header">
+              <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit</a></h3>
+              <span class="date">June 26, 2014</span>
+              <span class="cetagory">in <strong>Photography</strong></span>
+            </div>
+            <div class="entry-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+          </div>                    
+        </div>
+        <div class="load-more wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+          <a href="#" class="btn-loadmore"><i class="fa fa-repeat"></i> Load More</a>
+        </div>                
+      </div>
+    </div>
+  </section><!--/#blog-->
+
+  <section id="contact">
+    <!--mapa-->
+  <div style="width:100%; height: 40%; margin-top: 5%;">
+  <div id="google-map" class="wow fadeIn" data-latitude="-21.971237" data-longitude="-46.7983457" data-wow-duration="1000ms" data-wow-delay="400ms"></div>
+  </div>
+  <!--FIMmapa-->
+    <div id="contact-us" class="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+            <h2>ENTRE EM CONTATO</h2>
+            <p>Está tendo alguma dificuldade, econtrou algum problema ou tem alguma dúvida? Deixe-nos uma mensagem</p>
+          </div>
+        </div>
+        <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+          <div class="row">
+            <div class="col-sm-6">
+              <form id="main-contact-form" name="contact-form" method="post" action="#">
+                <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" placeholder="Nome" required="required">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input type="email" name="email" class="form-control" placeholder="Endereço de Email" required="required">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="subject" class="form-control" placeholder="Assunto" required="required">
+                </div>
+                <div class="form-group">
+                  <textarea name="message" id="message" class="form-control" rows="4" placeholder="Insira sua mensagem" required></textarea>
+                </div>                        
+                <div class="form-group">
+                  <button type="submit" class="btn-submit">Enviar</button>
+                </div>
+              </form>   
+            </div>
+            <div class="col-sm-6">
+              <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                <p>Para mais informações entre em contato conosco, responderemos o antes possível.</p>
+                <ul class="address">
+                  <li><i class="fa fa-map-marker"></i> <span> Endereço:</span> Dr. João Batista Merlin, s/nº - Jardim Itália</li>
+                  <li><i class="fa fa-phone"></i> <span> Telefone:</span>  (19) 3634-1100  </li>
+                  <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:someone@yoursite.com"> suporte@reclamesaojoao.com</a></li>
+                  <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="#">www.reclamesaojoao.com</a></li>
+                </ul>
+              </div>                            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>        
+  </section><!--/#contact-->
+  <footer id="footer">
+    <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      <div class="container text-center">
+        <div class="footer-logo">
+          <a href="index.html"><img class="img-responsive" src="images/logo.png" alt=""></a>
+        </div>
+        <div class="social-icons">
+          <ul>
+            <li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li> 
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <p>&copy; 2017 IFSP-SBV</p>
+          </div>
+          <div class="col-sm-6">
+            <p class="pull-right">Contruído por <a href="http://sbv.ifsp.edu.br/">Equipe IFSP</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <script type="text/javascript" src="js/jquery.inview.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script type="text/javascript" src="js/mousescroll.js"></script>
+  <script type="text/javascript" src="js/smoothscroll.js"></script>
+  <script type="text/javascript" src="js/jquery.countTo.js"></script>
+  <script type="text/javascript" src="js/lightbox.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
