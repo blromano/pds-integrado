@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Projeto Indra</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <script src="js/tooltip.js"></script>
+
+</head>
+
+<body id="page-top" class="index">
+
+    <div id="background-modal" class="elemento-escondido"></div>
+
+    <div id="modal-login" class="elemento-escondido">
+
+        <form name="sentMessage" id="form-login" novalidate>
+            <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <label> Email </label>
+                    <input type="email" class="form-control entrada-texto" placeholder="Email" required data-validation-required-message="Por favor, digite seu email.">
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <label> Senha </label>
+                    <input type="password" class="form-control entrada-texto" placeholder="Senha" required data-validation-required-message="Por favor, digite uma senha válida.">
+                    <p class="help-block text-danger"></p>
+                </div>
+            </div>
+            <br>
+            <div id="success"></div>
+            <div class="row">
+                <div class="form-group col-xs-12" id="cadastrar">
+                    <button type="submit" class="btn btn-primary"> Login </button>
+                    <div  class="btn btn-danger" id="btn-cancelar"> Cancelar </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="menu">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="page-scroll icone-menu-container">
+                    <img  class="img-responsive" src="img/icone.png" id="icone-menu" alt="icone"/>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="page-scroll">
+                        <a href="index.html">P&aacute;gina Principal</a>
+                    </li>
+                    <li id="btn-login">
+                        <a> Login </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>PCD X</h2>
+                </div>
+            </div>
+            <form data-toggle="validator">
+                <div align="center" class="form-group">
+                    <select class="form-control select">
+
+                        <option value="">Sensores</option>
+                        <option value="s1">Sensor 1</option>
+                        <option value="s2">Sensor 2</option>
+                        <option value="s3">Sensor 3</option>
+                        <option value="s4">Sensor 4</option>
+                        <option value="s5">Sensor 5</option>
+                    </select>
+
+
+                    <select class="form-control text-center select">
+                        <option value="">Valor mínimo</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+
+                    </select>
+
+
+                    <select class="form-control text-center select">
+                        <option value="">Valor máximo</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+
+                    <label >Início:</label>
+                    <input id="data-inicio"class="form-control select campoData" title="Início"  required>
+                    <label>Término:</label>
+                    <input id="campoData" class="form-control select" title="Início" required>
+                    <input type="submit" role="button" value="Aplicar" class="btn btn-primary">    
+                </div>
+            </form>
+            <div style="margin-top: 20px"class="form-group">
+                <table class="table table-condensed table-striped table-hover">
+                    <thead>
+                        <tr bgcolor="#3a4857">
+                            <th style="width:25%">Data</th>
+                            <th style="width:25%">Hora</th>
+                            <th style="width:25%">Medição</th>                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td >11/04/2016</td>
+                            <td><font>11:40</font></td>
+                            <td>
+                                <span data-toggle="tooltip" title="Acima do valor normal" style="color:#B22222; font-weight: bold">18</span>
+                            </td>
+                            
+                        </tr> 
+                        <tr>
+                            <td >11/04/2016</td>
+                            <td><font>18:40</font></td>
+                            <td>
+                                <span data-toggle="tooltip" title="Normal" style="color:#2f8055; font-weight: bold">9</span>
+                            </td>
+                        </tr> 
+
+                        <tr>
+                            <td >11/04/2016</td>
+                            <td><font>01:40</font></td>
+                            <td>
+                                <span data-toggle="tooltip" title="Acima do valor normal" style="color:#B22222; font-weight: bold">20</span>
+                            </td>
+                        </tr> 
+
+                        <tr>
+                            <td >12/04/2016</td>
+                            <td><font>08:40</font></td>
+                            <td>
+                                <span data-toggle="tooltip" title="Normal"style="color:#2f8055; font-weight: bold">7</span>
+                            </td>
+                        </tr> 
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="caixa-grafico">
+            <h4>Sensor X - Gráfico Linear</h4>
+            <canvas id="GraficoLine" style="display: inline-block;"></canvas>
+            <span>Hora x Tipo de dado</span>
+            <script type="text/javascript">
+
+                var options = {
+                    responsive: true
+                };
+
+                var data = {
+                    labels: ["10h", "13h", "16h", "19h", "21h"],
+                    datasets: [                                    
+                    {
+                        label: "Dados secundários",
+                        fillColor: "rgba(151,187,205,0.2)",
+                        strokeColor: "rgba(151,187,205,1)",
+                        pointColor: "rgba(151,187,205,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(151,187,205,1)",
+                        data: [22, 24, 26, 25, 27]
+                    }
+                    ]
+                };
+
+                window.onload = function () {
+
+                    var ctx = document.getElementById("GraficoLine").getContext("2d");
+                    var LineChart = new Chart(ctx).Line(data, options);
+                }
+            </script>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container ">
+                <div class="row">
+                    <div class="footer-col col-md-6">
+                        <h3>Local</h3>
+                        <p>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo<br>Campus São João da Boa Vista</p>
+                    </div>
+                    <div class="footer-col col-md-6">
+                        <h3>Redes Sociais</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/ifspsaojoaodaboavista" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Mask JQuery Plugin -->
+    <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/mascaras.js"></script>
+
+    <!-- Plugin de gráficos -->
+    <script src="js/Chart.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+</body>
+
+</html>

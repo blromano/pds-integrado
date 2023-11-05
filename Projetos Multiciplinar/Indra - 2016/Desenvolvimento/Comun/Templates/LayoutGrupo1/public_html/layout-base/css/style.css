@@ -1,0 +1,104 @@
+#logo-indra{
+    width: 300px;
+    height: auto;
+}
+
+#cadastrar{
+    text-align: center;
+}
+
+#about{
+    background-color: white;
+    color: black;
+}
+
+#menu{
+    background-color: #2C3E50;
+}
+
+#painel-inicial{
+    background-color: #009ECE;
+}
+
+#icone-menu{
+    width: 75px;
+    height: auto;
+}
+
+#ferramentas{
+    background-color: #009ECE;
+    color: white;
+}
+
+#modal-login{
+    position: fixed;
+    bottom: 25%;
+    right: 25%;
+    left: 25%;
+    top: 25%;
+
+    z-index: 99999;    
+}
+
+@media(max-width:767px) {
+    #icone-menu{
+        width: 50px;
+        height: auto;
+        margin-left: 1em;
+    }
+
+    .icone-menu-container {
+        padding: 0;
+        margin: 1em;
+    }
+
+}
+
+#form-login{
+    background-color: #0e8799;
+    padding: 5% 10% 5% 10%;
+    border-radius: 15px;
+}
+
+.elemento-escondido{
+    display:none;
+}
+
+#btn-login:hover{
+    cursor: pointer;
+}
+
+#background-modal{
+    position:fixed;
+    background-color: #4d4d4d;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 8888;
+    opacity: 0.8;
+}
+
+.entrada-texto{
+    color: white;
+}
+.ferramentas-fora {
+    background-color: white;
+    padding: 1em;
+}
+
+.ferramentas{
+    color: black;
+}
+
+
+.select_dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 15px;
+    text-align: left;
+    background-color: #ffffff;
+}

@@ -1,0 +1,142 @@
+#logo-indra{
+    width: 300px;
+    height: auto;
+}
+
+.table{
+    background: #ecedef;
+}
+.table > tbody > tr > td{
+    font-weight: normal;
+    padding: 8px;
+    line-height: 1;
+    vertical-align: top;
+    border-top: 1px solid white;
+}
+
+.table > thead > tr > th{
+    color: white;
+    padding: 8px;
+    line-height: 1;
+    vertical-align: top;
+    border-top: 1px solid #ecf0f1;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+  border: 1px solid white;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #dbdcde;
+}
+
+.table-hover > tbody > tr:hover {
+  background-color: #9097a0;
+}
+
+.btn-table {
+ padding: 1px 10px 1px;        
+}
+
+#cadastrar{
+    text-align: center;
+}
+
+#about{
+    background-color: white;
+    color: black;
+}
+
+#menu{
+    background-color: #2C3E50;
+}
+
+#painel-inicial{
+    background-color: #009ECE;
+}
+
+#icone-menu{
+    width: 75px;
+    height: auto;
+}
+
+#ferramentas{
+    background-color: #009ECE;
+    color: white;
+}
+
+#modal-login{
+    position: fixed;
+    bottom: 25%;
+    right: 25%;
+    left: 25%;
+    top: 25%;
+
+    z-index: 99999;    
+}
+//Fazendo
+#modal-listagem{
+    position: fixed;
+    bottom: 25%;
+    right: 25%;
+    left: 25%;
+    top: 25%;
+
+    z-index: 99999;    
+}
+
+@media(max-width:767px) {
+    #icone-menu{
+        width: 50px;
+        height: auto;
+        margin-left: 1em;
+    }
+
+    .icone-menu-container {
+        padding: 0;
+        margin: 1em;
+    }
+
+}
+
+#form-login{
+    background-color: #0e8799;
+    padding: 5% 10% 5% 10%;
+    border-radius: 15px;
+}
+
+.elemento-escondido{
+    display:none;
+}
+
+#btn-login:hover{
+    cursor: pointer;
+}
+
+#background-modal{
+    position:fixed;
+    background-color: #4d4d4d;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 8888;
+    opacity: 0.8;
+}
+
+.entrada-texto{
+    color: white;
+}
+.ferramentas-fora {
+    background-color: white;
+    padding: 1em;
+}
+
+.ferramentas{
+    color: black;
+}
