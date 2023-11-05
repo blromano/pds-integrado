@@ -1,0 +1,6 @@
+<?php
+include '../../dao/OrgaosColabDAO.php';
+$orgDAO = new OrgaosColabDAO();
+echo json_encode(array(
+    'valid' => !$orgDAO->emailExiste($_POST['email']),
+));

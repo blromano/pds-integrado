@@ -1,0 +1,15 @@
+.tableInterna > thead > tr > th,
+.tableInterna > tbody > tr > th,
+.tableInterna > tfoot > tr > th,
+.tableInterna > thead > tr > td,
+.tableInterna > tbody > tr > td,
+.tableInterna > tfoot > tr > td {
+  	padding: 3px;
+  	line-height: 1.42857143;
+  	vertical-align: top;
+  	border-top: 1px solid #ecf0f1;
+  	margin-left: 2%;
+}
+.tableInterna {
+	margin-left: 10px;
+}
