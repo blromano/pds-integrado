@@ -1,0 +1,193 @@
+* { margin: 0; padding: 0; border: 0 }
+body { background: url(bg.png) }
+legend { display: none }
+
+.novo {
+    position: relative;
+    left: 175px;    
+}
+
+#linha_dados {
+
+    overflow: hidden;     
+}
+
+#linha_dados label{
+    background: #333; 
+    border-radius: 6px 0px 0px 6px; 
+    color: #f0f0f0; 
+    display: block; 
+    height: 50%; 
+    float: left; 
+    height: 30px;
+    font: 13px 'Open Sans',Arial;
+    padding: 5px 7px 6px;
+    width: 100px
+        //margin-left: 150px;
+}
+
+#linha_dados input[type="text"] { 
+    background: #FFF;
+    color: #666;
+    display: block;
+    float: left;
+    height: 50%px;
+    font: 13px 'Open Sans',Arial;
+    padding: 5px 7px 6px;
+    width: 100px;
+    border-radius: 0px 6px 6px 0px; 
+}
+
+#botoes_f4 {
+
+    overflow: hidden;     
+}
+
+#botoes_f4 label{
+    background: #333; 
+    border-radius: 6px 0px 0px 6px; 
+    color: #f0f0f0; 
+    display: block; 
+    height: 50%; 
+    float: left; 
+    height: 30px;
+    font: 13px 'Open Sans',Arial;
+    padding: 0px 5px 5px 70px;
+    width: 100px
+        //margin-left: 150px;
+}
+
+#botoes_f4 input[type="text"] { 
+    background: #FFF;
+    color: #666;
+    display: block;
+    float: left;
+    height: 50%px;
+    font: 13px 'Open Sans',Arial;
+    padding: 5px 7px 6px;
+    width: 100px;
+    border-radius: 0px 6px 6px 0px; 
+}
+
+.campos {
+    width: 697px; 
+    margin: 0 auto 15px; 
+    overflow: hidden; 
+}
+
+.campos label { 
+    background: #333; 
+    border-radius: 6px 0 0 6px; 
+    color: #f0f0f0; 
+    cursor: pointer; 
+    display: block; 
+    height: 37px; 
+    float: left; 
+    height: 34px;
+    font: 15px 'Open Sans',Arial;
+    padding: 5px 13px 6px;
+    width: 150px;
+}
+
+.campos input[type="text"] { 
+    background: #FFF;
+    color: #666;
+    display: block;
+    float: left;
+    height: 34px;
+    font: 15px 'Open Sans',Arial;
+    padding: 2px 13px 6px;
+    width: 397px;
+}
+
+.campos input[type="button"] { 
+    background: #2679A5; 
+    border-radius: 0 6px 6px 0;
+    color: #FFF;
+    cursor: pointer;
+    height: 34px;
+    font: 15px 'Open Sans',Arial;
+    padding: 2px 13px 6px;
+    width: 150px;
+
+    -webkit-transition: background .2s ease-in;
+    -moz-transition: background .2s ease-in;
+    -ms-transition: background .2s ease-in;
+    -o-transition: background .2s ease-in;
+    transition: background .2s ease-in;
+}
+
+.botao{
+
+
+    background: #2679A5; 
+    border-radius: 0 6px 6px 0;
+    color: #FFF;
+    cursor: pointer;
+    height: 30px;
+    font: 15px 'Open Sans',Arial;
+    padding: 2px 13px 6px;
+    width: 200px;
+    float: left;
+
+    -webkit-transition: background .2s ease-in;
+    -moz-transition: background .2s ease-in;
+    -ms-transition: background .2s ease-in;
+    -o-transition: background .2s ease-in;
+    transition: background .2s ease-in;
+}
+
+.campos input[type="button"]:hover { background: #12587C }
+
+input[type="submit"] {
+    background: #2679A5; 
+    border-radius: 6px;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font: 20px 'Open Sans',Arial;
+    padding: 7.5px 15px;
+    width: 250px;
+
+    -webkit-transition: background .2s ease-in;
+    -moz-transition: background .2s ease-in;
+    -ms-transition: background .2s ease-in;
+    -o-transition: background .2s ease-in;
+    transition: background .2s ease-in;
+}
+
+input[type="submit"]:hover { background: #12587C }
+
+/* =============== Estilos do autocomplete =============== */
+.ui-autocomplete { 
+    background: #fff; 
+    border-top: 1px solid #ccc;
+    cursor: pointer; 
+    font: 15px 'Open Sans',Arial;
+    margin-left: 3px;
+    width: 493px !important;
+    position: fixed;
+}
+
+.ui-autocomplete .ui-menu-item { 
+    list-style: none outside none;
+    padding: 7px 0 9px 10px;
+}
+
+.ui-autocomplete .ui-menu-item:hover { background: #eee }
+
+.ui-autocomplete .ui-corner-all { 
+    color: #666 !important;
+    display: block;
+}
+
+/* =============== Estilos adicionados =============== */
+
+#txMunicipio{
+
+    color: #122b40;
+    border-style: solid;
+    border-width: medium;
+    border-color: #333;
+}

@@ -1,0 +1,10 @@
+.detAlerta{
+    background: #ecedef;
+}
+.detAlerta > tbody > tr > td{
+    font-weight: normal;
+    line-height: 3;    
+    vertical-align: central;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}

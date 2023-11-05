@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Projeto Indra</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/freelancer.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/estilo_HistoricoDeAlertas.css" rel="stylesheet">
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/freelancer.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/tablesPlus.js"></script>
+        <!-- <script src="js/orgaos.js"></script> -->
+
+        <!-- Data Tables CSS -->
+        <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+        <link href="css/buttons.dataTables.css" rel="stylesheet">
+
+    </head>
+
+    <body id="page-top" class="index">
+
+        <div id="background-modal" class="elemento-escondido"></div>
+
+        <div id="modal-login" class="elemento-escondido">
+
+            <form name="sentMessage" id="form-login" novalidate>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label> Email </label>
+                        <input type="email" class="form-control entrada-texto" placeholder="Email" required data-validation-required-message="Por favor, digite seu email.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label> Senha </label>
+                        <input type="password" class="form-control entrada-texto" placeholder="Senha" required data-validation-required-message="Por favor, digite uma senha válida.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="row">
+                    <div class="form-group col-xs-12" id="cadastrar">
+                        <button type="submit" class="btn btn-primary"> Login </button>
+                        <div  class="btn btn-danger" id="btn-cancelar"> Cancelar </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" id="menu">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="page-scroll icone-menu-container">
+                        <img  class="img-responsive" src="img/icone.png" id="icone-menu" alt="icone"/>
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="page-scroll">
+                            <a href="index.html">P&aacute;gina Principal</a>
+                        </li>
+                        <li id="btn-login">
+                            <a> Login </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>HISTÓRICO DE ALERTAS</h2>
+                    </div>
+                </div>
+                <form>
+                    <div align="center" class="form-group" style="margin-top: 2%;">
+                        <label>País</label>
+                        <select class="form-control select" style="width: 10%">
+                            <option value="">Brasil</option>
+                            <option value="">Estados Unidos</option>
+                            <option value="">Canadá</option>
+                            <option value="">Japão</option>
+                        </select>
+
+                        <label>Estado</label>
+                        <select class="form-control select" style="width: 10%">
+                            <option value="">SP</option>
+                            <option value="">MG</option>
+                            <option value="">RJ</option>
+                            <option value="">SC</option>
+                        </select>
+
+                        <label>Cidade</label>
+                        <select class="form-control select" style="width: 15%">
+                            <option value="">São João da Boa Vista</option>
+                            <option value="">Aguaí</option>
+                            <option value="">Águas da Prata</option>
+                            <option value="">Casa Branca</option>
+                        </select>
+
+                        <label>Data:</label>
+                        <div class="form-control select" style="width: 40%; padding: 1% 0% 3% 0%;">
+                            <label>Inicial:</label>
+                            <input type="date" style="margin-right: 8%">
+                            <label>Final:</label>
+                            <input type="date">
+                        </div>
+
+                        <input type="submit" role="button" value="Aplicar" class="btn btn-primary">
+                    </div>
+                </form>
+                <div class="form-group">
+                    <table id="table-alerts" align="center" style="width: 95%" class="table table-condensed ">
+                        <thead>
+                            <tr bgcolor="#3a4857">
+                                <th></th>
+                                <th>País</th>
+                                <th>Estado</th>
+                                <th>Cidade</th>
+                                <th></th>
+                                <!--<th>Data Registrada</th>-->
+                                <th>PCD</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><button id="dado1" class="glyphicon glyphicon-plus botao-semfundo"></button></td>
+                                <td>Brasil</td>
+                                <td>SP</td>
+                                <td>São João da Boa Vista</td>
+                                <th></th>
+                                <!--<td>06/05/2016</td>-->
+                                <td>PCD- Morro da Goiába</td>
+
+                            </tr>
+                            <tr>
+                                <td style="display: none" id="interTable1" colspan="7">
+                                    <table style="width: 100%" class="detAlerta">
+                                        <thead>
+                                            <tr>
+                                                <th style="padding-left: 4%;">Data</th>
+                                                <th style="padding-left: 1.5%;">Hora</th>                                                
+                                                <th style="padding-left: 25%;">Descrição</th>
+                                                <th style="padding-left: 3%;">Periculosidade</th>
+                                                <th style="padding-left: 3%;">Informações</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr >
+                                                <td align="center">10/02/2016</td>
+                                                <td align="center">12:23</td>                                                
+                                                <td align="center">Precipitação Atmosférica acumulada e de longa duração!</td>
+                                                <td align="center">Média</td>
+                                                <td align="center"><button class="btn btn-primary btn-table ">Detalhes</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">03/11/2016</td>
+                                                <td align="center">15:56</td>                                                
+                                                <td align="center">Ventanias produzindo várias devastações!</td>
+                                                <td align="center">Alta</td>
+                                                <td align="center"><button class="btn btn-primary btn-table ">Detalhes</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">25/04/2016</td>
+                                                <td align="center">17:02</td>                                                
+                                                <td align="center">Precipitação Atmosférica constituída de Pedregulhos de Gelo!</td>
+                                                <td align="center">Alta</td>
+                                                <td align="center"><button class="btn btn-primary btn-table ">Detalhes</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><button id="dado2" class="glyphicon glyphicon-plus botao-semfundo"></button></td>
+                                <td>Brasil</td>
+                                <td>MG</td>
+                                <td>Belo Horizonte</td>
+                                <th></th>
+                                <!--<td>05/05/2016</td>-->
+                                <td>PCD- Alpes Queda dos Ventos</td>
+
+                            </tr>
+                            <tr>
+                                <td style="display: none" id="interTable2" colspan="7">
+                                    <table style="width: 100%" class="detAlerta">
+                                        <thead>
+                                            <tr>
+                                                <th style="padding-left: 4%;">Data</th>
+                                                <th style="padding-left: 1.5%;">Hora</th>                                                
+                                                <th style="padding-left: 25%;">Descrição</th>
+                                                <th style="padding-left: 3%;">Periculosidade</th>
+                                                <th style="padding-left: 3%;">Informações</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr >
+                                                <td align="center">09/15/2016</td>
+                                                <td align="center">12:23</td>                                                
+                                                <td align="center">Precipitação Atmosférica acumulada e de longa duração!</td>
+                                                <td align="center">Média</td>
+                                                <td align="center"><button class="btn btn-primary btn-table ">Detalhes</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">05/11/2016</td>
+                                                <td align="center">15:56</td>                                                
+                                                <td align="center">Ventanias produzindo várias devastações!</td>
+                                                <td align="center">Alta</td>
+                                                <td align="center"><button class="btn btn-primary btn-table ">Detalhes</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">14/02/2016</td>
+                                                <td align="center">17:02</td>                                                
+                                                <td align="center">Precipitação Atmosférica constituída de Pedregulhos de Gelo!</td>
+                                                <td align="center">Alta</td>
+                                                <td align="center"><button class="btn btn-primary btn-table ">Detalhes</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><button id="dado3" class="glyphicon glyphicon-plus botao-semfundo"></button></td>
+                                <td>Brasil</td>
+                                <td>RJ</td>
+                                <td>Rio de Janeiro</td>
+                                <th></th>
+                                <!--<td>04/05/2016</td>-->
+                                <td>PCD- Choeira Conta-Gotas</td>
+
+                            </tr>
+                            <tr>
+                                <td style="display: none" id="interTable3" colspan="7">
+                                    <table id="Halerta"style="width: 100%" class="detAlerta">
+                                        <thead>
+                                            <tr>
+                                                <th style="padding-left: 4%;">Data</th>
+                                                <th style="padding-left: 1.5%;">Hora</th>                                                
+                                                <th style="padding-left: 25%;">Descrição</th>
+                                                <th style="padding-left: 3%;">Periculosidade</th>
+                                                <th style="padding-left: 3%;">Informações</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                 <td align="center">25/04/2016</td>
+                                                <td align="center">12:23</td>                                               
+                                                <td align="center">Precipitação Atmosférica acumulada e de longa duração!</td>
+                                                <td align="center">Média</td>
+                                                <td align="center"><button class="btn btn-primary btn-table ">Detalhes</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">25/04/2016</td>
+                                                <td align="center">15:56</td>                                                
+                                                <td align="center">Ventanias produzindo várias devastações!</td>
+                                                <td align="center">Alta</td>
+                                                <td align="center"><button class="btn btn-primary btn-table ">Detalhes</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">25/04/2016</td>
+                                                <td align="center">17:02</td>                                                
+                                                <td align="center">Precipitação Atmosférica constituída de Pedregulhos de Gelo!</td>
+                                                <td align="center">Alta</td>
+                                                <td align="center"><button class="btn btn-primary btn-table ">Detalhes</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td><button id="dado4" class="glyphicon glyphicon-plus botao-semfundo"></button></td>
+                                <td>Brasil</td>
+                                <td>SC</td>
+                                <td>Florianópolis</td>
+                                <th></th>
+                                <!--<td>03/05/2016</td>-->
+                                <td>PCD- Clareira Beija-Flor</td>
+
+                            </tr>
+                            <tr>
+                                <td style="display: none" id="interTable4" colspan="7">
+                                    <table style="width: 100%" class="detAlerta">
+                                        <thead>
+                                            <tr>
+                                                <th style="padding-left: 4%;">Data</th>
+                                                <th style="padding-left: 1.5%;">Hora</th>                                                
+                                                <th style="padding-left: 25%;">Descrição</th>
+                                                <th style="padding-left: 3%;">Periculosidade</th>
+                                                <th style="padding-left: 3%;">Informações</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td align="center">29/06/2016</td>
+                                                <td align="center">12:23</td>
+                                                <td align="center">Precipitação Atmosférica acumulada e de longa duração!</td>
+                                                <td align="center">Média</td>
+                                                <td align="center"><button class="btn btn-primary btn-table ">Detalhes</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">31/09/2016</td>
+                                                <td align="center">15:56</td>
+                                                <td align="center">Ventanias produzindo várias devastações!</td>
+                                                <td align="center">Alta</td>
+                                                <td align="center"><button class="btn btn-primary btn-table ">Detalhes</button></td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">05/01/2016</td>
+                                                <td align="center">17:02</td>
+                                                <td align="center">Precipitação Atmosférica constituída de Pedregulhos de Gelo!</td>
+                                                <td align="center">Alta</td>
+                                                <td align="center"><button class="btn btn-primary btn-table ">Detalhes</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="footer-above">
+                <div class="container ">
+                    <div class="row">
+                        <div class="footer-col col-md-6">
+                            <h3>Local</h3>
+                            <p>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo<br>Campus São João da Boa Vista</p>
+                        </div>
+                        <div class="footer-col col-md-6">
+                            <h3>Redes Sociais</h3>
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="https://www.facebook.com/ifspsaojoaodaboavista" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+        <div class="scroll-top page-scroll visible-xs visible-sm">
+            <a class="btn btn-primary" href="#page-top">
+                <i class="fa fa-chevron-up"></i>
+            </a>
+        </div>
+
+        <!-- Data Tables JQuery -->
+        <!--<script src="js/jquery.dataTables.min.js"></script>
+        <script src="js/dataTables.bootstrap.min.js"></script>        
+        <script src="js/tables.js"></script>-->
+
+
+
+    </body>
+
+</html>
