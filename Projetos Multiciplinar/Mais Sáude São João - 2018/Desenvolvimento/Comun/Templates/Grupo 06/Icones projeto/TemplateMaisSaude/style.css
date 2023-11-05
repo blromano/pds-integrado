@@ -1,0 +1,100 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/03/2018, 10:09:59
+    Author     : Sérgio
+*/
+
+@font-face {
+    font-family: Unisans;
+    src: url('C:\xampp\htdocs\TemplateMaisSaude\uni-sans.otf');
+}
+#content{
+	background-color: #A8C2E0;
+}
+#logo{
+    height: 150px;
+    width: 150px;
+}
+
+#header{
+    width: 100%;
+	background-color: #799EBA;
+}
+
+.icon{
+    height: 70px;
+    width: 70px;
+}
+
+.menu_esq{
+    margin-left: 16%;
+}
+.opcao_menu{
+    width: 25%;
+    margin-top: 20px;
+}
+
+.menu_logo{
+    width: 100%;
+}
+
+footer{
+    bottom: 0;
+    position: relative;
+    width: 100%;
+	background-color: #799EBA;
+}
+
+.legenda_icone{
+    text-align: center;
+    font-family: Unisans;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 12%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #A8C2E0}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.social_dropdown{
+    margin-left: 17%;
+}

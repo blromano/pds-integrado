@@ -1,0 +1,49 @@
+#fundo{
+    position:absolute;
+    left:0%;
+    top:5%;
+    height:90%;
+    width:100%;
+    z-index:-1;
+    background:#E7EBF2;
+}
+#barralog{
+    position:absolute;
+    left:0%;
+    top:0%;
+    height:13.2%;
+    width:100%;
+    z-index:-1;
+    background:#2f426a;
+}
+#fota{
+    position:absolute;
+    left:13.5%;
+    top:3.3%;
+    font-size:45;
+    font-weight:900;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+#formlog{
+    position:absolute;
+    right:7.5%;
+    top:5.3%;
+    font-size:45;
+    font-weight:900;
+    color:#2f426a;
+    font-weight:bold;
+}
+#logoentrada{
+    position:absolute;
+    left:7%;
+    top:22%;
+}
+#formcad{
+    position:absolute;
+    right:15.4%;
+    top:28%;
+    font-size:16px;
+    color:#000000;
+    font-weight:bold;
+}

@@ -1,0 +1,94 @@
+<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+
+<div>
+	<div class="text-center">
+		<h1>Cadastro Nutricionista</h1>
+	</div>
+	<form class="container my-4 ">
+		<!-- Nome Sobrenome-->
+		<div class="row form-group">
+			<div class="col">
+				<input class="form-control" type="text" name="nomenutricadastro" placeholder="Nome"></br>
+			</div>
+			<div class="col">
+				<input class="form-control" type="text" name="sobrenomenutricadastro" placeholder="Sobrenome"></br>
+			</div>
+		</div>
+		<!-- Email CPF-->
+		<div class="row form-group">
+			<div class="col">
+				<input class="form-control" type="email" name="emailnutricadastro" placeholder="meuemail@mail.com"></br>
+			</div>
+			<div class="col">
+				<input class="form-control" type="text" name="cpfnutricadastro" placeholder="CPF sem pontuação"></br>
+			</div>
+		</div>
+		<!---END CRF -->
+		<div class="row form-group">
+			<div class="col">
+				<input class="form-control" type="text" name="endnutricadastro" placeholder="Endereço"></br>
+			</div>
+			<div class="col">
+				<input class="form-control" type="text" name="crnnutri" placeholder="CRN"></br>
+			</div>
+		</div>
+		<!--- TEL DATA-->
+		<div class="row form-group"> 
+			<div class="col">
+				<input class="form-control" type="date" name="datanutri">
+			</div>
+			<div class="col">
+				<input class="form-control" type="tel" name="telnutri" placeholder="Telefone">
+			</div>
+		</div>
+		<!--Senha CONFIRM-->
+		<div class="row form-group"> 
+			<div class="col">
+				<input class="form-control" type="password" name="senhanutri" placeholder="senha">
+			</div>
+			<div class="col">
+				<input class="form-control" type="password" name="confirmnutri" placeholder="Confirmação de senha">
+			</div>
+		</div>
+		<!--GENERO-->
+		<div class="row form-group">
+			<div class="col">
+				<label>Género</label>	<select name="generonutricadastro">
+							<option value="feminino">Feminino</option>
+							<option value="masculino">Masculino</option>
+							<option value="outro">Outro</option>
+					</select>
+			</div>
+		</div>
+		<!-- FOCO FISICO-->
+		<div class="row form-group">
+			<div class="col">
+				<label for="comment">Foco fisico:</label>
+				<textarea class="form-control" rows="5" name="foconutri"></textarea>
+			</div>			
+		</div>
+		<!-- DESCRICAO-->
+		<div class="form-group">
+  				<label for="comment">descrição:</label>
+ 			    <textarea class="form-control" rows="5" name="descnutri"></textarea>
+			</div>
+		</div>
+		<!--FOTO -->
+		<div class="form-group">
+			<div style="text-align: center;" class="col">
+				<label>Foto para cadastro</label><br>
+				<input type="file" name="fotonutri" accept="image/*"><
+			</div>
+		</div>
+		<!-- ENVIAR-->
+		<div class="text-center">
+			<input class=" btn btn-danger col-md-2" type="submit" name="botao" value="Cadastrar"></br>
+		</div>				
+	</form>
+</div>

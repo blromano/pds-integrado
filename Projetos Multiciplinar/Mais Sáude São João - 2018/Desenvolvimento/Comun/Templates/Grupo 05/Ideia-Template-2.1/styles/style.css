@@ -1,0 +1,124 @@
+body {
+    overflow-x: hidden;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.low-opacity {
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px rgba(0, 0, 0, 0.7) solid;
+}
+
+.non-rounded {
+    border-radius: 0px;
+}
+
+content {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+.blur {		
+    filter: blur(2px);
+    background-image: url('../resources/background-768p.png');
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-attachment: fixed;
+    background-image: url('../resources/background-768p.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+
+@media (orientation: landscape) 
+    and (min-height: 768px) {
+        .blur, header {
+            background-image: url("../resources/background-900p.png");
+        }
+}
+
+@media (orientation: landscape) 
+    and (min-height: 900px) {    
+        .blur, header {
+            background-image: url("../resources/background-1k.png");
+        }
+}
+
+@media (orientation: landscape) 
+    and (min-height: 1080px) {
+        .blur, header {
+            background-image: url("../resources/background-2k.png");
+        }
+}
+
+@media (orientation: landscape) 
+    and (min-height: 1440px) {
+        .blur, header {
+            background-image: url("../resources/background-4k.png");
+        }
+}
+
+@media (orientation: portrait) 
+    and (min-height: 768px) {
+        .blur, header {
+            background-image: url("../resources/background-900p-m.png");
+        }
+}
+
+@media (orientation: portrait) 
+    and (min-height: 900px) {
+        .blur, header {
+            background-image: url("../resources/background-1k-m.png");
+        }
+}
+
+@media (orientation: portrait) 
+    and (min-height: 1080px) {
+        .blur, header {
+            background-image: url("../resources/background-2k-m.png");
+        }
+}
+
+@media (orientation: portrait) 
+    and (min-height: 1440px) {
+        .blur, header {
+            background-image: url("../resources/background-4k-m.png");
+        }
+}
+
+.water-mark {
+    filter: blur(1px);
+}
+
+.perfect-circle {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+.fit-circle {
+    width: 80px;
+}
+
+.bg-darker-light {
+    background: #d6d6d6;
+}
+
+.text-darker-light {
+    color: #d6d6d6;
+}
+
+.bg-lighter {
+    background: white;
+}
+
+.text-lighter {
+    color: white;
+}

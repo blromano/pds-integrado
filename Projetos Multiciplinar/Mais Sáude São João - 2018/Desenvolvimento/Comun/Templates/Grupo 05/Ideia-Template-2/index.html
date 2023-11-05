@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title> Template - Grupo 5 </title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css" />
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.js"></script>
+    
+<!--
+	<script type="text/javascript" src="http://186.219.151.106/hhunt/jquery/jquery-3.3.1.min.js"></script>
+	<script src="http://186.219.151.106/hhunt/bootstrap/js/bootstrap.js"></script>
+	<link rel="stylesheet" href="http://186.219.151.106/hhunt/bootstrap/css/bootstrap.css">
+-->
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="./load-content.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="container-fluid low-opacity text-light">
+			<div class="row full-height align-items-center">
+				<div class="col-md-6 offset-md-3 text-center">
+					
+					<h1> MAIS SAÚDE SÃO JOÃO </h1>
+					<a class="non-rounded btn btn-outline-light btn-lg" href="#content"> Participe </a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<!--Menu!-->
+<div class="btn-group ">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Menu
+  </button>
+  <ul class="dropdown-menu dropdown-menu-right ">
+			<li class="nav-item">
+				<a class="nav-link" href="#sobre">Sobre</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#postagens">Postagens</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#equipe">Equipe</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#cadastro">Cadastro</a>
+			</li>
+		</ul>
+  </div>
+</div>
+<!--Fim Menu!-->
+	<content id="content">
+		<div class="full-height fixed-top blur" style="z-index: -1">
+		</div>
+        
+		<div class="container my-4">
+			<div class="doc" data-aos="fade-left" load-url="./contents/menu.html"></div>
+		</div>
+
+        <div class="container my-4" id="sobre">
+
+        	<div class="bg-light p-4" data-aos="fade-right">
+	            <h1 class="text-center"> Sobre nosso template! </h1>
+			    <hr>
+			    <div class="row">
+			        <div data-aos="slide-up" class="col-md-3 offset-md-1">
+			            <p> Nossa template tem a capacidade de integrar partes de outros layouts! </p> 
+			        </div>
+			        <div data-aos="slide-down" class="bg-primary col-md-7">
+			            
+			        </div>
+			    </div>
+			    <div class="row" data-aos="slide-left">
+			        <div class="col-md-10 bg-danger offset-md-1">
+			            cccccccccccc
+			        </div>
+			    </div>
+			</div>
+        </div>
+        
+        <div class="container my-4" id="postagens">
+            <div class="doc p-4" data-aos="fade-right" load-url="./contents/desc.html #desc-3"></div>
+        </div>
+
+        <div class="container my-4" id="equipe">
+        	<div class="doc p-4" data-aos="slide-up" load-url="./contents/teste.html #formulario"></div>
+        </div>
+
+        <div class="container my-4" id="cadastro">
+        	<div class="doc p-4 rounded" data-aos="slide-up" load-url="./contents/cadastrousuario.html"></div>
+        </div>
+        
+		<div class="container-fluid bg-dark text-light">
+			<div class="p-4">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="navbar-nav">
+							<li>Fale conosco</li>
+							<li><a href="#" class="text-secondary"> brenindasilva@hotmail.com </a></li>
+							<li><a href="#" class="text-secondary"> 4002-8922 </a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="navbar-nav">
+							<li>Ajuda</li>
+							<li><a href="#" class="text-secondary"> Políticas de privacidade: </a></li>
+							<li><a href="#" class="text-secondary"> Autores </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</content>
+
+	<footer>
+
+	</footer>
+
+</body>
+</html>

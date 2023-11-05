@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="login" class="container text-center">
+			<form>
+				<label>Usuário</label></br>
+				<input type="text" name="usuariologin"></br>
+				<label>Senha</label></br>
+				<input type="password" name="senhalogin"></br>
+				<input type="submit" name="botaologin" value="Entrar"><br>
+			</form>
+		</div>
+		<div class="text-center">
+				<label>Não possui cadastro?</label>
+				<a class="btn btn-danger" data-toggle="collapse" href="#tipousuario" role="button" aria-expanded="false">Clique aqui</a>
+		</div>
+			<div id="tipousuario" class="text-center">
+				<div class="escolha">
+					<div id="inutil">
+						<div class="opcao">
+							<button type="button" data-toggle="collapse" data-target="#cadastrousuario">Usuário</button>
+						</div>
+						<div id="cadastrousuario" class="container collapse" data-parent="tipousuario">
+							<label>Nome</label></br>
+							<input type="text" name="nomeusucadastro"></br>
+							<label>Sobrenome</label></br>
+							<input type="text" name="sobrenomeusucadastro"></br>
+							<label>E-mail</label></br>
+							<input type="email" name="emailusucadastro"></br>
+							<label>CPF</label></br>
+							<input type="text" name="cpfusucadastro"></br>
+							<label>Endereço</label></br>
+							<input type="text" name="endusucadastro"></br>
+							<label>Data de Nascimento</label></br>
+							<input type="date" name="datausucadastro"></br>
+							<label>Telefone</label></br>
+							<input type="tel" name="telusucadastro"></br>
+							<label>Senha</label></br>
+							<input type="password" name="senhausucadastro"></br>
+							<label>Confirma senha</label></br>
+							<input type="password" name="confirsenhausucadastro"></br>			
+						</div>
+					</div>
+				<div class="escolha">
+					<div class="opcao">
+						<button type="button" data-toggle="collapse" data-target="#cadastronutri">Nutricionista
+						</button>
+					</div>
+					<div id="cadastronutri" class="container center-block collapse" data-parent="#tipousuario">
+						<label>Nome completo</label></br>
+						<input type="text" name="nomenutricadastro"></br>
+						<label>E-mail</label></br>
+						<input type="email" name="emailnutricadastro"></br>
+						<label>CPF</label></br>
+						<input type="text" name="cpfnutricadastro"></br>
+						<label>Endereço</label></br>
+						<input type="text" name="endnutricadastro"></br>
+						<label>CRN</label></br>
+						<input type="text" name="crnnutricadastro"></br>
+						<label>Foco</label></br>
+						<input type="text" name="foconutricadastro"></br>
+						<label>Gênero</label></br>
+						<select name="generonutricadastro">
+							<option value="feminino">Feminino</option>
+							<option value="masculino">Masculino</option>
+							<option value="outro">Outro</option>
+						</select>
+						<label>Descrição</label></br>
+						<input type="text" name="descnutricadastro"></br>
+						<label>Data de Nascimento</label></br>
+						<input type="date" name="datanutricadastro"></br>
+						<label>Telefone</label></br>
+						<input type="tel" name="telusucadastro"></br>
+						<label>Senha</label></br>
+						<input type="password" name="senhausucadastro"></br>
+						<label>Confirma senha</label></br>
+						<input type="password" name="confirsenhausucadastro"></br>	
+						<label>Foto</label></br>
+						<input type="image" name="endnutricadastro"></br>
+						<select name="statusnutri">
+							<option value="Disponivel">Disponível</option>
+							<option value="indisponivel">Indisponível</option>
+						</select>
+					
+				</div>
+				<div class="escolha">
+					<div class="opcao">
+						<button type="button" data-toggle="collapse" data-target="#cadastroedu">Educador Físico
+						</button>
+					</div>
+					<div id="cadastroedu" class="container center-block collapse" data-parent="#tipousuario">
+						<label>Nome completo</label></br>
+						<input type="text" name="nomenutricadastro"></br>
+						<label>E-mail</label></br>
+						<input type="email" name="emailnutricadastro"></br>
+						<label>CPF</label></br>
+						<input type="text" name="cpfnutricadastro"></br>
+						<label>Endereço</label></br>
+						<input type="text" name="endnutricadastro"></br>
+						<label>CRFE</label></br>
+						<input type="text" name="crnnutricadastro"></br>
+						<label>Foco</label></br>
+						<input type="text" name="foconutricadastro"></br>
+						<label>Gênero</label></br>
+						<select name="generoeducadastro">
+							<option value="feminino">Feminino</option>
+							<option value="masculino">Masculino</option>
+							<option value="outro">Outro</option>
+						</select>
+						<label>Descrição</label></br>
+						<input type="text" name="descnutricadastro"></br>
+						<label>Data de Nascimento</label></br>
+						<input type="date" name="datanutricadastro"></br>
+						<label>Telefone</label></br>
+						<input type="tel" name="telusucadastro"></br>
+						<label>Senha</label></br>
+						<input type="password" name="senhausucadastro"></br>
+						<label>Confirma senha</label></br>
+						<input type="password" name="confirsenhausucadastro"></br>	
+						<label>Foto</label></br>
+						<input type="image" name="endnutricadastro"></br>
+						<select name="statusedu">
+							<option value="Disponivel">Disponível</option>
+							<option value="indisponivel">Indisponível</option>
+						</select>
+					</div>
+				</div>
+			</div>
+	</body>
+</html>
+
+

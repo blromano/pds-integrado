@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+</head>
+<body>
+
+    <div id="header" class="container-fluid text-center">
+        <div class="menu_logo">
+            <img class="icon" id="logo" src="Logo_Final.png">
+        </div>
+        <div class="menu_esq opcao_menu col-sm-2 dropdown">
+            <img class="icon" src="icon_nutricao.png">
+            <div class="dropdown-content">
+                <a href=""> Plano alimentar </a>
+                <a href=""> Dário de bordo </a>
+                <a href=""> Ferramentas nutricionais </a>
+            </div>
+            <br class="legenda_icone"> Nutrição
+        </div>
+        <div class="opcao_menu col-sm-2 dropdown">
+            <img class="icon" src="icon_treino.png">
+            <div class="dropdown-content">
+                <a href=""> Checkup </a>
+                <a href=""> Treinos </a>
+                <a href=""> Ferramentas esportivas </a>
+            </div>
+            <br class="legenda_icone"> Treinamento
+        </div>
+        <div class="opcao_menu col-sm-2 dropdown">
+            <img class="icon" src="icon_social.png">
+            <div class="social_dropdown dropdown-content">
+                <a href=""> Meu perfil </a>
+                <a href=""> Feed </a>
+            </div>
+            <br class="legenda_icone"> +Saúde Social
+        </div>
+        <div class="opcao_menu col-sm-2">
+            <a href=""><img class="icon" src="icon_login.png"></a>
+            <br class="legenda_icone"> Sair
+        </div>
+    </div>
+   
+    <div id="content">
+        <div class="container-fluid text-center">    
+      <style>
+	.form1{
+		width: 40%;
+	}
+  </style>
+    <div class="col-sm-8 text-left"> 
+      <h2 class="info">Cadastro</h2>
+    <form>
+      <div class="form-group">
+              <label for="email">Nome:</label>
+              <input type="email" class="form1 form-control" id="nome">
+            </div>
+            <div class="form-group">
+              <label for="email">Idade:</label>
+              <input type="email" class="form1 form-control" id="idade">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form1 form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form1 form-control" id="senha">
+            </div>
+        <label class=" form-group my-1 mr-2" for="inlineFormCustomSelectPref">Categoria</label>
+            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option value="1">Educador Físico</option>
+              <option value="2">Nutricionista</option>
+              <option value="3">Usuário</option>
+            </select>
+        <br>
+        <br>
+            <button type="submit" class="botao btn btn-primary">Enviar</button>
+			
+      </form>
+<br><br>
+<p class="info">Já é cadastrado? <a href="#">Clique Aqui.</a></p>
+
+<button class="botao"type="button" data-toggle="modal" data-target="#confirm">Excluir Cadastro</button>
+
+<div class="modal fade" id="confirm" role="dialog">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-body">
+            <p>Deseja excluir todos os registros?</p>
+      </div>
+      <div class="modal-footer">
+        <a href="wfefwe" type="button" class="btn btn-danger" id="delete">Sim</a>
+            <button type="button" data-dismiss="modal" class="btn btn-default">Cancelar</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+</div>
+<br><br>
+</div>
+    </div>
+<div class="container-fluid text-center">    
+  <div class="row content">
+    </div>
+  </div>
+</div>
+
+<footer class="text-center">
+    <p> Mais Saúde São João <br> © Copyright 2018 <br> Todos os direitos reservados </p>
+</footer>
+
+</body>
+</html>

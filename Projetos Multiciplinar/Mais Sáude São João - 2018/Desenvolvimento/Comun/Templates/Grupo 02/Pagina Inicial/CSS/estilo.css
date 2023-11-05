@@ -1,0 +1,59 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+#rodape 
+{
+    width: 100%; /* Full-width */
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0; /* Some top and bottom padding */
+    text-align:center;
+    background-color: #2f426a; /* Dark-grey background */
+    color: white;
+    font-size: 11px;
+}
+.menu-links
+{
+    background-color: #2f426a; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */    
+    box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    border-radius:4px;
+    color: white;
+}
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #2f426a; /* Dark-grey background */
+    overflow: auto; /* Overflow due to float */
+}
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 3%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 15px; /* Increased font size */
+}
+.active:hover {
+    background-color: #2f426a !important; /* Add a hover color */
+}
+.icon-bar a:hover {
+    background-color: #AD1F1F !important; /* Add a hover color */
+}
+.menu-links a:hover {
+    background-color: #AD1F1F !important; /* Add a hover color */
+}
+.active {
+    background-color: #AD1F1F; /* Add an active/current color */
+}
+
+.w-card,.w-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.w-round,.w-round-medium{border-radius:4px}
+w-white,.w-hover-white:hover{color:#000!important;background-color:#fff!important}
+.w-container,.w-panel{padding:0.01em 16px}.w-panel{margin-top:16px;margin-bottom:16px; margin-right: 16px}
+.w-center{text-align:center!important}
+.w-circle{border-radius:50%}
+.w-col{padding:0 8px; margin-right: 10px; margin-left: 200px;margin-top: 20px; }
+.w-col.m3,.w-quarter{width:15%}.w-col.m4,.w-third{width:25%}

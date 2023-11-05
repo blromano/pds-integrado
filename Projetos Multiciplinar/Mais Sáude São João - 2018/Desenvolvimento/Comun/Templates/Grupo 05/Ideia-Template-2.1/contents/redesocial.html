@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title> Template - Grupo 5 </title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css" />
+        <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.js"></script>
+
+        <!--
+<script type="text/javascript" src="http://186.219.151.106/hhunt/jquery/jquery-3.3.1.min.js"></script>
+<script src="http://186.219.151.106/hhunt/bootstrap/js/bootstrap.js"></script>
+<link rel="stylesheet" href="http://186.219.151.106/hhunt/bootstrap/css/bootstrap.css">
+-->
+        <link rel="stylesheet" type="text/css" href="./open-iconic/font/css/open-iconic-bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
+        <script type="text/javascript" src="../scripts/load-content.js"></script>
+    </head>
+    <body>
+
+        <content >
+            <div class="full-height fixed-top blur" style="z-index: -1">
+            </div>
+
+            <div class="container-fluid">
+                <div class="">
+                    <div class="row">
+                        <div class="col-md-2">
+                            
+                            <div class="container bg-light my-4 p-4">
+                                <div style="overflow: hidden" class="mx-auto mb-2 rounded border border-primary">
+                                    <img class="img-fluid" src="../resources/logofinal_vetor.png" alt="profile-pic">
+                                </div>
+
+                                <span id="username" class="font-weight-bold font-italic"> Username </span>
+
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-secondary dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown">
+                                        Minha Conta
+                                    </button>
+                                    <div class="dropdown-menu p-1" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item rounded border my-1" href="#">
+                                            <span class="oi oi-cog"></span> Configurações
+                                        </a>
+                                        <a class="dropdown-item rounded border my-1" href="#">
+                                            <span class="oi oi-person"></span> Perfil
+                                        </a>
+                                        <a class="dropdown-item rounded border btn-outline-danger text-danger my-1" href="#">
+                                            <span class="oi oi-power-standby"></span> Sair
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                        </div>
+
+                        <div class="col">
+                           
+                            <div class="container-fluid bg-light my-4 p-4">
+                                <div class="row text-center mx-auto px-2">
+                                    <div class="col rounded border m-2 p-1">
+                                        <span class="font-weight-bold">Seguidores: </span> 
+                                        <span class="font-weight-bold font-italic text-primary"> 1808 </span>
+                                    </div>
+                                    <div class="col rounded border m-2 p-1">
+                                        <span class="font-weight-bold">Seguindo: </span> 
+                                        <span class="font-weight-bold font-italic text-primary"> 24 </span>
+                                    </div>
+                                    <div class="col rounded border m-2 p-1">
+                                        <span class="font-weight-bold">Frequencia: </span> 
+                                        <span class="font-weight-bold font-italic text-primary"> 87% </span>
+                                    </div>
+                                </div>
+
+                                <div class="row text-center mx-auto">
+                                    <div class="col">
+                                            <div class="form-group">
+                                                <textarea class="form-control" placeholder="Como foi seu dia hoje?" id="publish-textarea" rows="4"></textarea>
+                                                <div class="custom-file my-1">
+                                                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+                                                    <label class="custom-file-label" for="validatedCustomFile">Inserir imagem </label>
+                                                    <div class="invalid-feedback">Imagem invalida</div>
+                                                </div>
+                                                <input type="submit" class="form-control btn btn-primary my-1" value="Postar">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <!-- postagem -->
+                                <div class="container bg-light mb-4 p-2">
+
+                                    <div class="row">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                    <div class="perfect-circle border">
+                                                        <img class="fit-circle" src="../resources/logofinal_vetor.png" alt="profile-pic">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row ml-2">
+                                                        <span class="font-weight-bold font-italic text-info">
+                                                            Username
+                                                        </span>
+                                                        <span class="font-weight-bold">
+                                                            : Publicou no dia 24/04/2018
+                                                        </span>
+                                                    </div>
+                                                    <div class="row p-4 m-2 text-justify border">
+                                                        <p>
+                                                            Acima de tudo, é fundamental ressaltar que a constante divulgação das informações oferece uma interessante oportunidade para verificação das novas proposições. Ainda assim, existem dúvidas a respeito de como o desafiador cenário globalizado não pode mais se dissociar do impacto na agilidade decisória. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a competitividade nas transações comerciais faz parte de um processo de gestão das posturas dos órgãos dirigentes com relação às suas atribuições.Evidentemente, a crescente influência da mídia auxilia a preparação e a composição dos conhecimentos estratégicos para atingir a excelência. Assim mesmo, a adoção de políticas descentralizadoras acarreta um processo de reformulação e modernização dos métodos utilizados na avaliação de resultados. Percebemos, cada vez mais, que a valorização de fatores subjetivos estende o alcance e a importância do remanejamento dos quadros funcionais. Pensando mais a longo prazo, o aumento do diálogo entre os diferentes setores produtivos maximiza as possibilidades por conta do retorno esperado a longo prazo. Por outro lado, o desenvolvimento contínuo de distintas formas de atuação pode nos levar a considerar a reestruturação do sistema de participação geral. 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <!-- media -->
+                                    <div class="row mx-1 border-top py-2">
+                                        <div class="col">
+                                            <img src="../resources/logofinal_vetorpreto.png" alt="img1" class="low-opacity img-thumbnail img-fluid">
+                                        </div>
+                                        <div class="col">
+                                            <img src="../resources/logofinal_vetorbranco.png" alt="img2" class="low-opacity img-thumbnail img-fluid">
+                                        </div>
+                                        <div class="col">
+                                            <img src="../resources/logofinal_vetor.png" alt="img3" class="low-opacity img-thumbnail img-fluid">
+                                        </div>
+                                    </div>
+
+                                    <!-- comment -->
+                                    <div class="row mx-1 py-2 border-top">
+                                        <div class="col-md-12">
+                                            <form action="" class="row mx-auto">
+                                                <div class="form-group col-md-10 px-0">
+                                                    <textarea class="form-control" rows="1" id="comment" placeholder="Comente..."></textarea>
+                                                </div>
+                                                <div class="form-group col-md-2 px-0 pl-2">
+                                                    <input type="submit" class="btn btn-primary btn-block" value="Comentar">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            
+                            <div class="row">
+                                <!-- postagem -->
+                                <div class="container bg-light mb-4 p-2">
+
+                                    <div class="row">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-1">
+                                                    <div class="perfect-circle border">
+                                                        <img class="fit-circle" src="../resources/logofinal_vetor.png" alt="profile-pic">
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="row ml-2">
+                                                        <span class="font-weight-bold font-italic text-info">
+                                                            Username
+                                                        </span>
+                                                        <span class="font-weight-bold">
+                                                            : Publicou no dia 24/04/2018
+                                                        </span>
+                                                    </div>
+                                                    <div class="row p-4 m-2 text-justify border">
+                                                        <p>
+                                                            Acima de tudo, é fundamental ressaltar que a constante divulgação das informações oferece uma interessante oportunidade para verificação das novas proposições. Ainda assim, existem dúvidas a respeito de como o desafiador cenário globalizado não pode mais se dissociar do impacto na agilidade decisória. Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a competitividade nas transações comerciais faz parte de um processo de gestão das posturas dos órgãos dirigentes com relação às suas atribuições.Evidentemente, a crescente influência da mídia auxilia a preparação e a composição dos conhecimentos estratégicos para atingir a excelência. Assim mesmo, a adoção de políticas descentralizadoras acarreta um processo de reformulação e modernização dos métodos utilizados na avaliação de resultados. Percebemos, cada vez mais, que a valorização de fatores subjetivos estende o alcance e a importância do remanejamento dos quadros funcionais. Pensando mais a longo prazo, o aumento do diálogo entre os diferentes setores produtivos maximiza as possibilidades por conta do retorno esperado a longo prazo. Por outro lado, o desenvolvimento contínuo de distintas formas de atuação pode nos levar a considerar a reestruturação do sistema de participação geral. 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <!-- media -->
+                                    <div class="row mx-1 border-top py-2">
+                                        <div class="col">
+                                            <img src="../resources/logofinal_vetorpreto.png" alt="img1" class="low-opacity img-thumbnail img-fluid">
+                                        </div>
+                                        <div class="col">
+                                            <img src="../resources/logofinal_vetorbranco.png" alt="img2" class="low-opacity img-thumbnail img-fluid">
+                                        </div>
+                                        <div class="col">
+                                            <img src="../resources/logofinal_vetor.png" alt="img3" class="low-opacity img-thumbnail img-fluid">
+                                        </div>
+                                    </div>
+
+                                    <!-- comment -->
+                                    <div class="row mx-1 py-2 border-top">
+                                        <div class="col-md-12">
+                                            <form action="" class="row mx-auto">
+                                                <div class="form-group col-md-10 px-0">
+                                                    <textarea class="form-control" rows="1" id="comment" placeholder="Comente..."></textarea>
+                                                </div>
+                                                <div class="form-group col-md-2 px-0 pl-2">
+                                                    <input type="submit" class="btn btn-primary btn-block" value="Comentar">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>           
+
+        </content>
+
+        <footer>
+            <div class="container-fluid bg-dark text-light">
+                <div class="p-4">
+                    <div class="row">
+                        <div class="col-md-3 offset-md-3">
+                            <ul class="navbar-nav text-center">
+                                <li>Fale conosco</li>
+                                <li><a href="#" class="text-secondary"> brenindasilva@hotmail.com </a></li>
+                                <li><a href="#" class="text-secondary"> 4002-8922 </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="navbar-nav text-center">
+                                <li>Ajuda</li>
+                                <li><a href="#" class="text-secondary"> Políticas de privacidade: </a></li>
+                                <li><a href="#" class="text-secondary"> Autores </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
