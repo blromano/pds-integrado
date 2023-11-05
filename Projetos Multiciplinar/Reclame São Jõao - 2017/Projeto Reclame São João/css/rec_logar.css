@@ -1,0 +1,115 @@
+a{
+	border: 1px solid transparent;
+}
+
+body{
+	background: white;
+}
+
+.main-nav{
+	margin-bottom: 14%;
+}
+@media (max-width: 1024px) {
+.table_geral{
+	width: 100%;
+	height: 100%;
+}
+
+.table_imagem{
+display:none;
+}
+
+.div_botao{
+	display:none;
+}
+
+.mensagem{
+	margin-top: 5%;
+	color: #f60;
+    font-size: 25px;
+    line-height: 25px;
+	font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.div_botao{
+	margin-bottom: 0%;
+	border: 0px solid #ddd;
+}
+}
+@media (min-width: 1024px) {
+.table_geral{
+	width: 100%;
+	height: 100%;
+	border: 1px solid transparent;
+	margin-bottom: 14%;
+}
+.td_table_geral{
+	height: 85%;
+	background-color: white;
+}
+
+.div_botao_responsivo{
+	display:none;
+}
+
+.table_imagem{
+	float: left; 
+	width: 50%;
+	height: 100%;
+}
+
+.megaphone{
+	
+}
+
+.table_mensagem{
+	margin-left: 30%;
+	width: 50%;
+	height: 100%;
+}
+
+.mensagem{
+	color: #f60;
+    font-size: 45px;
+    line-height: 45px;
+	font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.div_botao{
+	margin-bottom: 5%;
+	border: 0px solid #ddd;
+}
+}
+
+
+.botao_logar {
+    padding: 20px;
+    width: 80%;
+	margin-left: 10%;
+    color: #fff;
+	background-color: #64594f;
+    border: 0;
+	margin-top: 0%;
+	border-radius: 7px;
+}
+
+.botao_cadastrar {
+    padding: 20px;
+    width: 80%;
+	margin-left: 10%;
+    color: #fff;
+	background-color: #ff751a;
+    border: 0;
+	margin-top: 0%;
+	border-radius: 7px;
+}
+
+.botao_logar:hover{
+	background-color: #72665a;
+}
+
+.botao_cadastrar:hover{
+	background-color: #ff8533;
+}

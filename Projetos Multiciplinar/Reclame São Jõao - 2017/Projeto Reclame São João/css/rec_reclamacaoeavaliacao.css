@@ -1,0 +1,53 @@
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+z-index: 3;
+color: #ffffff;
+background-color: #64594F;
+border-color: #64594F;
+cursor: default;}
+
+@media screen and (min-width: 737px) {
+
+.row > * {
+padding: 0px 0px 0px 0px;
+}
+}
+
+textarea.input-sm, textarea.form-control.input-sm, input.form-control.input-sm, input.input-sm[type="text"], input.input-sm[type="password"], input.input-sm[type="email"], input.input-sm[type="number"], .form-control.input-sm[type="text"], .form-control.input-sm[type="password"], .form-control.input-sm[type="email"], .form-control.input-sm[type="tel"], .form-control.input-sm[contenteditable] {
+font-size: 14px;
+margin-left: 5px !important;
+}
+
+.input-sm {
+height: 30px;
+padding: 5px 10px;
+font-size: 12px;
+line-height: 1.5;
+border-radius: 3px;
+}
+
+@media (max-width: 1024px) {
+	
+	.row > * {
+	padding: 0px 0px 0px 0px;
+	}
+	.tudorecentes{
+	margin-top: 20%;
+	width: 50%;
+	}
+	#table_length{
+	display: none;
+	}
+
+	#ajustestable{
+	display: none;
+	}
+		
+}
+
+@media (min-width: 1024px) {
+	
+	#ajustestable_responsivo{
+	display: none;
+	}	
+}
+

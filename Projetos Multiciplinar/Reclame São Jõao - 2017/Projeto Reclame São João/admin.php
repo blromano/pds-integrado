@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<?php
+session_start();
+// echo $_SESSION['USU_EMAIL'];
+include_once 'controle/Conexao.php';
+include_once 'controle/UsuarioDAO.php';
+include_once 'controle/AdministradoresDAO.php';
+
+$conn = new Conexao();
+$dao = new UsuarioDAO();
+
+if (isset($_SESSION['USU_EMAIL'])) {
+    # code...
+    // $dao->redirecionar($_SESSION['USU_EMAIL']);
+    $tipo = $dao->verificarUsuario($_SESSION['USU_EMAIL']);
+
+// echo $tipo;
+    if ($tipo == 'est') {
+        # code...
+        header('Location: est_boas-vindas.php');
+    }
+    if ($tipo == 'adm') {
+        # code...
+        // header('Location: admin.php');
+    }
+    if ($tipo==="usr") {
+        # code...
+        header('Location: usu_paginaBoasVindasUsuario.php');
+    }
+
+}else{
+   // header('Location: usu_loginUsuario.php');
+
+    // select * from usuarios;
+}
+
+$AdministradoresDAO = new AdministradoresDAO();
+$isAdmin = $AdministradoresDAO->isAdmin($_SESSION['USU_EMAIL']);
+?>
+<html>
+    <head>
+        <?php
+        $pagina = 1;
+        if ($_GET) {
+            if (!empty($_GET["pagina"])) {
+                $pagina = intval($_GET["pagina"]);
+                if ($pagina == 1)
+                    echo "<title>Gerenciamento - Dashboard</title>";
+                elseif ($pagina == 2)
+                    echo "<title>Gerenciamento - Reclamações</title>";
+                elseif ($pagina == 3)
+                    echo "<title>Gerenciamento - Respostas</title>";
+                elseif ($pagina == 4)
+                    echo "<title>Gerenciamento - Denúncias</title>";
+                elseif ($pagina == 5)
+                    echo "<title>Gerenciamento - Usuários/Clientes</title>";
+                elseif ($pagina == 6)
+                    echo "<title>Gerenciamento - Usuários/Estabelecimentos</title>";
+                elseif ($pagina == 7)
+                    echo "<title>Gerenciamento - Usuários/Staff</title>";
+                elseif ($pagina == 8)
+                    echo "<title>Gerenciamento - Usuários/Banidos</title>";
+                elseif ($pagina == 9)
+                    echo "<title>Gerenciamento - Categorias/Reclamações</title>";
+                elseif ($pagina == 10)
+                    echo "<title>Gerenciamento - Categorias/Estabelecimentos</title>";
+                elseif ($pagina == 11)
+                    echo "<title>Gerenciamento - Categorias/Produtos e Serviços</title>";
+                elseif ($pagina == 12)
+                    echo "<title>Gerenciamento - Mensagens/Recebidas</title>";
+                elseif ($pagina == 13)
+                    echo "<title>Gerenciamento - Mensagens/Respondidas</title>";
+            }else {
+                $pagina = 1;
+            }
+        } else {
+            echo "<title>Gerenciamento - Dashboard</title>";
+            //header("Location: admin.php");
+        }
+        ?>
+        <meta charset="utf-8">
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+        <!-- Boostrap -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://bootswatch.com/3/paper/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- DataTables  -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css">
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+
+        <!-- Customizacao -->
+        <link rel="stylesheet" href="css/mod05/estilo.css"> <!-- Boostrap -->
+        <script src="js/mod05/dataTable.js"></script> <!-- DataTable -->
+		
+		<!-- Boostrap form validator -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="#"><i class="fa fa-cogs" aria-hidden="true"></i> Gerenciamento</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--<li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="badge"><span class="glyphicon glyphicon-bell"></span> 2</span></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">Você possui 2 notificações!</li>
+                                <li><a href="#">Nova resposta de Marcelo</a></li>
+                                <li><a href="#">Denuncia de Carol</a></li>
+                            </ul>
+                        </li>-->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"><?php echo $_SESSION['USU_EMAIL']?> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <!--<li><a href="#"><span class="glyphicon glyphicon glyphicon-cog"></span> Meu Perfil</a></li>
+                                <li class="divider"></li>-->
+                                <li><a href="php/mod01/sair.php"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <ul class="nav nav-tabs nav-justified">
+                <li <?php if ($pagina == 1) echo 'class="active"'; ?>>
+                    <a href="?pagina=1"><span class="fa fa-tachometer fa-2x" aria-hidden="true"></span><br> Dashboard</a>
+                </li>
+                <li <?php if ($pagina == 2) echo 'class="active"'; ?>>
+                    <a href="?pagina=2"><span class="fa fa-fire fa-2x" aria-hidden="true"></span><br> Reclamações</a>
+                </li>
+                <li <?php if ($pagina == 3) echo 'class="active"'; ?>>
+                    <a href="?pagina=3"><span class="fa fa-reply fa-2x" aria-hidden="true"></span><br> Respostas</a>
+                </li>
+                <li <?php if ($pagina == 4) echo 'class="active"'; ?>>
+                    <a href="?pagina=4"><span class="fa fa-flag fa-2x"></span><br> Denúncias</a>
+                </li>
+                <li <?php echo ($pagina == 5 || $pagina == 6) || ($pagina == 7) || ($pagina == 8) ? 'class="dropdown active"' : 'class="dropdown"'; ?>>
+                    <?php if ($isAdmin) { ?>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-users fa-2x"></span><br> Usuários
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li <?php if ($pagina == 5) echo 'class="active"'; ?>>
+                            <a href="?pagina=5">Clientes</a>
+                        </li>
+                        <li <?php if ($pagina == 6) echo 'class="active"'; ?>>
+                            <a href="?pagina=6">Estabelecimentos</a>
+                        </li>
+                        <li <?php if ($pagina == 7) echo 'class="active"'; ?>>
+                            <a href="?pagina=7">Administradores</a>
+                        </li>
+                        <li <?php if ($pagina == 8) echo 'class="active"'; ?>>
+                            <a href="?pagina=8">Banidos</a>
+                        </li>
+                    </ul>
+					<?php }else{ ?>
+					<a href="#" style="opacity: 0.5;cursor:not-allowed"><span class="fa fa-users fa-2x" aria-hidden="true"></span><br> Usuários</a>
+					<?php } ?>
+                </li>
+                <li <?php echo ($pagina == 9 || $pagina == 10) || ($pagina == 11) ? 'class="dropdown active"' : 'class="dropdown"'; ?>>
+					<?php if ($isAdmin) { ?>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-bookmark fa-2x"></span><br> Categorias
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li <?php if ($pagina == 9) echo 'class="active"'; ?>>
+                            <a href="?pagina=9">Reclamações</a>
+                        </li>
+                        <li <?php if ($pagina == 10) echo 'class="active"'; ?>>
+                            <a href="?pagina=10">Estabelecimentos</a>
+                        </li>
+                        <li <?php if ($pagina == 11) echo 'class="active"'; ?>>
+                            <a href="?pagina=11">Produtos e Serviços</a>
+                        </li>
+                    </ul>
+					<?php }else{ ?>
+					<a href="#" style="opacity: 0.5;cursor:not-allowed"><span class="fa fa-bookmark fa-2x" aria-hidden="true"></span><br> Categorias</a>
+					<?php } ?>
+                </li>
+                <li <?php echo ($pagina == 12 || $pagina == 13) ? 'class="dropdown active"' : 'class="dropdown"'; ?>>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="fa fa-envelope fa-2x" aria-hidden="true"></span><br> Mensagens
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li <?php if ($pagina == 12) echo 'class="active"'; ?>>
+                            <a href="?pagina=12">Recebidas</a>
+                        </li>
+                        <li <?php if ($pagina == 13) echo 'class="active"'; ?>>
+                            <a href="?pagina=13">Respondidas</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="container" style="margin-bottom: 30px;">
+            <?php
+			include 'php/mod05/modal.php';
+			
+            if ($pagina == 1)
+                include("dashboard.php");
+            elseif ($pagina == 2)
+                include("reclamacoes.php");
+            elseif ($pagina == 3)
+                include("respostas.php");
+            elseif ($pagina == 4)
+                include("denuncias.php");
+            elseif ($pagina == 5)
+                include("usuariocliente.php");
+            elseif ($pagina == 6)
+                include("usuarioempresa.php");
+            elseif ($pagina == 7)
+                include("usuarioadministrador.php");
+            elseif ($pagina == 8)
+                include("usuariobanido.php");
+            elseif ($pagina == 9)
+                include("categoriareclamacao.php");
+            elseif ($pagina == 10)
+                include("categoriaempresa.php");
+            elseif ($pagina == 11)
+                include("categoriaprodutoseservicos.php");
+            elseif ($pagina == 12)
+                include("mensagensrecebidas.php");
+            elseif ($pagina == 13)
+                include("mensagensrespondidas.php");
+            ?>
+
+        </div>
+    </body>
+</html>

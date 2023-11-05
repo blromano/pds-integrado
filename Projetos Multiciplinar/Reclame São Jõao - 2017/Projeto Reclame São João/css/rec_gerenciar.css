@@ -1,0 +1,251 @@
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+z-index: 3;
+color: #ffffff;
+background-color: #64594F;
+border-color: #64594F;
+cursor: default;}
+
+@media screen and (min-width: 737px) {
+
+.row > * {
+padding: 0px 0px 0px 0px;
+}
+}
+
+textarea.input-sm, textarea.form-control.input-sm, input.form-control.input-sm, input.input-sm[type="text"], input.input-sm[type="password"], input.input-sm[type="email"], input.input-sm[type="number"], .form-control.input-sm[type="text"], .form-control.input-sm[type="password"], .form-control.input-sm[type="email"], .form-control.input-sm[type="tel"], .form-control.input-sm[contenteditable] {
+font-size: 14px;
+}
+
+.input-sm {
+height: 30px;
+padding: 5px 10px;
+font-size: 12px;
+line-height: 1.5;
+border-radius: 3px;
+}
+
+.btn-danger{
+	background-color: #ed786a;
+}
+.btn-danger:hover{
+	background-color: #fd887a;
+}
+.btn{
+	border-radius: 2px;
+	padding: 3.5px 3.5px 3.5px 3.5px;
+}
+#botao{
+	padding: 0.50em 2em 0.50em 2em;
+}
+
+#recipient-name{
+	 background-color: white;
+	 box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+	 border: 1px solid #ccc;
+	 
+	 
+}
+#recipient-name:focus{
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+#gerenciar_div{
+	margin-top: 10%;
+}
+
+/*AQUI PRA BAIXO PODE EDITAR*/
+
+@media (max-width: 400px) {
+	.gerenciar_div_responsivo{
+	font-size: 10px;
+	}
+	.gerenciar_div_responsivo_reclamacao{
+	font-size: 12px;
+	}
+}
+
+@media (max-width: 1024px) {
+	
+	#gerenciar_div{
+	margin-top: 15%;
+	}
+	
+	.row > * {
+	padding: 0px 0px 0px 0px;
+	}
+	.gerenciar_div_responsivo{
+	margin-top: 15%;
+	margin-bottom: 15%;
+	}
+	#table{
+		width: 80%;
+	}
+	#table_length{
+	display: none;
+	}
+	.gerenciar_div{
+	display: none;
+	}
+
+}
+
+@media (min-width: 1024px) {
+	
+	.gerenciar_div{
+	border: 5px solid transparent;
+	width: 80%;
+	height: 135%;
+	display: table;
+	margin: 0 auto;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	}
+	.gerenciar_div_responsivo{
+	display: none;
+	}
+	
+}
+
+/*AQUI É RECLAMACAO*/
+
+@media (max-width: 1024px) {
+	
+	#rec_botao_responsivo_cancelar{
+		width: 100%;
+		margin-top: 2em;
+		margin-bottom: 1em;
+		margin-left: 0%;
+		color: #fff;
+		background-color: #72665a;
+		border: 0;
+		border-radius: 6px;
+		letter-spacing: 2px;
+		display: block;
+		padding: 0.4em 0 0.4em 0;
+		font-size: 12px;
+	}
+	
+	#rec_botao_responsivo_alterar{
+		width: 100%;
+		margin-bottom: 1em;
+		margin-left: 0%;
+		color: #fff;
+		background-color: #ed786a;
+		border: 0;
+		border-radius: 6px;
+		letter-spacing: 2px;
+		display: block;
+		padding: 0.4em 0 0.4em 0;
+		font-size: 12px;
+	}
+	
+	.pull-right{
+		float: none!important;
+	}
+	
+	.row > * {
+	padding: 0px 0px 0px 0px;
+	}
+	.gerenciar_div_responsivo_reclamacao{
+	margin-top: 15%;
+	margin-bottom: 15%;
+	}
+	#table{
+		width: 80%;
+	}
+	#table_length{
+	display: none;
+	}
+	.gerenciar_div_reclamacao_responsivo_1{
+	display: none;
+	}
+
+}
+
+@media (min-width: 1024px) {
+	
+	.gerenciar_div_reclamacao{
+	border: 5px solid transparent;
+	width: 80%;
+	height: 135%;
+	display: table;
+	margin: 0 auto;
+	margin-top: 5%;
+	margin-bottom: 10%;
+	}
+	.gerenciar_div_reclamacao_responsivo_2{
+	display: none;
+	}
+	
+}
+
+
+@media (max-width: 1024px) {
+	
+	#rec_gerenciar_button_editar{
+		padding: 3.5px 16px 3.5px 16px;
+	}
+	#rec_gerenciar_button_apagar{
+		padding: 3.5px 14px 3.5px 14px;
+	}
+	#rec_gerenciar_button_ir{
+		padding: 3.5px 32px 3.5px 32px;
+	}
+	
+	#myModal2{
+		
+	}
+	
+	.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 8px;
+	font-size: 17px;
+	border: none;
+	cursor: pointer;
+	}
+
+	.dropdown {
+	position: relative;
+	display: inline-block;
+	}
+
+	.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 100px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	}
+
+	.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	}
+
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	.dropdown:hover .dropdown-content {
+	display: block;
+	}
+
+	.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+	}
+}
+
+#status{
+	color: red;
+	 text-decoration: underline;
+}
+
+.popup{
+	margin-right: 5px;
+}
+
+#myPopup{
+	text-align: left;padding: 5px 5px 5px 5px;
+}

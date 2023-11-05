@@ -1,0 +1,198 @@
+body {
+	font-size: 15px;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+    color: #ffffff;
+    text-decoration: none;
+    outline: 0;
+    background-color: #64594F;
+}
+
+.nav-tabs.nav-justified {
+	margin-bottom: 15px;
+}
+
+
+.navbar-inverse {
+    background-color: #64594f;
+    border-color: transparent;
+}
+.navbar-inverse .navbar-brand {
+    color: rgba(255, 255, 255, 0.74);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 0.74);
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+    background-color: #786759;
+    color: #ffffff;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus {
+    border: none;
+    -webkit-box-shadow: inset 0 -2px 0 #2196f3;
+    box-shadow: inset 0 -2px 0 #2196f3;
+    color: #64594F;
+}
+/*
+.nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus:hover {
+    border: none;
+    color: #64594F;
+}*/
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus {
+    border: none;
+    -webkit-box-shadow: inset 0 -2px 0 #64594F;
+    box-shadow: inset 0 -2px 0 #64594F;
+    color: #64594F;
+}
+
+.nav-tabs>li>a:hover, .nav-tabs>li>a:focus:hover {
+    background-color: transparent;
+    -webkit-box-shadow: inset 0 -2px 0 #64594F;
+    box-shadow: inset 0 -2px 0 #64594F;
+    color: #64594F;
+}
+
+.nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus:hover {
+    border: none;
+    color: #64594F;
+}
+
+
+
+/* breadcrumbs */
+/*
+hr {
+  height: 3px;
+  margin-left: 15px;
+  margin-bottom:15px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), #64594F, rgba(0,0,0,0));
+}*/
+
+hr {
+  height: 3px;
+  margin-bottom:5px;
+  margin-top: 5px;
+}
+
+.breadcrumb {
+  background: rgba(245, 245, 245, 0); 
+  border: 0px solid rgba(245, 245, 245, 1); 
+  border-radius: 25px; 
+  display: block;
+}
+
+.btn-bread{
+    margin-top:10px;
+    font-size: 12px;
+    
+    border-radius: 3px;
+}
+
+/* pagination data table */
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    z-index: 3;
+    color: #ffffff;
+    background-color: #64594F;
+    border-color: #64594F;
+    cursor: default;
+}
+
+.pagination>li>a, .pagination>li>span {
+    color: #64594F;
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus {
+    color: #64594F;
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+  -webkit-box-shadow: inset 0 -2px 0 #64594F;
+  box-shadow: inset 0 -2px 0 #64594F;
+}
+
+select:focus,
+select.form-control:focus {
+  -webkit-box-shadow: inset 0 -2px 0 #64594F;
+  box-shadow: inset 0 -2px 0 #64594F;
+}
+
+
+/* button */
+.btn {
+    /*color: #ffffff;*/
+}
+
+.btn-primary {
+	background-color: #64594F;
+    border-color: #64594F;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:link, .btn-primary:active:hover {
+	background-color: #64594F;
+    border-color: #64594F;
+}
+
+
+input:focus, textarea:focus, select:focus {
+	border: 1px solid #64594f !important;
+	/*box-shadow: 0 0 1px #64594f !important;*/
+	-moz-box-shadow: 0 0 1px #64594f !important;
+	/*-webkit-box-shadow: 0 0 1px #64594f !important;*/
+	-webkit-box-shadow: inset 0 -2px 0 #64594F;
+	box-shadow: inset 0 -2px 0 #64594F;
+}
+
+input:focus, textarea:focus, select:focus {
+	outline-offset: 0px !important;
+	outline: none !important;
+	-webkit-box-shadow: inset 0 -2px 0 #64594F;
+	box-shadow: inset 0 -2px 0 #64594F;
+}
+
+
+/* notificação */
+
+.notificacao:after {
+    position: fixed;
+    content: attr(data-count);
+    margin-left: -6.8775px;
+    margin-top: -6.8775px;
+    padding: 0 4px;
+    min-width: 13.755px;
+    height: 13.755px;
+    line-height: 13.755px;
+    background: red;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 11.004px;
+    font-weight: 600;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.titulo {
+	color: #7a6c5d;
+	font-weight: bold
+}
+
+.data {
+	color: #7a6c5d;
+    font-size: 10px;
+}
