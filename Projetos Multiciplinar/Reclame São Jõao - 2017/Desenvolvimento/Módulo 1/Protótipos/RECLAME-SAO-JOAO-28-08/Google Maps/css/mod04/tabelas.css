@@ -1,0 +1,12 @@
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before {
+   background-color: #666;
+   border-radius: none;
+   box-shadow: none;
+   height: 13px;
+	    font-size: 17px;
+		
+		
+	}
+table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before {
+   background-color: #7A6C5D;
+}

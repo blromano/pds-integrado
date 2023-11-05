@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--meta do slishow-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--fim do meta do slishow-->
+	<title>Reclame São João</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/animate.min.css" rel="stylesheet"> 
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/testes.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/login.css" rel="stylesheet">
+	<link href="css/sidebar.css" rel="stylesheet">
+	<link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<!--link do slidshow testemunho-->
+	<link rel="stylesheet" href="css/w3.css">
+	<!--fim do link do slidshow testemunho-->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	
+</head><!--/head-->
+
+
+<script>
+// Get the modal2
+var modal2 = document.getElementById('la');
+
+// When the user clicks anywhere outside of the modal, close2 it
+window.onclick = function(event) {
+if (event.target == modal2) {
+modal2.style.display = "none";
+}
+}
+</script>
+<!-- FIM DO MODAL LOGIN -->
+
+<!-- MODAL CADASTRO -->
+<div id="la2" class="modal3">
+
+<form class="modal3-content animate" action="/action_page.php">
+<div class="img2container">
+<span onclick="document.getElementById('la2').style.display='none'" class="close2" title="Close Modal">&times;</span>
+<img src="images/favicon.ico" class="avatar2">
+</div>
+
+<div class="container2" style="background-color:#f1f1f1">
+<button type="button" onclick="document.getElementById('la2').style.display='none'" class="cancelbtn2">Cancel</button>
+<span class="psw2">Forgot <a href="#">password?</a></span>
+</div>
+</form>
+</div>
+
+
+
+<body>
+
+  <!--.preloader-->
+  <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
+  <!--/.preloader-->
+
+   <header id="home">
+
+    </div>
+	<!--/#home-slider-->
+    <div class="main-nav" >
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="mod01-paginaBoasVindasUsuario.html">
+            <h1><img class="img-responsive" src="images/logo.png" alt="logo"></h1>
+          </a>                    
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">   
+			<li class="scroll active"><a href="mod01-editarPerfilUsuario">Editar Perfil</a></li>
+            <li class="scroll"><a href="mod01-paginaBoasVindasUsuario.html">Home</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> José
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+          <li><a href="mod01-editarPerfilUsuario.html"><span class="glyphicon glyphicon-pencil"></span> Meu Perfil</a></li>
+		  <li><a href="#" style="margin-top: -20%;"><span class="glyphicon glyphicon-comment"></span> Reclamações</a></li>
+          <li><a href="../comum/Template/index.html" style="margin-top: -20%;"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
+				</ul>
+			</li>
+                  
+          </ul>
+        </div>
+      </div>
+    </div><!--/#main-nav-->
+  </header><!--/#home-->
+ 
+  <!--nav sidebar -->
+ <aside>
+    <nav class="navbar navbar-inverse sidebar navbar-fixed-top" role="navigation">
+
+        <div class="nav-side-menu">
+            <div class="brand">Rankings e Relatórios</div>
+            <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+            <div class="menu-list">
+
+                <ul id="menu-content" class="menu-content collapse out">
+
+
+                    <!-- <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                  <a href="#"><i class="fa fa-file-text-o fa-lg"></i> Relatórios <i class="fa fa-file-text fa-lg btn pull-right" style="margin-top:5px"></i></a>
+                </li> -->
+                    <!-- <ul class="sub-menu collapse" id="products">
+                    <li class="active"><a href="#">CSS3 Animation</a></li>
+                    <li><a href="#">General</a></li>
+                    <li><a href="#">Buttons</a></li>
+                    <li><a href="#">Tabs e Accordions</a></li>
+                    <li><a href="#">Typography</a></li>
+                    <li><a href="#">FontAwesome</a></li>
+                    <li><a href="#">Slider</a></li>
+                    <li><a href="#">Panels</a></li>
+                    <li><a href="#">Widgets</a></li>
+                    <li><a href="#">Bootstrap Model</a></li>
+                </ul> -->
+
+
+                    <li data-toggle="collapse" data-target="#service" class="collapsed">
+                        <a href="#"><i class="fa fa-caret-down fa-lg"></i> Rankings <i class="fa fa-bar-chart-o fa-lg btn pull-right" style="margin-top:5px; margin-right:4px;"></i></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="service">
+                        <li>Ranking completo dos estabelecimentos</li>
+                        <li>Problemas solucionados</li>
+                        <li>Número de reclamações nos últimos tempos</li>
+                        <li>Estabelecimentos tendenciosos</li>
+                    </ul>
+
+
+
+                    <li data-toggle="collapse" data-target="#new" class="collapsed">
+                        <a href="#"><i class="fa fa-caret-down fa-lg"></i> Relatórios <i class="fa fa-file-text fa-lg btn pull-right" style="margin-top:5px; margin-right:2px;"></i></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="new">
+                        <li>Feedback das reuniões</li>
+                        <li>Relatório tabular das avaliações</li>
+                        <li>Reclamação das últimas semanas</li>
+                    </ul>
+
+
+                    <!-- <li>
+                  <a href="#">
+                  <i class="fa fa-user fa-lg"></i> Profile
+                  </a>
+                  </li>
+
+                 <li>
+                  <a href="#">
+                  <i class="fa fa-users fa-lg"></i> Users
+                  </a>
+                </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+</aside>
+
+
+  <!-- INSERIR CONTEUDO AQUI -->
+  <!-- INSERIR CONTEUDO AQUI -->
+  <!-- INSERIR CONTEUDO AQUI -->
+  <!-- INSERIR CONTEUDO AQUI -->
+  <!-- INSERIR CONTEUDO AQUI -->
+  <!-- INSERIR CONTEUDO AQUI -->
+  <!-- INSERIR CONTEUDO AQUI -->
+  
+ <section id="contact">
+    <!--mapa-->
+    <div id="contact-us" class="parallax">
+      <div class="container">
+        <br/><br/><br/>
+			<div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+				<div class="container">
+								  <div class="row">
+									<!--<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad"> -->
+							   
+							   
+									  <div class="panel panel-info">
+										<div class="panel-heading">
+										  <h3 class="panel-title">Informações pessoais </h3>
+										</div>
+										<div class="panel-body">
+										  <div class="row">
+											<div class="col-md-3 col-lg-2 " align="center"> <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive"> </div>
+												<div class=" col-md-9 col-lg-9 "> 
+											  <table class="table table-user-information">
+												<tbody>
+												  <tr>
+													<td>Nome:</td>
+													<td>Rodne</td>
+												  </tr>
+												  <tr>
+													<td>Sobrenome:</td>
+													<td>Santos</td>
+												  </tr>
+												  <tr>
+													<td>Data de Nascimento:</td>
+													<td>22/06/1999</td>
+												  </tr>
+												  <tr>
+													<td>CPF</td>
+													<td>596.658.954-98</td>
+												  </tr>
+												  <tr>
+													<td>Telefone:</td>
+													<td>(19)99192-4763</td>
+												  </tr>
+												  <tr>
+													<td>Telefone Alternativo:</td>
+													<td>(19)99256-4532</td>
+												  </tr>
+												  <tr>
+													<td>Email</td>
+													<td>rodne_santos@yahoo.com</td>
+												  </tr>
+												  <tr>
+													<td>Senha</td>
+													<td>*********</td>
+												  </tr>
+												</tbody>
+											  </table>
+											  
+											</div>
+										  </div>
+										</div>
+										
+										<div class="panel-heading">
+										  <h3 class="panel-title">Endereço</h3>
+										</div>
+										<div class="panel-body">
+										  <div class="row">
+											<div class=" col-md-9 col-lg-9 "> 
+											  <table class="table table-user-information">
+												<tbody>
+												  <tr>
+													<td>Rua:</td>
+													<td>Saldanha Marinho</td>
+												  </tr>
+												  <tr>
+													<td>Bairro:</td>
+													<td>Centro</td>
+												  </tr>
+												    <tr>
+													<td>Cidade:</td>
+													<td>São João da Boa Vista</td>
+												  </tr>
+												  <tr>
+													<td>Número:</td>
+													<td>297</td>
+												  </tr>
+											   
+												  <tr>
+												    <td>Complemento:</td>
+													<td></td>
+												  </tr>
+												  <tr>
+												    <td>Estado:</td>
+													<td>SP</td>
+												  </tr>
+												  <tr>
+												    <td>CEP:</td>
+													<td>13870-229</td>
+												  </tr>
+												 
+												</tbody>
+											  </table>
+											  
+											  <a href="#" class="btn btn-primary">Atualizar Informações</a>
+											  </div>
+										  </div>
+										</div>
+										
+										<div class="panel-heading">
+										  <h3 class="panel-title">Principais reclamações realizadas</h3>
+										</div>
+										<div class="panel-body">
+										  <div class="row">
+											  <div class=" col-md-9 col-lg-9 "> 
+											  
+													<div class="container theme-showcase" role="main">
+																<br/><br/>
+																<!-- Inicio Modal -->
+																<div class="modal fade" id="myModalcad" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+																	<div class="modal-dialog" role="document">
+																		<div class="modal-content">
+																			<div class="modal-header">
+																				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																				<h4 class="modal-title text-center" id="myModalLabel">Cadastrar Produto</h4>
+																			</div>
+																			<div class="modal-body">
+																				<form method="POST" action="http://localhost/Template/processa_cad.php" enctype="multipart/form-data">
+																					<div class="form-group">
+																						<label for="recipient-name" class="control-label">Nome do produto:</label>
+																						<input name="nome" type="text" class="form-control">
+																					</div>
+																					
+																					<div class="form-group">
+																						<label for="message-text" class="control-label">Detalhes:</label>
+																						<textarea name="detalhes" class="form-control"></textarea>
+																					</div>
+																					
+																					<div class="form-group">
+																						<label for="recipient-name" class="control-label">Tipo do produto:</label><br/>
+																						<input type="radio" name="opcoes" value="html"/> Alimentício<br/>
+																						<input type="radio" name="opcoes" value="html"/> Cosmético<br/>
+																						<input type="radio" name="opcoes" value="html"/> Vestimento<br/>
+																					</div>
+												
+																					<div class="modal-footer">
+																						<button type="submit" class="btn btn-success">Cadastrar</button>
+																					</div>
+																				</form>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- Fim Modal -->
+													  	</div>							
+													</div>
+											  </div>
+										  </div>
+										</div>
+										
+										
+									  </div>
+									<!-- </div> -->
+								  </div>
+								</div>
+            </div>
+        </div>
+      </div>
+    </div>  	
+  </section>
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="exampleModalLabel">Alterar Produto</h4>
+							</div>
+							<div class="modal-body">
+								<form method="POST" action="http://localhost/Template/processa.php" enctype="multipart/form-data">
+									<div class="form-group">
+										<label for="recipient-name" class="control-label">Nome do roduto:</label>
+										<input name="nome" type="text" class="form-control" id="recipient-name">
+									</div>
+									<div class="form-group">
+										<label for="message-text" class="control-label">Detalhes:</label>
+										<textarea name="detalhes" class="form-control" id="detalhes-text"></textarea>
+									</div>
+									
+									<div class="form-group">
+													<label for="recipient-name" class="control-label">Tipo do produto:</label><br/>
+													<input type="radio" name="opcoes" value="html"/> Alimentício<br/>
+													<input type="radio" name="opcoes" value="html"/> Cosmético<br/>
+													<input type="radio" name="opcoes" value="html"/> Vestimento<br/>
+									</div>
+									
+									<input name="id" type="hidden" id="id_curso">
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+										<button type="submit" class="btn btn-danger">Alterar</button>
+									</div>
+								</form>
+							</div>			  
+						</div>
+					</div>
+				</div>
+
+<!--RODAPÉ-->
+	<footer id="footer" style="background-color: #232323; margin-bottom: -10%;" >
+		<div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+		<div class="container text-center">
+		<div class="tudo">
+
+			<div class="logo">
+			<a href="mod01-paginaBoasVindasUsuario.html""><img style="margin-left: 30%; margin-top: 4%;"  class="img-responsive" src="images/logo.png" alt=""></a> 
+				<div id=icons" class="social-icons" style="margin-top: 5%;" >
+				<ul>
+				<li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
+				<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li> 
+				<li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+				<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+				<li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>
+				</ul>
+				</div>
+			</div>
+
+			<div class="texto">
+				<h3>Sobre o IFSP e o projeto</h3>
+				<p>Somos uma equipe de alunos do Instituto Federal de São Paulo - Campus São João da Boa Vista, que buscam finalizar o projeto proposto em uma das disciplinas 
+				com o maior sucesso possível. <br/>
+				Ao alcançar esse sucesso, estaremos proporcionando para a cidade um novo sistema que pode impulsionar o comércio justo e maior comprometimento 
+				por parte dos estabelecimentos presentes na cidade.  <a href="mod01-SobreProjeto.html">Saiba mais...</a></p>
+			</div>	
+			</div>
+			</div>
+			</div>
+			
+				<div class="footer-bottom" style="background-color: #191919;">
+				<div class="container">
+				<div class="row">
+					<div class="col-sm-6" style=" color: white">
+						<p>&copy; 2017 IFSP-SBV</p>
+					</div>
+					<div class="col-sm-6">
+						<p class="pull-right" style="color: white;">Construído por <a style="color: white;" href="http://sbv.ifsp.edu.br/">Equipe IFSP</a></p>
+					</div>
+				</div>
+				</div>
+				</div>
+	</footer>
+<!--FIM DO RODAPÉ--> 
+  
+<!--script em geral-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script type="text/javascript" src="js/jquery.inview.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/mousescroll.js"></script>
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+<script type="text/javascript" src="js/jquery.countTo.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript" type="text/javascript" src="js/formatarCPF.js"></script>
+<!--fim do script em geral-->
+  
+
+</body>
+</html>

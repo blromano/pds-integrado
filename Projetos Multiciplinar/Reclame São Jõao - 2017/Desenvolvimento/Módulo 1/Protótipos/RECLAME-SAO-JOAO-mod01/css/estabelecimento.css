@@ -1,0 +1,712 @@
+#nome {  
+	font-weight: 300;
+	color: #666;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 5%;
+	margin-bottom: 0%;
+	font-size: 50px;
+	-webkit-tap-highlight-color: black;
+}
+#link {
+	font-size: 12px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-left: 5.4%;
+	margin-right: 5.4%;
+	color: #999;
+}
+a:link, a:visited {
+	text-decoration: none
+	}
+a:hover {
+	text-decoration: underline; 
+	color: #f00
+	}
+a:active {
+	text-decoration: none
+	}
+
+.tudao{
+	
+	border: 1px solid transparent;
+	width: 100%;
+	height: 140%;
+}
+	
+.tudo2{
+	float: left;
+	border: 1px solid transparent;
+	width: 68%;
+	height: 100%;
+	margin-left: 5%;
+}		
+
+@media screen and (max-width: 1100px) {
+.tudo2{
+	float: left;
+	border: 1px solid transparent;
+	width: 100%;
+	height: 100%;
+	margin-left: 5%;
+}
+}
+	
+.quadro1{
+	border: 1px solid #ddd;
+	width: 100%;
+	height: 10%;
+    border-radius: 4px;
+}
+
+.divtempo{
+	display: table;
+	border: 2px solid transparent; 
+	height: 100%;
+
+	width: 100%;
+}
+
+.crono{
+	float: left;
+	margin-left: 2%;
+	
+	padding: 2% 5% 2%;
+	border: 1px solid black;
+	position: relative;
+top: 50%;
+transform: translateY(18%); 
+}
+
+.entenda{
+	
+	margin-left: 74%;
+	color: #3884c7;
+	margin-right: 2%;
+	border: 1px solid #ddd;
+    border-radius: 4px;
+	position: relative;
+top: 50%;
+transform: translateY(38%);
+}
+
+.entenda2{
+	text-align: center;
+	padding: 5% 10% 5%;
+	margin: 0px 0px 0px;
+}
+
+.entenda:hover{
+	color: #23527c;
+	cursor: pointer!important;
+}
+
+.tudoquadro2quadro3{
+	width: 100%;
+	border: 1px solid transparent;
+}
+
+.quadro2{
+	float: left; 
+	width: 40%;
+	height: 45%;
+	border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.qiq2{
+	clear: both;
+	border: 1px solid transparent;
+	text-align: center;
+	height: 100%;
+}
+
+.iconra10002{
+	margin-top: 25%;
+	margin-left: 6%;
+	border: 1px solid transparent;
+}
+
+.iconra1000{
+	border: 1px solid transparent;
+	height: 40%;
+	width: 50%;
+}
+
+.picon{
+	font-weight: 600;
+	margin: 0px 0px 0px;
+	margin-top: 2%;
+    font-size: 120%;
+	width: 100%;
+	text-align: center;
+	border: 1px solid transparent;
+
+}
+
+.smallicon{
+	font-weight: 600;
+    font-size: 120%;;
+
+	text-align: center;
+	border: 1px solid transparent;
+}
+
+
+.quadro3{
+	margin-left: 40%;
+	border: 1px solid #ddd;
+	height: 45%;
+	width: 60%;
+    border-radius: 4px;
+
+}
+
+.tudaografico{
+	display: table;
+	border: 1px solid transparent;
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 0%;
+	height: 100%;
+}
+
+.tudografico{
+	float: left;
+	display: table;
+	border: 1px solid transparent;
+	width: 30%;
+	margin-left: 20%;
+	margin-top: 30%;
+	height: 50%;
+}
+
+.grafico1{
+	border: 1px solid black;
+	width: 100%;
+	height: 33%;
+}
+.grafico2{
+	border: 1px solid black;
+	width: 100%;
+	height: 33%;
+}
+.grafico3{
+	border: 1px solid black;
+	width: 100%;
+	height: 34%;
+}
+
+.tudografico2{
+	display: table;
+	border: 1px solid transparent;
+	width: 30%;
+	margin-top: 30%;
+	height: 50%;
+}
+
+.grafico11{
+	border: 1px solid black;
+	width: 150%;
+	height: 33%;
+}
+.grafico22{
+	border: 1px solid black;
+	width: 150%;
+	height: 33%;
+}
+.grafico33{
+
+	border: 1px solid black;
+	width: 150%;
+	height: 34%;
+}
+
+.quadro4{
+	float: left; 
+	width: 20%;
+	height: 45%;
+	border: 1px solid #ddd;
+    border-radius: 14px;
+	margin-left: 4%;
+}
+
+.quadro44{
+	float: left;
+	margin-top: 30%;
+	width: 20%;
+	height: 45%;
+	border: 1px solid #ddd;
+    border-radius: 14px;
+	margin-left: -20%;
+}
+
+.quadro5{
+	margin-left: 40%;
+	border: 1px solid #ddd;
+	height: 45%;
+	width: 60%;
+    border-radius: 4px;
+}
+
+.quadro6{
+	float: right;
+	margin-right: 29%;
+	border: 1px solid #ddd;
+	padding: 1px 1px 1px 1px;
+    border-radius: 4px;
+	width: 20%;
+}
+
+.forma{
+	margin-left: 27%;
+    width: 68%;
+    height: 60%;
+	border: 1px solid #ddd;
+    border-radius: 14px;
+	
+}
+
+.comentario{
+    *//color: #FCA205;
+	color: black;
+    font-family: 'Lobster';
+	font-size: 200%
+}
+
+
+.quadro7{
+	float: right;
+	margin-right: 5.2%;
+	border: 1px solid #ddd;
+	padding: 15px 19px 15px;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 1100px) {
+.quadro7{
+	float: right;
+	margin-right: 5.2%;
+	border: 1px solid #ddd;
+	padding: 15px 53px 15px;
+    border-radius: 4px;
+}
+}
+
+.quadrointerno0{
+	margin-top: 12%;
+}
+
+.quadrointerno01{
+	margin-top: 15.5%;
+}
+
+.quadrointerno2{
+	border: 1px solid transparent;
+	text-align: center;
+	padding: 5% 5% 15%;
+}
+
+.quadrointerno2 p{
+	margin: 0px 0px 0px;
+}
+
+.preclame{
+	color: #E53B3B;
+	font-size: 150%;
+}
+.preclame11{
+	color: #A3C345;
+	font-size: 21px;
+}
+.preclame2{
+color: #7c7c7c;
+font-size:100%;
+font-family: "Open Sans",Helvetica,Arial,sans-serif;
+}
+#pdoquadro7{
+	color: #3884c7;
+}
+#pdoquadro7:hover{
+	color: #23527c;
+	    cursor: pointer!important;
+}
+	
+
+.enviarreclame {
+    padding: 6%;
+    width: 100%;
+    color: #fff;
+	    background-color: #e84a4a;
+    border: 0;
+	border-radius: 7px;
+}
+
+.agendar-reuniao:
+{
+	color: #00FF7F;
+}
+
+.agendar-reuniao:hover
+{
+	color: #0000FF;
+}
+
+.enviarreclame:hover{
+	background-color: #E53B3B;
+}
+
+.enviarreclame2 {
+    padding: 6%;
+    width: 100%;
+    color: #fff;
+	    background-color: #90ad38;
+    border: 0;
+	border-radius: 7px;
+}
+
+.enviarreclame2:hover{
+	background-color: #85a134;
+}
+
+
+
+.recentes{
+	border: 1px solid transparent;
+	width: 100%;
+	margin-top: 10%;
+	height: 20%;
+	background-color: #4A90E2;
+	
+}
+
+.textorecentes{
+	position: relative;
+	top: 50%;
+	color: #fff;
+	transform: translateY(-50%); 
+	text-align: center;
+	font-size: 30px;
+}
+
+.tudorecentes{
+	border: 1px solid black;
+	width: 90%;
+	height: 60%;
+	display: table;
+	margin: 0 auto;
+	margin-top: 5%;
+}
+
+.bloco1recentes{
+	float: left;
+	border: 1px solid black;
+	width: 30%;
+	height: 100%;
+}
+
+.bloco2recentes{
+	border: 1px solid red;
+	width: 30%;
+	height: 100%;
+	margin-left: 30%;
+}
+
+
+.textop{
+	text-align: center;
+}
+
+.div1{
+	border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.div2{
+
+	border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.texto1p{
+		border: 1px solid #ddd;
+
+}
+
+.texto2p{
+		border: 1px solid #ddd;
+
+}
+
+.texto3p{
+		border: 1px solid #ddd;
+}
+
+.imggrafico1{
+	width: 100%;
+	height: 85%;
+}
+.imggrafico2{
+	width: 100%;
+	height: 50%;
+}
+
+textarea{
+	margin-left: 20px;
+    width:47%;
+    height:175px;
+    
+	
+	border: 1px solid #ddd;
+    border-radius: 14px;
+    margin-left: 30px;
+}
+
+.textarea2{
+	margin-left: 4%;
+    width:47%;
+    height:175px;
+    background:#E6E8FA;
+	border: 1px solid #ddd;
+    border-radius: 14px;
+}
+
+.textarea3{
+	margin-left: 20px;
+    width:620px;
+    height:175px;
+	border: 1px solid #ddd;
+    border-radius: 14px;
+    margin-left: 30px;
+}
+
+.textarea4{
+    width:532px;
+    height:175px;
+    
+	
+	border: 1px solid #ddd;
+    border-radius: 14px;
+}
+
+.textarea5{
+	margin-left: 5%;
+    width:47%;
+    height:175px;
+    
+	
+	border: 1px solid #ddd;
+    border-radius: 14px;
+    margin-left: 30px;
+}
+
+
+input[type=submit]{
+        background:#006699;
+        color:#ffffff;
+}
+
+
+
+
+
+.nome_do_usuario{
+	font-size: 100%;
+		font-family: arial ;
+		border-radius: 4px;
+		
+		margin-right:0%;
+		border: 1px solid transparent;
+		
+		margin-top: 2%;
+}
+
+
+.estrelas input[type=radio] {
+  display: none;
+  
+}
+.estrelas label i.fa:before {
+  content:'\f005';
+  color: #FC0;
+  font-size:150%;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+  color: #CCC;
+}
+
+
+
+
+
+
+
+
+
+
+
+.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 29px;
+   overflow: hidden;
+   width: 240px;
+}
+
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 29px;
+   padding: 5px; /* If you add too much padding here, the options won't show in IE */
+   width: 268px;
+}
+
+.styled-select.slate {
+   background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+   height: 34px;
+   width: 240px;
+}
+
+.styled-select.slate select {
+   border: 1px solid #ccc;
+   font-size: 16px;
+   height: 34px;
+   width: 268px;
+}
+
+/* -------------------- Rounded Corners */
+.rounded {
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+}
+
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+}
+
+/* -------------------- Colors: Background */
+.slate   { background-color: #ddd; }
+.green   { background-color: #779126; }
+.blue    { background-color: #3b8ec2; }
+.yellow  { background-color: #eec111; }
+.black   { background-color: #000; }
+
+/* -------------------- Colors: Text */
+.slate select   { color: #000; }
+.green select   { color: #fff; }
+.blue select    { color: #fff; }
+.yellow select  { color: #000; }
+.black select   { color: #fff; }
+
+
+/* -------------------- Select Box Styles: danielneumann.com Method */
+/* -------------------- Source: http://danielneumann.com/blog/how-to-style-dropdown-with-css-only/ */
+#mainselection select {
+   border: 0;
+   color: #EEE;
+   background: transparent;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 2px 10px;
+   width: 378px;
+   *width: 350px;
+   *background: #58B14C;
+   -webkit-appearance: none;
+}
+
+#mainselection {
+   overflow:hidden;
+   width:350px;
+   -moz-border-radius: 9px 9px 9px 9px;
+   -webkit-border-radius: 9px 9px 9px 9px;
+   border-radius: 9px 9px 9px 9px;
+   box-shadow: 1px 1px 11px #330033;
+   background: #58B14C url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 319px center;
+}
+
+
+/* -------------------- Select Box Styles: stackoverflow.com Method */
+/* -------------------- Source: http://stackoverflow.com/a/5809186 */
+select#soflow, select#soflow-color {
+   -webkit-appearance: button;
+   -webkit-border-radius: 2px;
+   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+   -webkit-padding-end: 20px;
+   -webkit-padding-start: 2px;
+   -webkit-user-select: none;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#FAFAFA, #F4F4F4 40%, #E5E5E5);
+   background-position: 97% center;
+   background-repeat: no-repeat;
+   border: 1px solid #AAA;
+   color: #555;
+   font-size: inherit;
+   margin: 20px;
+   overflow: hidden;
+   padding: 5px 10px;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   width: 300px;
+}
+
+select#soflow-color {
+   color: #fff;
+   background-image: url(http://i62.tinypic.com/15xvbd5.png), -webkit-linear-gradient(#779126, #779126 40%, #779126);
+   background-color: #779126;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   padding-left: 15px;
+}
+
+option
+{
+	color: black;
+	width: 240px;
+}
+
+#search-box {
+    position: relative;
+    width: 20%;
+    margin: 0;
+}
+#search-form {
+    height: 30px;
+    border: 1px solid #999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+}
+#search-text {
+    font-size: 14px;
+    color: #ddd;
+    border-width: 0;
+    background: transparent;
+}
+#search-box input[type="text"] {
+    width: 70%;
+    padding: 5px 0 5px 1em;
+    color: #333;
+    outline: none;
+}
+#search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 70px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    border-width: 0;
+    background-color: #4d90fe; /*--define a cor do botão Buscar--*/
+    -webkit-border-radius: 0px 5px 5px 0px;
+    -moz-border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+}

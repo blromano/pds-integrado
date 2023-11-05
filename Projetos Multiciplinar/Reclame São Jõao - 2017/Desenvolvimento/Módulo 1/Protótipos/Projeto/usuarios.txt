@@ -1,0 +1,20 @@
+create table cadastrousuarios (
+id int NOT NULL AUTO_INCREMENT,,
+nome varchar (100) NOT NULL,
+sobrenome varchar (100) NOT NULL,
+email varchar (100) NOT NULL,
+data_nascimento date NOT NULL,
+cpf integer (12) NOT NULL,
+complemento varchar (500),
+numero integer (10) NOT NULL,
+foto_perfil varchar (100),
+telefone1 varchar (15)NOT NULL,
+telefone2 varchar (15),
+senha varchar (20) NOT NULL,
+confirmar_senha varchar (20) NOT NULL,
+estado varchar (50) NOT NULL,
+rua varchar (100) NOT NULL,
+bairro varchar (100) NOT NULL,
+cep varchar (10) NOT NULL,
+cidade varchar (100) NOT NULL
+);

@@ -1,0 +1,373 @@
+<?php 
+	include_once("conexao.php");
+	$result_cursos = "SELECT * FROM cursos";
+	$resultado_cursos = mysqli_query($conn, $result_cursos);
+?> 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		
+		<!-- INÍCIO DO META DO SLIDESHOW -->
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- FIM DO META DO SLIDESHOW -->
+		
+		<!-- TÍTULO DO SITE -->
+			<title>Reclame São João</title>
+		
+		<!-- OUTROS -->
+			<link href="../../css/bootstrap.min.css" rel="stylesheet">
+			<link href="../../css/animate.min.css" rel="stylesheet"> 
+			<link href="../../css/font-awesome.min.css" rel="stylesheet">
+		
+			<link href="../../css/main.css" rel="stylesheet">
+			<link href="../../css/testes.css" rel="stylesheet">
+			<link href="../../css/login.css" rel="stylesheet">
+			<link href="../../css/estabelecimento.css" rel="stylesheet">
+			<link href="../../css/responsive.css" rel="stylesheet">
+			
+			<link id="css-preset" href="../../css/presets/preset1.css" rel="stylesheet">
+			<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+			<link rel="shortcut icon" href="../../images/favicon.ico">
+			
+			<title>Modal</title>
+				<link href="../../css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	
+	<body>
+		<!-- MENU DO SITE -->
+		<div class="main-nav" >
+		  <div class="container">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="../../index.html">
+					<h1><img class="img-responsive" src="../../images/logo.png" alt="logo"></h1>
+				  </a>                    
+				</div>
+			
+				<!-- MENU DO SITE - OPÇÕES-->
+				<div class="collapse navbar-collapse">
+				  <ul class="nav navbar-nav navbar-right">   
+						<li class="scroll active"><a href="#">Cadastrar</a></li>
+						<li class="scroll"><a href="../../index.html" >Home</a></li>
+						<li class="scroll"  ><a href="../../login.html">Logar</a></li>    
+				  </ul>
+				</div>
+		  </div>
+		</div>
+		<!-- FIM DO MENU DO SITE -->
+		<section id="contact">
+			<div id="contact-us" class="parallax">
+			  <!-- INÍCIO - PREENCHER PERFIL -->
+			  <div class="container">
+				<div class="row">
+				  <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+					<h2> Preencher Perfil</h2>
+				  </div>
+				</div>
+				  <div class="row">
+					<div class="col-sm-6 " style="width: 60%; margin-right:20%; margin-left:20%; ">
+					
+						  <!-- INÍCIO DO FORMULÁRIO -->
+						  <form id="main-contact-form" name="contact-form" method="post" action="#" style="border: 1px solid white; padding: 15px; 30px 0px;">
+							
+							<!-- PÚBLICO ALVO -->
+							<div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">		
+								<div class="col-sm-6" style="padding-left: 20px;">
+										<div class="form-group">	  
+											<fieldset>
+												<legend>Público alvo</legend>
+												<textarea name="publicoalvo" class="textarea3" rows="4" cols="90" placeholder="Mensagem" style="resize: none;"></textarea>
+											</fieldset>
+										</div>
+								</div>
+							</div>
+							
+							<!-- VISÃO GERAL DA EMPRESA -->
+							<div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+										<div class="col-sm-6" style="padding-left: 20px;">
+											<div class="form-group">	  
+												<fieldset>
+													<legend>Visão geral da empresa</legend>
+													<textarea name="visaogeral" class="textarea3" rows="4" cols="90" placeholder="Mensagem" style="resize: none;"></textarea>
+												</fieldset>
+											</div>
+										</div>
+							
+							</div>
+							
+							<!-- PRINCIPAIS PRODUTOS -->
+							<div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+										<div class="col-sm-6" style="padding-left: 20px;">
+											<div class="form-group">	  
+												<fieldset>
+													<br/><br/>
+													<legend style="padding-right: 110px; ">Principais Produtos</legend>
+												</fieldset>
+											</div>
+										</div>
+							
+							</div>
+							
+							<div class="container theme-showcase" role="main"">	
+										<!-- INÍCIO DO MODAL CADASTRAR PRODUTO -->
+										<div class="modal fade" id="myModalcad" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+											<div class="modal-dialog" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+														<h4 class="modal-title text-center" id="myModalLabel">Cadastrar Produto</h4>
+													</div>
+													<div class="modal-body">
+														<form method="POST" action="http://localhost/Template/processa_cad.php" enctype="multipart/form-data">
+															<div class="form-group">
+																<label for="recipient-name" class="control-label">Nome do produto:</label>
+																<input name="nome" type="text" class="form-control">
+															</div>
+															
+															<div class="form-group">
+																<label for="message-text" class="control-label">Detalhes:</label>
+																<textarea name="detalhes" class="form-control"></textarea>
+															</div>
+															
+															<div class="form-group">
+																<label for="recipient-name" class="control-label">Tipo do produto:</label><br/>
+																<input type="radio" name="opcoes" value="html"/> Alimentício<br/>
+																<input type="radio" name="opcoes" value="html"/> Cosmético<br/>
+																<input type="radio" name="opcoes" value="html"/> Vestimento<br/>
+															</div>
+						
+															<div class="modal-footer">
+																<button type="submit" class="btn btn-success">Cadastrar</button>
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- FIM DO MODAL CADASTRAR PRODUTO -->
+										
+										<!-- INÍCIO DA TABELA DE PRODUTOS -->
+										<div class="col-sm-7" style="padding-left: 5px; padding-right: 37px; margin-top:-5%;">
+											<div class="form-group">	
+											<div class="row">
+												<div class="col-md-15">
+													<table class="table">
+														<thead>
+															<tr>
+																<th>Numeração</th>
+																<th>Nome do Produto</th>
+																<th>Procedimentos</th>
+																<th><button type="button" class="btn btn-xs btn-success" data-toggle="modal" data-target="#myModalcad">Cadastrar</button></th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																	<td>1</td>
+																	<td>Sapato</td>
+																	<td>
+																		<button type="button" class="btn btn-xs btn-primary" data-toggle="modal" data-target="#myModal<?php echo $rows_cursos['id']; ?>">Visualizar</button>
+																		
+																		<button type="button" class="btn btn-xs btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="<?php echo $rows_cursos['id']; ?>" data-whatevernome="<?php echo $rows_cursos['nome']; ?>"  data-whateverdetalhes="<?php echo $rows_cursos['detalhes']; ?>">Editar</button>
+																		
+																		<a href="processa_apagar.php?id=<?php echo $rows_cursos['id']; ?>"><button type="button" class="btn btn-xs btn-danger">Apagar</button></a>
+																	</td>
+															</tr>
+															<tr>
+																	<td>1</td>
+																	<td>Roupa</td>
+																	<td>
+																		<button type="button" class="btn btn-xs btn-primary" data-toggle="modal" data-target="#myModal<?php echo $rows_cursos['id']; ?>">Visualizar</button>
+																		
+																		<button type="button" class="btn btn-xs btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="<?php echo $rows_cursos['id']; ?>" data-whatevernome="<?php echo $rows_cursos['nome']; ?>"  data-whateverdetalhes="<?php echo $rows_cursos['detalhes']; ?>">Editar</button>
+																		
+																		<a href="processa_apagar.php?id=<?php echo $rows_cursos['id']; ?>"><button type="button" class="btn btn-xs btn-danger">Apagar</button></a>
+																	</td>
+															</tr>
+															<?php while($rows_cursos = mysqli_fetch_assoc($resultado_cursos)){ ?>
+																<tr>
+																	<td><?php echo $rows_cursos['id']; ?></td>
+																	<td><?php echo $rows_cursos['nome']; ?></td>
+																	<td>
+																		<button type="button" class="btn btn-xs btn-primary" data-toggle="modal" data-target="#myModal<?php echo $rows_cursos['id']; ?>">Visualizar</button>
+																		
+																		<button type="button" class="btn btn-xs btn-warning" data-toggle="modal" data-target="#exampleModal" data-whatever="<?php echo $rows_cursos['id']; ?>" data-whatevernome="<?php echo $rows_cursos['nome']; ?>"  data-whateverdetalhes="<?php echo $rows_cursos['detalhes']; ?>">Editar</button>
+																		
+																		<a href="processa_apagar.php?id=<?php echo $rows_cursos['id']; ?>"><button type="button" class="btn btn-xs btn-danger">Apagar</button></a>
+																	</td>
+																</tr>
+																<!-- INÍCIO DO MODAL -->
+																<div class="modal fade" id="myModal<?php echo $rows_cursos['id']; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+																	<div class="modal-dialog" role="document">
+																		<div class="modal-content">
+																			<div class="modal-header">
+																				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+																				<h4 class="modal-title text-center" id="myModalLabel"><?php echo $rows_cursos['nome']; ?></h4>
+																			</div>
+																			<div class="modal-body">
+																				<p><?php echo $rows_cursos['id']; ?></p>
+																				<p><?php echo $rows_cursos['nome']; ?></p>
+																				<p><?php echo $rows_cursos['detalhes']; ?></p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- FIM DO MODAL -->
+															<?php } ?>
+														</tbody>
+													 </table>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- FIM DA TABELA DE PRODUTOS -->
+							</div>
+							
+							<!-- BOTÃO CONFIRMAR -->
+								<div class="form-group"  style="padding-left: 20px;">
+										  <button type="submit" class="btn-submit2" dtype="submit" onclick="location.href='mod03-login-estabelecimento.html'".click(); >Confirmar</button>
+								</div>
+						  </form>
+						  <!-- FIM DO FORMULÁRIO -->
+					</div>			  
+				  </div>
+			</div>
+			<!-- FIM - PREENCHER PERFIL -->
+		   </div>	
+		</section>
+
+				<!-- INÍCIO DO MODAL ALTERAR PRODUTO -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="exampleModalLabel">Alterar Produto</h4>
+							</div>
+							<div class="modal-body">
+								<form method="POST" action="http://localhost/Template/processa.php" enctype="multipart/form-data">
+									<div class="form-group">
+										<label for="recipient-name" class="control-label">Nome do roduto:</label>
+										<input name="nome" type="text" class="form-control" id="recipient-name">
+									</div>
+									<div class="form-group">
+										<label for="message-text" class="control-label">Detalhes:</label>
+										<textarea name="detalhes" class="form-control" id="detalhes-text"></textarea>
+									</div>
+									
+									<div class="form-group">
+													<label for="recipient-name" class="control-label">Tipo do produto:</label><br/>
+													<input type="radio" name="opcoes" value="html"/> Alimentício<br/>
+													<input type="radio" name="opcoes" value="html"/> Cosmético<br/>
+													<input type="radio" name="opcoes" value="html"/> Vestimento<br/>
+									</div>
+									
+									<input name="id" type="hidden" id="id_curso">
+									<div class="modal-footer">
+										<button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+										<button type="submit" class="btn btn-danger">Alterar</button>
+									</div>
+								</form>
+							</div>			  
+						</div>
+					</div>
+				</div>
+				<!-- FIM DO MODAL ALTERAR PRODUTO -->
+		
+		<!-- RODAPÉ -->
+			<footer id="footer" style="background-color: #232323; margin-bottom: -10%; margin-top: 18%;" >
+				<div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+				<div class="container text-center">
+				<div class="tudo">
+
+					<div class="logo">
+					<a href="../../index.html"><img style="margin-left: 30%; margin-top: 4%;"  class="img-responsive" src="../../images/logo.png" alt=""></a> 
+						<div id=icons" class="social-icons" style="margin-top: 5%;" >
+						<ul>
+						<li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
+						<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li> 
+						<li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+						<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+						<li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>
+						</ul>
+						</div>
+					</div>
+
+					<div class="texto">
+						<h3>Sobre nós</h3>
+						<p>Somos uma equipe de alunos do Instituto Federal de São Paulo - Campus São João da Boa Vista, que buscam finalizar o projeto proposto em uma das disciplinas 
+						com o maior sucesso possível. <br/>
+						Ao alcançar esse sucesso, estaremos proporcionando para a cidade um novo sistema que pode impulsionar o comércio justo e maior comprometimento 
+						por parte dos estabelecimentos presentes na cidade.</p>
+					</div>	
+					</div>
+					</div>
+					</div>
+					
+						<div class="footer-bottom" style="background-color: #191919;">
+						<div class="container" >
+						<div class="row" >
+							<div class="col-sm-6" style=" color: white">
+								<p>&copy; 2017 IFSP-SBV</p>
+							</div>
+							<div class="col-sm-6">
+								<p class="pull-right" style="color: white;">Construído por <a style="color: white;" href="http://sbv.ifsp.edu.br/">Equipe IFSP</a></p>
+							</div>
+						</div>
+						</div>
+						</div>
+			</footer>
+			
+			  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+							<div class="modal-dialog" role="document">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+										<h4 class="modal-title" id="exampleModalLabel">Resposta</h4>
+									</div>
+									<div class="modal-body">
+										<form method="POST" action="#" enctype="multipart/form-data">
+											<div class="form-group">
+												<label for="recipient-name" class="control-label">Título:</label>
+												<input name="nome" type="text" class="form-control" id="recipient-name">
+											</div>
+											<div class="form-group">
+												<label for="message-text" class="control-label">Resposta:</label>
+												<textarea name="detalhes" class="textarea4" id="detalhes-text"></textarea>
+											</div>
+											
+											<input name="id" type="hidden" id="id_curso">
+											<div class="modal-footer">
+												<button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+												<button type="submit" class="btn btn-danger">Salvar</button>
+											</div>
+										</form>
+									</div>			  
+								</div>
+							</div>
+						</div>
+		<!-- FIM DO RODAPÉ --> 
+	  
+		<!-- SCRIPT EM GERAL -->
+			<script type="text/javascript" src="../../js/jquery.js"></script>
+			<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+			<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+			<script type="text/javascript" src="../../js/jquery.inview.min.js"></script>
+			<script type="text/javascript" src="../../js/wow.min.js"></script>
+			<script type="text/javascript" src="../../js/mousescroll.js"></script>
+			<script type="text/javascript" src="../../js/smoothscroll.js"></script>
+			<script type="text/javascript" src="../../js/jquery.countTo.js"></script>
+			<script type="text/javascript" src="../../js/main.js"></script>
+		<!--FIM DO SCRIPT EM GERAL -->
+	  
+	</body>
+</html>

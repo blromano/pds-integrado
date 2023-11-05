@@ -1,0 +1,161 @@
+.loucura{
+	margin-top: 10%;
+	text-align: center;
+}
+.loucura2{
+	margin-top: 5%;
+	border: 1px solid transparent;
+	text-align: center;
+	    font-size: 28px;
+		font-family: Calibri;
+}
+
+.loucura3{
+	margin-top: 5%;
+	border: 1px solid #ddd;
+	width: 50%;
+	height: -50%;
+	margin-left: 25%;
+	    font-size: 20px;
+		font-family: arial ;
+		border-radius: 4px;
+		
+}
+
+.loucura33{
+	font-size: 15px;
+		font-family: arial ;
+		border-radius: 4px;
+		
+		margin-right:0%;
+		border: 1px solid transparent;
+		
+		margin-top: 2%;
+}
+
+.haha{
+	margin-left: -0.6%;
+	margin-top: 2%;
+}
+
+.nomeMenu{
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	width: 60%;
+	margin-left: 0.1%;
+
+}
+
+.nomeMenu333{
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	width: 95%;
+	height: 35px;
+	font-size: 12px;
+	    padding: 10px 16px;
+	margin-left: 0.1%;
+}
+
+.nomeMenu3334{
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	width: 95%;
+	height: 105px;
+	    padding: 10px 16px;
+	font-size: 12px;
+	margin-left: 0.1%;
+}
+
+.nomeMenu3335{
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	width: 45%;
+	height: 35px;
+	    padding: 10px 16px;
+	font-size: 12px;
+	margin-left: 0.1%;
+}
+.nomeMenu3336{
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	width: 45%;
+	height: 35px;
+	margin-left: 5%;
+	    padding: 10px 16px;
+	font-size: 12px;
+	
+}
+
+.enviarreclame3334 {
+    padding: 10px;
+    width: 25%;
+	margin-top: 2%;
+	margin-left:38%;
+    color: #fff;
+	    background-color: #90ad38;
+    border: 0;
+	border-radius: 6px;
+
+}
+
+.enviarreclame3334:hover{
+	background-color: #85a134;
+}
+
+.menutudao{
+	border: 1px solid transparent;
+	margin-left: 5%;
+	margin-top: 3%;
+	margin-bottom: 5%;
+}
+
+.enviarreclame {
+    padding: 5px;
+    width: 100%;
+    color: #333;
+	    background-color: #fff;
+    border: 1px solid #ddd;
+	border-radius: 4px;
+
+}
+
+.enviarreclame:hover{
+	background-color: #A3C345;
+    border: 1px solid #A3C345;
+}
+
+.loucura44{
+	display: table;
+	border: 1px solid transparent;
+	width: 100%;
+}
+
+.loucura4{
+	float: left;
+	text-align: center;
+	width: 18%;
+	font-size: 15px;
+	border-radius: 4px;
+	border: 1px solid transparent;
+	
+}
+.loucura5{
+	margin-left: 18%;
+	text-align: center;
+	margin-right: 60%;
+	font-size: 15px;
+	border-radius: 4px;
+	border: 1px solid transparent;
+}
+
+
+.estrelas input[type=radio] {
+  display: none;
+}
+.estrelas label i.fa:before {
+  content:'\f005';
+  color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+  color: #CCC;
+}
