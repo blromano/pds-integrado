@@ -1,0 +1,86 @@
+.divlogo{
+	border: 1px solid #64594f;
+	width: 100%;
+	margin-top: -1%;
+	margin-left: -0.0%;
+	height: 108%;
+	background-color: #64594f;
+}
+
+.tabledivlogo{
+	width: 80%;
+	height: 100%;
+	border: 1px solid transparent;
+	margin-left: 10%;
+}
+
+.tddivlogo1{
+	height: 15%;
+}
+
+.tddivlogo2{
+	height: 85%;
+	background-color: white;
+}
+
+.quadro6{
+	margin-bottom: 5%;
+	border: 0px solid #ddd;
+}
+
+.botao435 {
+    padding: 20px;
+    width: 80%;
+	margin-left: 10%;
+    color: #fff;
+	background-color: #64594f;
+    border: 0;
+	margin-top: 0%;
+	border-radius: 7px;
+}
+
+.botao436 {
+    padding: 20px;
+    width: 80%;
+	margin-left: 10%;
+    color: #fff;
+	background-color: #f60;
+    border: 0;
+	margin-top: 0%;
+	border-radius: 7px;
+}
+
+.botao435:hover{
+	background-color: #72665a;
+}
+
+.botao436:hover{
+	background-color: #ff751a;
+}
+
+.menu666{
+	margin-left: 30%;
+	width: 50%;
+	height: 100%;
+}
+
+.conteudo666{
+	float: left; 
+	width: 50%;
+	height: 100%;
+}
+
+.tudo666{
+	display: table;
+	width: 100%;
+	height: 100%;
+	border: 1px solid transparent;
+}
+
+.h2666{
+	color: #f60;
+    font-size: 45px;
+    line-height: 45px;
+	font-weight: bold;
+    padding-bottom: 20px;
+}

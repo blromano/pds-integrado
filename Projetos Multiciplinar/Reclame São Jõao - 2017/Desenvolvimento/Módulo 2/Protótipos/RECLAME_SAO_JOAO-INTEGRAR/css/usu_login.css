@@ -1,0 +1,13 @@
+.dropdown-menu {
+			background-color: #64594f;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+			background-color: #64594f;
+}
+.recuperarSenha:hover
+{
+	color: blue;
+	text-decoration:underline;
+}
+

@@ -1,0 +1,88 @@
+.titulosolucao{
+	color: #666;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    width: 650px;
+    line-height: 35px;
+}
+
+.descricao{
+	margin-top: 0%;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	width: 95%;
+	height: 165px;
+	padding: 10px 16px;
+	font-size: 12px;
+	margin-left: 0.1%;
+	
+}
+
+.dadosborder{
+	border: 1px solid red;
+	border-width: 0px 1px 0px 0px ; 
+	border-style: dashed dotted; 
+	border-color: #ccc #ccc #ccc #ccc;
+}
+
+.tabledados{
+	margin-left: 0.1%;
+	width: 60%;
+	font-size: 10px;
+}
+
+.titulosolucao2{
+	color: #666;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    width: 650px;
+    line-height: 35px;
+}
+
+.telefone{
+	font-size: 15px;
+	font-family: arial ;
+	border-radius: 4px;
+	margin-right:0%;
+	border: 1px solid transparent;
+	margin-top: 0%;
+}
+
+.caixa{
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	width: 36%;
+	height: 35px;
+	font-size: 12px;
+	padding: 10px 16px;
+	margin-left: 0.1%;
+}
+
+.divconsideracao{
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	padding: 10px 15px 10px;
+	margin-top:2%;
+	width: 80%;
+	background-color: #f4f3f0;
+}
+
+.consideracao{
+	color: #666;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    width: 650px;
+    line-height: 35px;
+}
+
+.consideracaotexto{
+	font-size: 15px;
+	margin-top: 2%;
+}
+
+#glyphicon{
+	top: 3px;
+}

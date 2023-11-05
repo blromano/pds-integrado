@@ -1,0 +1,70 @@
+.tudao{
+	border: 5px solid transparent; 
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.panel{
+	width: 96%;
+	margin-left: 2%;
+	height: 100%;
+}
+
+.panel-heading{
+	width: 100%;
+	height: 20%;
+}
+
+.panel-body{
+	width: 100%;
+	height: 80%;
+}
+
+.tableperfil{
+	float: left;
+	width:100%; 
+	
+	margin-left:0%;
+	border: 5px solid transparent; 
+}
+
+.tableconteudo{
+	width:100%; 
+	height:100%;
+	
+	border: 5px solid transparent; 
+}
+
+.divmensagem{
+	font-size: 15px;
+	font-family: arial;
+	border-radius: 4px;
+	border: 1px solid black;
+	background-color: #f5f5f5;
+	border-color: #dddddd;
+	padding: 10px 10px 10px;
+	text-align: justify;
+}
+
+.tableconteudo1{
+	padding: 3% 4% 3%;
+	border: 3px solid transparent;
+	height: ;
+	width: 100%;
+}
+
+.tabletudao{
+	border: 4px solid transparent;
+}
+
+.tdtudao2{
+	width: 80%;
+}
+
+.divmensagem{
+margin-left:2%;
+margin-right: 2%;
+margin-bottom: 4%;
+
+}

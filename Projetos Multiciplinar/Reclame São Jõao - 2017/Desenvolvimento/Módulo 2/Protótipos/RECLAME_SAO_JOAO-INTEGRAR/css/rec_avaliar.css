@@ -1,0 +1,114 @@
+    form label{
+	font-weight: 600;
+    text-transform: lowercase;
+    color: #888;
+    display: inline-block;
+	
+    margin: 0 0 1em 0;
+}
+
+#form_assunto{
+	box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0);
+	background-color: white;
+}
+
+.loucura2{
+	margin-top: 5%;
+	border: 1px solid transparent;
+	text-align: center;
+	font-size: 28px;
+	font-family: Calibri;
+}
+
+.ava_titulo{
+		font-size: 15px;
+		font-family: arial ;
+		border-radius: 4px;
+		margin-right:0%;
+		border: 1px solid transparent;
+		margin-top: 2%;
+		margin-bottom: 2%;
+}
+
+.loucura3{
+	margin-top: 5%;
+	border: 1px solid #ddd;
+	width: 75%;
+	height: -50%;
+	margin-left: 15%;
+	font-family: arial;
+	background-color: white;
+	border: 1px solid #ddd;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.loucura33{
+	font-size: 15px;
+		font-family: arial ;
+		border-radius: 4px;
+		margin-right:0%;
+		border: 1px solid transparent;
+		margin-top: 2%;
+}
+
+.ava_butom {
+    padding: 10px;
+    width: 25%;
+	margin-top: 4%;
+	margin-left:0%;
+    color: #fff;
+	background-color: #ed786a;
+    border: 0;
+	border-radius: 6px;
+	font-size: 17px;
+}
+
+.ava_butom:hover{
+	background-color: #85a134;
+}
+
+.menutudao{
+	border: 1px solid transparent;
+	margin-left: 5%;
+	margin-top: 0%;
+	margin-bottom: 5%;
+}
+
+.estrelas{
+	font-size: 25px;
+	margin-left: 0.2%;
+}
+
+.estrelas input[type=radio] {
+  display: none;
+}
+.estrelas label i.fa:before {
+  content:'\f005';
+  color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+  color: #CCC;
+}
+
+#avatar245{
+	font-size: 30px;
+}
+.nomeempresa{
+	font-size: 20px;
+	font-family: arial ;
+}
+
+.descricao{
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	width: 45%;
+	height: 105px;
+	padding: 10px 16px;
+	font-size: 12px;
+	margin-left: 0.1%;
+}
+
+	@media (min-width: 1024px) {
+  #extras{display: none;}
+  .btn-toggle{display: block;}
+}
