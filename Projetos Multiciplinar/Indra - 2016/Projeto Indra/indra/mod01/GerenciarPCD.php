@@ -1,0 +1,387 @@
+<?php
+
+require_once 'class/Usuario.php';
+
+session_start();
+
+if(!isset($_SESSION['user'])){
+    header('location:index1.php');
+} 
+?>
+
+
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Gerenciamento de PCD</title>
+
+        <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/freelancer.css" rel="stylesheet">
+        
+        <!-- Data Tables CSS -->
+        <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+        <link href="css/buttons.dataTables.css" rel="stylesheet">
+        <link href="css/editor.dataTables.min.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body id="page-top" class="index">
+    
+    <div class="modal fade" id="adicionar-pcd" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Adicionar PCD de interesse</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group" align="center">
+                                   Formulário para adicionar a pcd de interesse
+                                </div>
+                            <div class="modal-footer">
+                            <div align="center">
+                                <button type="submit" class="btn btn-default" data-dismiss="modal">Adicionar</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="modal fade" id="salva" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Salvar Dados</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group" align="center">
+                                   Deseja salavar suas alterações?
+                                </div>
+                            <div class="modal-footer">
+                            <div align="center">
+                                <button type="submit" class="btn btn-default" data-dismiss="modal">Salvar</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+
+
+<div class="modal fade" id="modal-exluir-cadastro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Excluir Cadastro</h4>
+                    </div>
+                    <div class="modal-body">
+                        <label>Você realmente deseja excluir a PCD?</label>                       
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Excluir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-salvar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Salvar Alterações</h4>
+                    </div>
+                    <div class="modal-body">
+                        <label>Os dados foram salvos com sucesso!</label>                       
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" id="menu">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#page-top" class="page-scroll icone-menu-container">
+                        <img  class="img-responsive" src="img/icone.png" id="icone-menu" alt="icone"/>
+                    </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="float:right">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="hidden">
+                            <a href="index.html"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="index.html">P&aacute;gina Principal</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" id="dropdown" data-toggle="dropdown">Gerenciar</a> 
+                            <ul class="dropdown-menu" id="drop-menu" role="menu">
+                                <li role="presentation"><a href="GerenciarUsuarios.html" >Usuários</a></li>
+                                <li role="presentation"><a href="GerenciarComunicados.html" >Comunicados</a></li>          
+                            </ul>
+                        </li>
+                        
+                        <li id="btn-login">
+                            <a href="logout.php"> Logout </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+
+        <!-- Header -->
+        <header id="painel-inicial">
+            <div class="container" >
+                <div class="row">
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- Alertas -->
+        <div class="container-fluid elemento-escondido" id="alerta" style="padding: 1em; background-color: rgba(255,0,0,0.4); ">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <br>
+                    <br>
+                    <h1>Gerenciar PCD</h1>
+                    <br>
+                    <br>
+                </div>
+            </div>
+
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item active" align="center">
+                        <img src="img/alerta/alerta-1.jpg" alt="" />
+                        <div class="carousel-caption">
+                            <h3>TUA MAE, SP</h3>
+                            <p>18/03/2016 - 16:30</p>
+                            <p>Risco: Grave</p>
+                            <p>Pancadão de Verão</p>
+                        </div>
+                    </div>
+
+                    <div class="item" align="center">
+                        <img src="img/alerta/alerta-1.jpg" alt=""/>
+                        <div class="carousel-caption">
+                            <h3>TEU FILHO, SP</h3>
+                            <p>18/03/2016 - 16:48</p>
+                            <p>Risco: Grave</p>
+                            <p>Pancadão de Verão</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- About Section -->
+        <section class="success" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2> Gerenciar PCD de interesse </h2>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                
+                <div class="row">
+                        <button class="btn btn-primary btn-table " data-dismiss="modal" data-toggle="modal" data-target="#adicionar-pcd">Novo</button>                           
+                    </div>
+               
+                <div class="row">
+                    <table id="tabela-usuarios" class="table table-condensed">
+                            <thead>
+                                <tr bgcolor="#3a4857">
+                                    <th style="width:10%">Interesse</th>
+                                    <th style="width:15%">ID</th>
+                                    <th style="width:25%">informação 1</th>
+                                    <th style="width:25%">informação 2</th>
+                                    <th style="width:25%">informação 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td >
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" value="">
+                                            </label>
+                                        </div></td>
+                                    <td>1</td>
+                                    <td><font>informação 1</font></td>
+                                    <td>informação 2</td>
+                                    <td>informação 3</td>
+                                    
+                                </tr> 
+                                <tr>
+                                <td >
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" value="">
+                                            </label>
+                                        </div></td>
+                                    <td>2</td>
+                                    <td><font>informação 1</font></td>
+                                    <td>informação 2</td>
+                                    <td>informação 3</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td >
+                                        <div class="checkbox">
+                                            <label>
+                                            <input type="checkbox" value="">
+                                            </label>
+                                        </div></td>
+                                    <td>3</td>
+                                    <td><font>informação 1</font></td>
+                                    <td>informação 2</td>
+                                    <td>informação 3</td>
+                                   
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+                 <button type="button" class="btn btn-primary btn-table " data-dismiss="modal" data-toggle="modal" data-target="#salvar">Salvar</button>
+            </div>
+        </section>
+      
+       
+
+                    <!-- Footer -->
+                    <footer class="text-center">
+                        <div class="footer-above">
+                            <div class="container ">
+                                <div class="row">
+                                    <div class="footer-col col-md-6">
+                                        <h3>Local</h3>
+                                        <p>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo<br>Campus São João da Boa Vista</p>
+                                    </div>
+                                    <div class="footer-col col-md-6">
+                                        <h3>Redes Sociais</h3>
+                                        <ul class="list-inline">
+                                            <li>
+                                                <a href="https://www.facebook.com/ifspsaojoaodaboavista" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+
+                    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+                    <div class="scroll-top page-scroll visible-xs visible-sm">
+                        <a class="btn btn-primary" href="#page-top">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+
+                    <!-- jQuery -->
+                    <script src="js/jquery.js"></script>
+                    
+                      <!-- Data Tables JQuery -->
+                    <script src="js/jquery.dataTables.min.js"></script>
+                    <script src="js/dataTables.bootstrap.min.js"></script>        
+                    <script src="js/tabela.js"></script>
+                    <script src="js/dataTables.editor.min.js"></script>
+
+                    <!-- Data Tables Buttons -->
+                    <script src="js/dataTables.buttons.min.js"></script>
+
+                    <!-- Bootstrap Core JavaScript -->
+                    <script src="js/bootstrap.min.js"></script>
+
+                    <!-- Plugin JavaScript -->
+                    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+                    <script src="js/classie.js"></script>
+                    <script src="js/cbpAnimatedHeader.js"></script>
+
+                    <!-- Contact Form JavaScript -->
+                    <script src="js/jqBootstrapValidation.js"></script>
+                    <script src="js/contact_me.js"></script>
+
+                    <!-- Custom Theme JavaScript -->
+                    <script src="js/freelancer.js"></script>
+
+                    </body>
+
+                    </html>
+

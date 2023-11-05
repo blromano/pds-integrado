@@ -1,0 +1,72 @@
+[
+    {
+        "Id": 1,
+        "Titulo": "PCD1",
+        "Latitude": -21.971389,
+        "Longitude":  -46.802394,
+        "Descricao": "Conteúdo do InfoBox 1"
+    },
+    {
+        "Id": 2,
+        "Titulo": "PCD2",
+        "Latitude": -21.955820,
+        "Longitude": -46.812338,
+        "Descricao": "Conteúdo do InfoBox 2"
+    },
+    {
+        "Id": 3,
+        "Titulo": "PCD3",
+        "Latitude": -21.959321,
+        "Longitude": -46.780978,
+        "Descricao": "Conteúdo do InfoBox 3"
+    },
+    {
+        "Id": 4,
+        "Titulo": "PCD4",
+        "Latitude": -21.965393,
+        "Longitude": -46.765747,
+        "Descricao": "Conteúdo do InfoBox 4"
+    },
+    {
+        "Id": 5,
+        "Titulo": "PCD5",
+        "Latitude": -21.974830,
+        "Longitude": -46.761839,
+        "Descricao": "Conteúdo do InfoBox 5"
+    },
+    {
+        "Id": 6,
+        "Titulo": "PCD6",
+        "Latitude": -21.975886,
+        "Longitude":  -46.765390,
+        "Descricao": "Conteúdo do InfoBox 6"
+    },
+    {
+        "Id": 7,
+        "Titulo": "PCD7",
+        "Latitude": -21.992179,
+        "Longitude":  -46.773079,
+        "Descricao": "Conteúdo do InfoBox 7"
+    },
+    {
+        "Id": 8,
+        "Titulo": "PC81",
+        "Latitude": -21.997192,
+        "Longitude": -46.798247,
+        "Descricao": "Conteúdo do InfoBox 8"
+    },
+    {
+        "Id": 9,
+        "Titulo": "PCD9",
+        "Latitude": -21.986260,
+        "Longitude": -46.810836,
+        "Descricao": "Conteúdo do InfoBox 9"
+    },
+    {
+        "Id": 10,
+        "Titulo": "PCD10",
+        "Latitude": -21.970762,
+        "Longitude": -46.815748,
+        "Descricao": "Conteúdo do InfoBox 10"
+    }
+]

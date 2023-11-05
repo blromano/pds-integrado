@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Projeto Indra - Parâmetros de Alertas</title>
+
+	<!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+	<link href="../../css/plugin/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="../../css/plugin/freelancer.css" rel="stylesheet">
+	<link href="../../css/custom/mod05/tabelaInterna.css" rel="stylesheet">
+
+	<!-- Data Tables CSS -->
+	<link href="../../css/plugin/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="../../css/plugin/buttons.dataTables.css" rel="stylesheet">
+
+	<!-- formVailidatior.io CSS -->
+	<link href="../../css/plugin/formValidation.min.css" rel="stylesheet">
+
+	<!-- Custom Fonts -->
+	<link href="../../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="../../css/custom/mod05/style.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body id="page-top" class="index">
+
+	<div id="background-modal" class="elemento-escondido"></div>
+
+	<div id="modal-login" class="elemento-escondido">
+
+		<form name="sentMessage" id="form-login" novalidate>
+			<div class="row control-group">
+				<div class="form-group col-xs-12 floating-label-form-group controls">
+					<label> Email </label>
+					<input type="email" class="form-control entrada-texto" placeholder="Email" required data-validation-required-message="Por favor, digite seu email.">
+					<p class="help-block text-danger"></p>
+				</div>
+			</div>
+			<div class="row control-group">
+				<div class="form-group col-xs-12 floating-label-form-group controls">
+					<label> Senha </label>
+					<input type="password" class="form-control entrada-texto" placeholder="Senha" required data-validation-required-message="Por favor, digite uma senha válida.">
+					<p class="help-block text-danger"></p>
+				</div>
+			</div>
+			<br>
+			<div id="success"></div>
+			<div class="row">
+				<div class="form-group col-xs-12" id="cadastrar">
+					<button type="submit" class="btn btn-primary"> Login </button>
+					<div  class="btn btn-danger" id="btn-cancelar"> Cancelar </div>
+				</div>
+			</div>
+		</form>
+
+	</div>
+
+	<!--MODAL  Excluir Parâmetros-->
+	<div class="modal fade multi-step" id="modalDeletar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title step-1" data-step="1">Excluir Parâmetros de Alerta</h4>
+					<h4 class="modal-title step-2" data-step="2">Parâmetro de alerta excluido com sucesso</h4>
+					<h4 class="modal-title step-3" data-step="3">Falha</h4>
+				</div>
+				<div align="center" class="modal-body step step-1" data-step="1">
+					Você realmente deseja excluir os parâmetros de alerta do sensor da PCD selecionada?
+				</div>
+				<div class="modal-footer">
+					<button id="simDeletar" type="button" class="btn btn-default step step-1" data-step="1">Sim</button>
+					<button type="button" class="btn btn-default step step-1" data-step="1" data-dismiss="modal">Não</button>
+					<a class="btn btn-primary step step-2" data-step="2" data-dismiss="modal">Fechar</a>
+					<a class="btn btn-primary step step-3" data-step="3" data-dismiss="modal">Fechar</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--MODAL Editar Parâmetros-->
+	<div class="modal fade multi-step" id="modalEditar" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 id="modalEditarTitle" class="modal-title step-1" data-step="1" >Atualizar Parâmetros do Sensor X</h4>
+					<h4 class="modal-title step-2" data-step="2">Parâmetro de alerta atualizado com sucesso</h4>
+					<h4 class="modal-title step-3" data-step="3">Falha</h4>
+				</div>
+				<form id="formEditar" class="formParam" method="POST">
+					<div class="modal-body step step-1">
+						<div class="form-group">
+							<label>Valor máximo:</label>
+							<input type="text" class="form-control input valorMax" placeholder="Vamor máximo para alertas" name="valorMax" id="valorMaxEditar">
+						</div>
+						<div id="divCorMax" class="form-group corMax">
+							<label>Escolha uma cor que represente o valor máximo:</label><br>
+							<select id="corMaxEditar" name="corMax" class="form-control select">
+								<option value="">Cor</option>
+								<option value="Vermelho">Vermelho</option>
+								<option value="Laranja">Laranja</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Valor mínimo:</label>
+							<input type="text" class="form-control input" placeholder="Valor mínimo para alertas" id="valorMinEditar" name="valorMin">
+						</div>
+						<div id="divCorMin" class="form-group corMin">
+							<label>Escolha uma cor que represente o valor mínimo:</label><br>
+							<select id="corMinEditar" name="corMin" class="form-control select">
+								<option value="">Cor</option>
+								<option value="Verde">Verde</option>
+								<option value="Azul">Azul</option>
+							</select>
+						</div>
+						<input id="idParam" value="" type="hidden" name="id">
+					</div>
+					<div class="modal-body step step-2">
+						<!-- <h2>Parâmetro de alerta atualizado com sucesso!<h2> -->
+					</div>
+					<div class="modal-footer">
+						<button id="simEditar" type="button" class="btn btn-default step step-1" data-step="1">Atualizar</button>
+						<button type="button" class="btn btn-default step step-1" data-step="1" data-dismiss="modal">Voltar</button>
+						<a class="btn btn-primary step step-2" data-step="2" data-dismiss="modal">Fechar</a>
+						<a class="btn btn-primary step step-3" data-step="3" data-dismiss="modal">Fechar</a>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--MODAL Adicionar Parâmetros-->
+<div class="modal fade multi-step" id="modalCadastrar" role="dialog">
+
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 id="modalEditarTitle" class="modal-title step-1" data-step="1" >Cadastrar Parâmetros do Sensor X</h4>
+				<h4 class="modal-title step-2" data-step="2">Parâmetro de alerta cadastrado com sucesso</h4>
+				<h4 class="modal-title step-3" data-step="3">Falha</h4>
+			</div>
+			<form id="formCriar" class="formParam" method="POST">
+				<div class="modal-body">
+					<div class="modal-body step step-1">
+						<div class="form-group">
+							<label>Valor máximo:</label>
+							<input type="text" class="form-control input valorMax" placeholder="Vamor máximo para alertas" name="valorMax">
+						</div>
+						<div style="display: none;" id="criarCorMax" class="form-group corMax">
+							<label>Escolha uma cor que represente o valor máximo:</label><br>
+							<select name="corMax" class="form-control select">
+								<option value="">Cor</option>
+								<option value="Vermelho">Vermelho</option>
+								<option value="Laranja">Laranja</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Valor mínimo:</label>
+							<input type="text" class="form-control input valorMin" placeholder="Valor mínimo para alertas" name="valorMin">
+						</div>
+						<div style="display: none;" id="criarCorMin" class="form-group corMin">
+							<label>Escolha uma cor que represente o valor mínimo:</label><br>
+							<select name="corMin" class="form-control select">
+								<option value="">Cor</option>
+								<option value="Verde">Verde</option>
+								<option value="Azul">Azul</option>
+							</select>
+							<input id="idSensor" value="" type="hidden" name="idSensor">
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button id="cadastrarSim" type="button" class="btn btn-default  step step-1" data-step="1">Cadastrar</button>
+					<button type="button" class="btn btn-default  step step-1" data-step="1" data-dismiss="modal">Voltar</button>
+					<a class="btn btn-primary step step-2" data-step="2" data-dismiss="modal">Fechar</a>
+					<a class="btn btn-primary step step-3" data-step="3" data-dismiss="modal">Fechar</a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+</div>
+
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top" id="menu">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header page-scroll">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="index.html" class="page-scroll icone-menu-container">
+				<img class="img-responsive" src="../../img/icone.png" id="icone-menu" alt="icone"/>
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="page-scroll">
+					<a href="index.html">P&aacute;gina Principal</a>
+				</li>
+				<li id="btn-login">
+					<a> Login </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- Contact Section -->
+<section id="contact">
+	<div class="container">
+		<h2>Parâmetros de Alerta por sensor de PCD</h2><br>
+		<table id="paramTable" class="table table-condensed">
+			<thead>
+				<tr bgcolor="#3a4857">
+					<th width="1%"></th>
+					<th>PCD</th>
+					<th>Quantidade de Sensores</th>
+				</tr>
+			</thead>
+			<tbody id="corpoTabela">
+
+			</tbody>
+		</table>
+	</div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+	<div class="footer-above">
+		<div class="container ">
+			<div class="row">
+				<div class="footer-col col-md-6">
+					<h3>Local</h3>
+					<p>Instituto Federal de Educação, Ciência e Tecnologia de São Paulo<br>Campus São João da Boa Vista</p>
+				</div>
+				<div class="footer-col col-md-6">
+					<h3>Redes Sociais</h3>
+					<ul class="list-inline">
+						<li>
+							<a href="https://www.facebook.com/ifspsaojoaodaboavista" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll visible-xs visible-sm">
+	<a class="btn btn-primary" href="#page-top">
+		<i class="fa fa-chevron-up"></i>
+	</a>
+</div>
+
+<!-- jQuery -->
+<script src="../../js/plugin/jquery.js"></script>
+
+<!--- formValidation.io jQuery -->
+<script src="../../js/plugin/formValidation.min.js"></script>
+<script src="../../js/plugin/formValidation-bootstrap.min.js"></script>
+
+<!-- Data Tables JQuery -->
+<script src="../../js/plugin/jquery.dataTables.min.js"></script>
+<script src="../../js/plugin/dataTables.bootstrap.min.js"></script>
+
+<!-- Data Tables Buttons -->
+<script src="../../js/plugin/dataTables.buttons.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../../js/plugin/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="../../js/plugin/freelancer.js"></script>
+
+<script src="../../js/plugin/multi-step-modal.js"></script>
+
+<!-- Custom JavaScript-->
+<script src="../../js/custom/mod05/paramAlertas.js"></script>
+
+</body>
+</html>
