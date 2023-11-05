@@ -1,0 +1,25 @@
+<?php
+
+include_once "Database.php";
+
+class NivelAcessoDAO{
+
+	public function cadastrarNivel($nivelAcesso) {
+		try {
+			$db = Database::conectar();
+			$query = "INSERT INTO niveis_de_acessos (NIV_ID, NIV_TIPO) VALUES(:NIV_ID, :NIV_TIPO)";
+			$stmt = $db->prepare($query);
+			$stmt->bindValue(":NIV_TIPO", $nivelAcesso->getTipo(), PDO::PARAM_STR);
+			$stmt->bindValue(":NIV_ID",$nivelAcesso->getId() , PDO::PARAM_STR);
+            //$stmt->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+			return $stmt->execute();
+            //$usuario->setId($db->lastInsertId());
+		} catch (PDOException $e) {
+			echo $e->getMessage();
+			exit();
+		}
+	}
+
+}
+
+

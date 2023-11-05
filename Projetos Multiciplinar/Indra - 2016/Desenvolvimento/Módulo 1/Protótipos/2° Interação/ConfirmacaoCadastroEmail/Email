@@ -1,0 +1,23 @@
+<?php
+class Email{
+    private $nome;
+    private $endereco;
+    
+     public function getNome() {
+        return $this->id;
+    }
+    
+     public function getEmail() {
+        return $this->email;
+    }
+
+      public function setNome($id) {
+        $this->id = $id;
+    }
+     public function setEmail($email) {
+        $this->email = $email;
+    }
+	
+}
+
+?>
