@@ -1,0 +1,77 @@
+.imgmodal{
+    width:130px;
+    height:130px;
+}
+.semconsulta{
+    height: 100%;
+    width: 100%; 
+    padding:5%; 
+    float:left; 
+    min-height: 100%
+}
+.quadrosemconsulta{
+     padding-bottom:  200px;
+}
+.marcarconsulta{
+    padding-top:30px; 
+    margin-left: 15px;
+}
+.marcarconsultabotao{
+    width: 150px; 
+    font-size: 14px; 
+}
+.footermarcarconsulta{
+    text-align: center; 
+    clear: both; 
+}
+.footermarcarconsultapartedebaixo{
+    display: block;
+}
+span{
+            color: #ad1f1f;
+            font-weight: bolder;
+        
+}
+#consulta{
+            float: none;
+            display: list-item;
+            padding: 200px;
+        
+}
+#botao{
+            margin-left: 60px;
+            margin-top: -30px;
+                 
+}
+.bordaaviso{
+    width: 20rem;
+    height: 10rem;
+}
+.nomesuplemento{
+    text-align: center;
+}
+.alinhamentoimgsuplemento{
+    width:130px;
+    height:130px;
+}
+.corpovisualizarperfil{
+    height: 100%;
+    width: 100%; 
+    padding:5%; 
+    float:left; 
+    min-height: 100%
+}
+.inputformperfileducador{
+    height: 30%; 
+    font-size: 12px;
+}
+.footerperfileducador{
+    text-align: center; 
+    clear: both; 
+}
+.footerbaixoperfileducador{
+    display: block;
+}
+.backgroundperfileducador{
+    background: white;
+}

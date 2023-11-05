@@ -1,0 +1,25 @@
+.imagemcard{
+   width:200px;
+   height:200px;
+}
+
+.imagemmodal{
+   width:150px;
+   height:150px;
+}
+
+.abremodal{
+    cursor:pointer; 
+}
+ .modal-xl {
+              width: 90%;
+             max-width:1200px;
+}
+.modal-body{
+          max-height: calc(100vh - 200px);
+          overflow-y: auto;
+}
+
+.tamanho{
+   width: 300px;
+}
