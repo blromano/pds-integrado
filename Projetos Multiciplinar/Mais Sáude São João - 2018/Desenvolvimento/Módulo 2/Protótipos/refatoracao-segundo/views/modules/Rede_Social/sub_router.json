@@ -1,0 +1,12 @@
+{
+	"inicio": "inicio.php",
+	"realiza_publicacao": "functions/realiza_publicacao.php",
+	"realiza_comentario": "functions/realiza_comentario.php",
+	"editar_publicacao": "functions/editar_publicacao.php",
+	"editar_comentario": "functions/editar_comentario.php",
+	"deletar_publicacao": "functions/deletar_publicacao.php",
+	"deletar_comentario": "functions/deletar_comentario.php",
+	"denunciar_pub": "functions/denunciar_pub.php",
+	"denunciar_comentario": "functions/denunciar_comentario.php",
+	"lista_denuncia": "lista_denuncia.php"
+}

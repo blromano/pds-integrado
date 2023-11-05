@@ -1,0 +1,68 @@
+.link, .link:hover{
+  color: white;
+  font-size: 225%;
+  text-decoration: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .2s;
+  background-color: black;
+}
+
+.text {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.col:hover .overlay {
+  opacity: 0.93;
+}
+
+#imc{
+    background-color: #9690C7;
+}
+
+.border_imc{
+    border: 1px solid #9690C7;
+}
+
+#psanguinea{
+    background-color: #bae1c9;
+}
+
+#oximetria{
+    background-color: #d8d27a;
+}
+
+#cpulmonar{
+    background-color: #E3B765;
+}
+
+#tgordura{
+    background-color: #FF8571;
+}
+
+#bpm{
+    background-color: #EBB3FA;
+}
+
+#visao{
+    background-color: #C4F7B6;
+}
+
+#relatorios{
+  background-color: #FFDC6E;
+}

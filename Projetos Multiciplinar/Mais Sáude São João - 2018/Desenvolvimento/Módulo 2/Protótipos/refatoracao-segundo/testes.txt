@@ -1,0 +1,301 @@
+TESTE DE BPM
+
+		<form>
+                    <div class="row">
+                        <div class="col-md-4 mx-auto">
+                            <label for="sexo">Informe seu sexo</label>
+                            <div class="form-group" id="sexo">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Masculino
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Feminino
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mx-auto">
+                            <div class="form-group">
+                                <labe for="bpm">Insira o Valor dos Batimentos por Minuto</labe>
+                                <input type="number" class="form-control" name="bpm">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 offset-md-5 align-self-center">
+                        <input type="submit" class="btn btn-danger">
+                    </div>
+                </form>
+
+TESTE CP PULMONAR
+
+<form>
+                    <div class="row">
+                        <div class="col-md-4 mx-auto">
+                            <label for="sexo">Informe seu sexo</label>
+                            <div class="form-group" id="sexo">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Masculino
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Feminino
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mx-auto">
+                            <div class="form-group">
+                                <labe for="cpm">Insira sua Capacidade Pulmonar</labe>
+                                <input type="number" class="form-control" name="cpm">
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 offset-md-5 align-self-center">
+                        <input type="submit" class="btn btn-danger">
+                    </div>
+                </form>
+
+TESTE IMC
+
+<form>
+					<div class="row">
+						<div class="col-md-4 mx-auto">
+							<label for="sexo">Informe seu sexo</label>
+							<div class="form-group" id="sexo">
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Masculino
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Feminino
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 mx-auto">
+							<div class="form-group">
+								<labe for="peso">Insira seu peso</labe>
+								<input type="number" class="form-control" name="peso" id="peso">
+							</div>
+						</div>
+
+						<div class="col-md-4 mx-auto">
+							<div class="form-group">
+								<labe for="peso">Insira sua altura</labe>
+								<input type="number" class="form-control" name="peso" id="peso">
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 offset-md- align-self-center">
+						<input type="submit" class="btn btn-danger">
+					</div>
+				</form>
+
+TESTE OXIMETRIA
+
+<form>
+                    <div class="row">
+                        <div class="col-md-4 mx-auto">
+                            <label for="sexo">Informe seu sexo</label>
+                            <div class="form-group" id="sexo">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Masculino
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Feminino
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mx-auto">
+                            <div class="form-group">
+                                <label>Insira seu Batimento Cardíaco</label>
+                                <input type="number" class="form-control" name="bpm">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mx-auto">
+                            <div class="form-group">
+                                <labe for="peso">Insira o valor da Saturação de Oxigênio no Sangue</labe>
+                                <input type="number" class="form-control" name="sp02">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 offset-md-5 align-self-center">
+                        <input type="submit" class="btn btn-danger">
+                    </div>
+                </form>
+
+TESTE PRESSÃO SANGUINEA
+
+<form>
+                    <div class="row">
+                        <div class="col-md-4 mx-auto">
+                            <label for="sexo">Informe seu sexo</label>
+                            <div class="form-group" id="sexo">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Masculino
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Feminino
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mx-auto">
+                            <div class="form-group ">
+                                <labe for="peso">Insira o valor de Pressão Sanguínea</labe>
+                                <input type="number" class="form-control" name="psanguinea">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 offset-md-5 align-self-center">
+                        <input type="submit" class="btn btn-danger">
+                    </div>
+                </form>
+
+TESTE TAXA DE GORDURA
+
+<form>
+                    <div class="row">
+                        <div class="col-md-4 mx-auto">
+                            <label for="sexo">Informe seu sexo</label>
+                            <div class="form-group" id="sexo">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Masculino
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Feminino
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mx-auto">
+                            <div class="form-group">
+                                <labe for="peso">Insira o valor da Taxa de Gordura</labe>
+                                <input type="number" class="form-control" name="tgordura">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 offset-md- align-self-center">
+                        <input type="submit" class="btn btn-danger">
+                    </div>
+                </form>
+
+TESTE VISÃO (UNFINISHED)
+
+<form>
+                    <div class="row">
+                        <div class="col-md-4 mx-auto">
+                            <label for="sexo">Informe seu sexo</label>
+                            <div class="form-group" id="sexo">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Masculino
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Feminino
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mx-auto">
+                            <div class="form-group">
+                                <labe for="peso">Informe seu Problema Oftalmológico</labe>
+                                <input type="number" class="form-control" name="peso" id="peso">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col  text-dark">
+                            <img class="img-fluid mw-100 h-auto  mx-auto d-block" src="<?=$_ROOT_PATH?>views/modules/CheckUps/TesteIshihara/12.png" alt="teste_1">
+                        </div>
+                        <div class="col  text-dark">
+                            <div class="form-group pt-2">
+                                <label for="numeroqueenxerga">Que número você enxerga?</label>
+                                <input type="number" class="form-control" id="n_teste_1" placeholder="Digite o número que você enxerga">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="n_enxerga">
+                                <label class="form-check-label" for="nenxerga">Não enxergo nenhum número.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col  text-dark">
+                            <img class="img-fluid mw-100 h-auto  mx-auto d-block" src="<?=$_ROOT_PATH?>views/modules/CheckUps/TesteIshihara/2.png" alt="teste_1">
+                        </div>
+                        <div class="col  text-dark">
+                            <div class="form-group pt-2">
+                                <label for="numeroqueenxerga">Que número você enxerga?</label>
+                                <input type="number" class="form-control" id="n_teste_1" placeholder="Digite o número que você enxerga">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="n_enxerga">
+                                <label class="form-check-label" for="nenxerga">Não enxergo nenhum número.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col  text-dark">
+                            <img class="img-fluid mw-100 h-auto  mx-auto d-block" src="<?=$_ROOT_PATH?>views/modules/CheckUps/TesteIshihara/42.png" alt="teste_1">
+                        </div>
+                        <div class="col  text-dark">
+                            <div class="form-group pt-2">
+                                <label for="numeroqueenxerga">Que número você enxerga?</label>
+                                <input type="number" class="form-control" id="n_teste_1" placeholder="Digite o número que você enxerga">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="n_enxerga">
+                                <label class="form-check-label" for="nenxerga">Não enxergo nenhum número.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col  text-dark">
+                            <img class="img-fluid mw-100 h-auto  mx-auto d-block" src="<?=$_ROOT_PATH?>views/modules/CheckUps/TesteIshihara/6.png" alt="teste_1">
+                        </div>
+                        <div class="col  text-dark">
+                            <div class="form-group pt-2">
+                                <label for="numeroqueenxerga">Que número você enxerga?</label>
+                                <input type="number" class="form-control" id="n_teste_1" placeholder="Digite o número que você enxerga">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="n_enxerga">
+                                <label class="form-check-label" for="nenxerga">Não enxergo nenhum número.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col  text-dark">
+                            <img class="img-fluid mw-100 h-auto  mx-auto d-block" src="<?=$_ROOT_PATH?>views/modules/CheckUps/TesteIshihara/12.png" alt="teste_1">
+                        </div>
+                        <div class="col  text-dark">
+                            <div class="form-group pt-2">
+                                <label for="numeroqueenxerga">Que número você enxerga?</label>
+                                <input type="number" class="form-control" id="n_teste_1" placeholder="Digite o número que você enxerga">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="n_enxerga">
+                                <label class="form-check-label" for="nenxerga">Não enxergo nenhum número.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col  text-dark">
+                            <img class="img-fluid mw-100 h-auto  mx-auto d-block" src="<?=$_ROOT_PATH?>views/modules/CheckUps/TesteIshihara/12.png" alt="teste_1">
+                        </div>
+                        <div class="col  text-dark">
+                           <div class="form-group pt-2">
+                                <label for="numeroqueenxerga">Que número você enxerga?</label>
+                                <input type="number" class="form-control" id="n_teste_1" placeholder="Digite o número que você enxerga">
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="n_enxerga">
+                                <label class="form-check-label" for="nenxerga">Não enxergo nenhum número.</label>
+                            </div>  
+                        </div>
+                    </div>  
+                    <div class="row mt-2">
+                        <div class="col-md-4 offset-md-5 align-self-center">
+                            <input type="submit" class="btn btn-danger">
+                        </div>
+                    </div>
+                </form>

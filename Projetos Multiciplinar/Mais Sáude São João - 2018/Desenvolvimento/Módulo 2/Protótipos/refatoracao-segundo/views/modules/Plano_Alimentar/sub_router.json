@@ -1,0 +1,17 @@
+{
+
+    "inserir_cardapio_busca": "inserir_cardapio_busca.php",
+    "inserir_cardapio": "inserir_cardapio.php",
+    "valida_inserir_cardapio": "valida_inserir_cardapio.php",
+    "gerir_cardapio":"gerir_cardapio.php",
+    "visualizar_cardapio":"visualizar_cardapio.php",
+    "gerir_cardapio_busca":"gerir_cardapio_busca.php",
+    "vida_alimentar_metas_busca_nome":"vida_alimentar_metas_busca_nome.php",
+    "visualizar_vida_alimentar":"visualizar_vida_alimentar.php",
+    "vida_alimentar_metas_do_paciente":"vida_alimentar_metas_do_paciente.php",
+    "valida_vida_alimentar": "valida_vida_alimentar.php",
+    "ProcurarFichaConsulta": "Procurar Ficha de Consulta.php",
+    "EditarFichaConsulta": "Editar Ficha de Consulta.php",
+    "EnviarEFC": "Enviar para EFC.php",
+    "RegistrarDisponibilidadeHorárioConsulta":"Registrar Disponibilidade de Horário para Consulta.php"
+}

@@ -1,0 +1,17 @@
+{
+    "atualizar_peso_altura": "atualizar_peso_altura.php",
+	"cadastrar_novo_alimento_mod09": "cadastrar_novo_alimento_mod09.php",
+	"calcular_peso_ideal_imc": "calcular_peso_ideal_imc.php",
+	"exibir_historico_consumo_calorias_nutrientes": "exibir_historico_consumo_calorias_nutrientes.php",
+	"exibir_historico_peso": "exibir_historico_peso.php",
+	"exibir_relatorio_calorias_consumidas_por_tipo_refeicao": "exibir_relatorio_calorias_consumidas_por_tipo_refeicao.php",
+	"exibir_relatorio_calorias_consumidas_restantes": "exibir_relatorio_calorias_consumidas_restantes.php",
+	"exibir_relatorio_nutrientes": "exibir_relatorio_nutrientes.php",
+	"exibir_relatorios_dados_historicos": "exibir_relatorios_dados_historicos.php",
+	"exibir_relatorios_diarios": "exibir_relatorios_diarios.php",
+	"gerir_alimentos_favoritos": "gerir_alimentos_favoritos.php",
+	"gerir_diario_de_bordo": "gerir_diario_de_bordo.php",
+	"inserir_refeicao": "inserir_refeicao.php",
+	"inserir_alimento_cardapio": "inserir_alimento_cardapio.php",
+        "deletar_alimento_refeicao": "deletar_alimento_refeicao.php"
+}

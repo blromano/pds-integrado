@@ -1,0 +1,26 @@
+Adicionar suplementos-V
+cadastro_perfil_treinamento-V
+confirmação_solicitação_acompanhamento-V
+Dispensa_Educador-V
+Disponibilidade_educador-V
+Editar_dados_suplementos-V
+Editar_Perfil_Treinamento-V
+Erro_Perfil_Treinamento-V
+Erro_realizar_pesquisa-V
+ficha_adiciona_treino-V
+ficha_treinamento-V
+ficha_treinamento_dados-V
+lista_usuario-V
+listar_consultas-V(JavaScript interno)-V
+Pesquisar_educador(JS interno)-V
+Visualizar_perfil_educador(Js Interno)-V
+
+
+
+
+1 efetuar perfil treinamento - second jesus, quebrado (reconstruir from the tela of edital perfil treinamento)
+	modal erro = erro_perfil_treinamento.php -> adicionar botao "OK"
+2 editar perfil treinamento:
+ -editar_perfil_treinamento.php - correto
+	modal erro idem
+3 pesquisar ed fisico

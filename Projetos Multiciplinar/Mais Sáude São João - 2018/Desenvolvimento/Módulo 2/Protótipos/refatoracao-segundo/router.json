@@ -1,0 +1,12 @@
+{
+    "home": "home.php",
+    "checkups": "modules/CheckUps/loader.php",
+	"dbordo": "modules/Diario_de_Bordo/loader.php",
+	"fesportivas": "modules/Ferramentas_Esportivas/loader.php",
+	"fnutricionais": "modules/Ferramentas_Nutricionais/loader.php",
+	"palimentar": "modules/Plano_Alimentar/loader.php",
+	"rsocial": "modules/Rede_Social/loader.php",
+	"rtreinos": "modules/Resultado_dos_Treinos/loader.php",
+	"treinos": "modules/Treinos/loader.php",
+	"usuarios": "modules/Usuarios/loader.php"
+}

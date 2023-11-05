@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'UniSans';
+    src: url("../../assets/fonts/UniSans.ttf");
+}
+
+$primary:       #1f406b;
+$secondary:     #9BA0A6;
+$light:         #FFFFFF;
+$darker:		#14181E;
+$danger: 		#c91a1a;
+$success:		#9DB72C;
+$info:			#347596;
+$warning:		#D2D030;
+$transparent-darker:		  rgba($darker, 0.9);
+$font-family-sans-serif:     'UniSans';
+
+//$navbar-padding-y:           (1rem / 3);
+
+/*
+$success:       $green !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$dark:          $gray-800 !default;
+*/    
+
+$btn-border-radius:           0px;
+$btn-border-radius-lg:        0px;
+$btn-border-radius-sm:        0px;
+
+
+
+
+$theme-colors: (
+  "darker":		$darker,
+  "transparent-darker":		$transparent-darker,
+);

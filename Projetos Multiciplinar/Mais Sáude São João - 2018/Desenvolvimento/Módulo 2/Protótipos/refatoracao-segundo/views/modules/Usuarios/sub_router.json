@@ -1,0 +1,25 @@
+{
+<<<<<<< .mine
+    "login": "Login.php",
+    "adicionar_patologias" : "adicionarpatologiasemedicacoescontinuas.php"
+   
+||||||| .r2360
+    "login": "Login.php"
+   
+=======
+
+    "patologias": "AdicionarPatologiasEMedicacoesContinuas.php",
+    "login":"login_cadastro_recu_senha.php",
+    "sair": "sair_portal.php",
+    "senha" : "alterar_senha.php",
+    "fale_conosco" : "FaleConosco.php",
+    "registrar" : "RegistrarPesoAltura.php",
+    "sobre" : "VisualizarSobreOProjeto.php",
+        "email" : "modelo_email_mod01.php",
+    "area_adm" : "login_adm.php",
+    "adm_chefe": "adm_chefe_view.php",
+    "adm_comum": "adm_comum_view.php",
+    "cadastro_adm": "cadastro_adm.php"
+  
+>>>>>>> .r2530
+}

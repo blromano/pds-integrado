@@ -1,0 +1,13 @@
+{
+    "relatorios": "relatorios.php",
+    "teste_bpm": "testbpm.php",
+    "inicial": "inicial.php",
+    "imc": "imc.php",
+    "bpm": "bpm.php",
+    "cpulmonar": "cpulmonar.php",
+    "graficos" : "graficos.php",
+    "oximetria": "oximetria.php",
+    "psanguinea": "psanguinea.php",
+    "tgordura": "tgordura.php",
+    "visao": "visao.php"
+}

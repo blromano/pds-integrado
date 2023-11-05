@@ -1,0 +1,249 @@
+#imgperfilcadastro{
+    width:18%;
+    height:18%;
+}
+#conteudocadastro{
+    margin-left: 425px;
+}
+#avatardadosconsulta{
+    width:130px;
+    height:130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom:20px;
+}
+#botoesdadosconsulta{
+    text-align: left;
+}
+.imgsuplemento{
+    width:200px;
+    height:200px;
+    margin-left: 133px;
+    margin-top: 20px;
+}
+#botaoeditarperfil{
+    margin-left: 50px;
+}
+.tabdisp>th{
+    text-align:left;
+}
+#avatarfichatreinamento{
+    width:130px;
+    height:130px; 
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+}
+.separacao{
+    border-top: 2px solid gray;
+    padding-bottom:20px;
+}
+.menu,.sub-menu {
+                padding: 0;
+            }
+.clearfix:after{
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+.menu,.sub-menu {
+    list-style: none;
+    background: #000;
+}
+.sub-menu {
+    background: #444;
+}
+.menu a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.menu li {
+    position: block;
+}
+.menu > li {
+    float: left;
+}
+.menu > li:hover {
+    background: #444;
+}
+.menu li:hover > .sub-menu {
+    display: block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 130px;
+    max-width: 250px;
+}
+.sub-menu li:hover {
+    background: #555;
+}
+.sub-menu .sub-menu {
+    top: 0;
+    left: 100%;
+.card a{
+     text-decoration: none;
+ }
+    
+} 
+.espaco{
+    margin-top: 50px;
+}
+.imagemcard{
+   width:200px;
+   height:200px;
+}
+
+.imagemmodal{
+   width:150px;
+   height:150px;
+}
+
+.abremodal{
+    cursor:pointer; 
+}
+ .modal-xl {
+    width: 90%;
+   max-width:1200px;
+}
+.modal-body{
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.tamanho{
+   width: 300px;
+}
+.imgmodal{
+    width:130px;
+    height:130px;
+}
+.semconsulta{
+    height: 100%;
+    width: 100%; 
+    padding:5%; 
+    float:left; 
+    min-height: 100%
+}
+.quadrosemconsulta{
+     padding-bottom:  200px;
+}
+.marcarconsulta{
+    padding-top:30px; 
+    margin-left: 15px;
+}
+.marcarconsultabotao{
+    width: 150px; 
+    font-size: 14px; 
+}
+.footermarcarconsulta{
+    text-align: center; 
+    clear: both; 
+}
+.footermarcarconsultapartedebaixo{
+    display: block;
+}
+span{
+            color: #ad1f1f;
+            font-weight: bolder;
+        
+}
+#consulta{
+            float: none;
+            display: list-item;
+            padding: 200px;
+        
+}
+#botao{
+            margin-left: 60px;
+            margin-top: -30px;
+                 
+}
+.bordaaviso{
+    width: 20rem;
+    height: 10rem;
+}
+.nomesuplemento{
+    text-align: center;
+}
+.alinhamentoimgsuplemento{
+    width:130px;
+    height:130px;
+}
+.corpovisualizarperfil{
+    height: 100%;
+    width: 100%; 
+    padding:5%; 
+    float:left; 
+    min-height: 100%
+}
+.inputformperfileducador{
+    height: 30%; 
+    font-size: 12px;
+}
+.footerperfileducador{
+    text-align: center; 
+    clear: both; 
+}
+.footerbaixoperfileducador{
+    display: block;
+}
+.backgroundperfileducador{
+    background: white;
+}
+.Inputusuarioconsultadia{
+margin-left: 10%; 
+height:30%;
+}
+
+.Inputusuarioconsultatime{
+height: 30%;
+margin-left: 5%;
+}
+.Inputusuarioconsultanome{
+height: 5%;
+font-size: 15px;
+}
+.InputusuarioconsultaNotifi{
+width: 30%;
+font-size: 12px; 
+margin-left: 2%; 
+margin-top: 0.2%;
+}
+.Inputusuarioconsultaquantidade{
+    width: 10%; 
+    height: 10%;
+    margin-left: 2%;
+}
+.Inputusuarioconsultaquantidade2{
+    width: 30%;
+    font-size: 12px;
+    margin-left: 2%; 
+    margin-top: 0.2%;
+}
+.Inputusuarioconsultaquantidade3{
+    height: 10%;
+    font-size: 12px;
+    width:30%;
+    margin-left: 5%;
+}
+.Inputusuarioconsultaedu{
+    margin-left: 2%;
+}
+.marcarconsulta{
+    width: 50%;
+}

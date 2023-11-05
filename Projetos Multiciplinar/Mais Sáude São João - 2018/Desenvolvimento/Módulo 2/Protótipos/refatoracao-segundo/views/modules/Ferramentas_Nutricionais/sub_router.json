@@ -1,0 +1,20 @@
+{
+    "nome do sub diretório": "link do subdiretorio.php",
+    "exemplo": "exemplo.php",
+    "unidade_medida":"unidade_medida.php",
+    "unidade_cadastra":"CadastraUnidade.php",
+    "unidade_edita":"EditaUnidade.php",
+    "unidade_exclui":"DeletaUnidade.php",
+    "abrindo_modais":"abrindo_modais.js",
+	"meu_alimento":"meu_alimento.php",
+    "meu_cadastra":"CadastraMeu.php",
+    "meu_edita":"EditaMeu.php",
+    "meu_exclui":"DeletaMeu.php",
+	"tipo_alimento":"tipo_alimento.php",
+    "cadastro_Tp_alimento":"cadastro_Tp_alimento.php",
+    "editar_Tp_alimento":"editar_Tp_alimento.php",
+    "deleta_Tp_alimento":"deleta_Tp_alimento.php",
+    "tp_alimento":"tp_alimento.css"
+
+    
+}

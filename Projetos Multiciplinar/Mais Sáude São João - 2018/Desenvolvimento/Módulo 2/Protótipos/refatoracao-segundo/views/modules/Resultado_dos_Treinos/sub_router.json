@@ -1,0 +1,22 @@
+{
+    "inicio": "rt_hist_ficha.php",
+    "adicionar_gasto_calorico": "rt_add_gasto.php",
+    "atualizar_ficha_treinamento": "rt_att_ficha.php",
+    "atualizar_programa_treinamento": "rt_att_prog.php",
+    "vincular_programa": "rt_desc_prog.php",
+    "editar_gasto_calorico": "rt_edit_gasto.php",
+    "historico_programas": "rt_hist_prog.php",
+    "historico_exercicio_ficha": "rt_hist_ex_ficha.php",
+    "historico_exercicio_programa": "rt_hist_ex_prog.php",
+    "historico_gasto": "rt_hist_gasto.php",
+    "visualizar_desempenho": "rt_visu_des.php",
+    "visualizar_dobras": "rt_visu_dobras.php",
+    "visualizar_ficha": "rt_visu_ficha.php",
+    "visualizar_gastoxconsumo": "rt_visu_gastoxconsumo.php",
+    "visualizar_gordura": "rt_visu_gord.php",
+    "visualizar_medidas": "rt_visu_medida.php",
+    "visualizar_programa": "rt_visu_prog.php",
+    "visualizar_programa_pronto": "rt_visu_prog_pronto.php",
+	"programa" : "programa_treinamento.php",
+    "teste" : "hist_ficha_teste.php"
+}

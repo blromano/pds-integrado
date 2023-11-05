@@ -1,0 +1,48 @@
+.atualizar_diario{
+    height: 100%;
+    width: 100%; 
+    padding:5%; 
+    float:left; 
+    min-height: 100% 
+}
+.botao{
+    margin-top: 1%;
+}
+.esquerda{
+    text-align: left;
+}
+
+.nome_refeicao{
+    text-align: center; 
+    color: #0087cc;
+}
+.total_refeicao{
+    color: #104999;
+}
+.spanvermelho{
+    color:red;
+}
+.danger{
+    color: red;
+}
+input:onclick{
+    background-color: white;
+}
+select{
+    background-color: white;
+}
+.centro{
+    text-align: center;
+}
+html, body {height:100%;}
+
+.geral {
+    min-height:100%;
+    position:relative;
+    width:100%;
+}
+
+footer {
+    bottom:0;
+    width:100%;
+}

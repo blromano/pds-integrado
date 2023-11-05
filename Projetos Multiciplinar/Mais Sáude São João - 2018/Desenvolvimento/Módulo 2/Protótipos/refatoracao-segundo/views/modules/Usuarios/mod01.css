@@ -1,0 +1,39 @@
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #05bca9;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #05bca9;
+}
+
+/* Style the tab content */
+.tabcontent {
+    animation: fadeEffect 2s; /* Fading effect takes 1 second */
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+input[type='file'] {
+    display: none
+}
+

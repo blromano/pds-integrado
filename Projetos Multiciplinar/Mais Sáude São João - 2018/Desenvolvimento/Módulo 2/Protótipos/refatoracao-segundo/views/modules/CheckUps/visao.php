@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> +Saúde São João </title>
+    <script src="<?=JQUERY_PATH?>" charset="utf-8"></script>
+    <script src="<?=POPPER_PATH?>" charset="utf-8"></script>
+    <script src="<?=THEME_JS_PATH?>" charset="utf-8"></script>
+    <script src="<?=ANIMATIONS_PATH?>" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="<?=$_ROOT_PATH?>views/modules/CheckUps/hover.css">
+    <link rel="stylesheet" href="<?=THEME_CSS_PATH?>">
+</head>
+<body>
+    <?php
+        $vertical_menu_links = [
+            "Nome do link" => "link_de_redirecionamento.html"
+        ];
+        include(VIEWS_PATH . '/module_base.php');
+        ?>
+    <section onclick="closeNav()">
+        <div class="row">
+            <div class="border col-md-10 offset-md-1 align-self-center mt-5">
+                <h1 class="text-center mt-3"> Visão </h1>
+            </div>
+        </div>
+
+        <div class="row">
+           <div class="border col-md-10 offset-md-1 align-self-center mt-2">
+                <form class="form">
+                    <div class="form-group">
+                        <label class="p-1"for="imc">DATA INICIAL</label>
+                        <input type="date" class="form-control form-control-lg" name="bpm-date"S>
+                </div>
+                </form>
+            </div>
+            <div class="border col-md-10 offset-md-1 align-self-center mt-2">
+                <form class="form">
+                    <div class="form-group">
+                        <label class="p-1"for="imc">DATA FINAL</label>
+                        <input type="date" class="form-control form-control-lg" name="bpm-date">
+                </div>
+                </form>
+            </div>
+            <?php include(VIEWS_PATH."modules/CheckUps/relatorios/tabela_visao.php"); ?>
+        </div>
+    </section>
+</body>
