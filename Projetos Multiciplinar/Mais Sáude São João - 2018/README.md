@@ -1,6 +1,6 @@
 # Repositório do projeto Mais Saúde São João 
 
-Aqui está presente os arquivos gerados no desenvolvimento do projeto Mais Saúde São João
+Os arquivos gerados durante o desenvolvimento do projeto "Mais Saúde São João" estão disponíveis aqui.
 
 Objetivo do projeto:
 - Desenvolvimento de um aplicativo com foco em cuidado pessoal
