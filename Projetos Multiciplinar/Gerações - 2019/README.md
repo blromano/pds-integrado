@@ -1,4 +1,4 @@
-#Repositório do projeto Gerações
+# Repositório do projeto Gerações
 Os arquivos gerados durante o desenvolvimento do projeto "Gerações" estão disponíveis aqui.
 
 Objetivo do projeto:
