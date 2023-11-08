@@ -1,4 +1,4 @@
-# Repositório do projeto Mais Saúde São João
+# Repositório do projeto MedLus
 Os arquivos gerados durante o desenvolvimento do projeto "MedLus" estão disponíveis aqui.
 
 Objetivo do projeto:
