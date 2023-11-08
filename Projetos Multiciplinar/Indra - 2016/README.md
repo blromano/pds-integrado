@@ -1,4 +1,4 @@
-#Repositório do projeto Indra
+# Repositório do projeto Indra
 Os arquivos gerados durante o desenvolvimento do projeto "Indra" estão disponíveis aqui.
 
 Objetivo do projeto:
