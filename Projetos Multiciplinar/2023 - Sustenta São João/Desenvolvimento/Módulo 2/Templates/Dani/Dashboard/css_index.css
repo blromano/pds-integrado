@@ -1,0 +1,323 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body {height: 100%;}
+
+header 
+{
+background-color: white;
+padding: 10px 2%;
+display: flex;
+justify-content: space-between;
+}
+
+.logo
+{
+width: 35%; 
+}
+
+.logo h3
+{
+cursor: pointer;    
+}
+
+.logo h3:hover
+{
+opacity: 0.7;    
+}
+
+.icons-header{
+    color: #337470;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+    width: 10%;
+	su
+   
+}
+
+.icons-header svg
+{
+margin:0 10px;
+cursor: pointer;
+}
+
+.icons-header svg:hover
+{
+opacity: 0.7;
+cursor: pointer;
+}
+
+
+.main
+{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.sidebar
+{
+width: 20%;
+background-color: #6DBA65;
+height: 100%;
+}
+
+
+.sidebar a.sidebar-active
+{
+border-left: 2px solid rgb(255, 255, 255);    
+background-color: #337470 ;  
+color: rgb(207, 207, 207); 
+font-weight: bold; 
+}
+
+.sidebar a.sidebar-active > svg
+{
+color: rgb(139, 139, 139); 
+}
+
+.sidebar h3 
+{
+color: #337470;
+font-size: 20px;
+margin: 10px;
+}
+
+.sidebar a 
+{
+display: block;
+text-decoration: none;
+padding: 10px 15px;
+color: #9BE17F;
+}
+
+
+.sidebar a:hover
+{
+border-left: 2px solid rgb(255, 255, 255);    
+background-color: #589b50 ;  
+color: rgb(255, 255, 255);
+font-weight: bold; 
+}
+
+.sidebar a:hover .sidebar s > svg
+{
+color: #777;    
+}
+
+.sidebar a > svg
+{
+color:rgb(255, 255, 255) ;    
+}
+
+.content
+{
+width: 80%;
+background-color: rgb(255, 255, 255);
+padding: 20px;
+}
+
+.titulo-secao
+{
+border-radius: 10px;
+background-color: white;
+padding: 10px;    
+}
+
+.titulo-secao h2
+{
+font-size: 19px;    
+}
+
+.titulo-secao p
+{
+font-size: 14px;
+}
+
+.titulo-secao svg 
+{
+color: green;    
+}
+
+.titulo hr
+{
+border-color: antiquewhite;    
+}
+
+.separator
+{
+width: 100%;
+height: 2px;
+background-color: rgb(138, 138, 138);    
+}
+
+.box-info
+{
+width: 100%;
+margin-top: 20px;
+display: flex;
+justify-content: space-around;   
+}
+
+.box-info-single
+{
+display: flex;
+justify-content: space-between;
+border-radius: 10px;
+color: white;
+width: 100%;
+margin:0 10px;
+padding: 10px;    
+}
+
+.box-info-single svg
+{
+font-size: 28px;    
+}
+
+
+.sitemap {
+	margin: 0 0 2em 0;
+}
+
+/* ------------------------------------------------------------
+	Page Styles
+------------------------------------------------------------ */
+
+/* -------- Top Level --------- */
+
+.primaryNav {
+	clear: both;
+	width: 100%;
+	margin-top: 2px;
+} 
+
+.primaryNav ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	position:relative;
+    padding: 10px ;
+   
+}
+.primaryNav li {
+	flex: 1;
+	flex-basis: 10px;
+	position: relative;
+}
+.primaryNav > ul > li {
+	margin-top: 2px;
+}
+.primaryNav li a {
+	margin: 0;
+	padding: .875em .9375em .9375em .9375em;
+	display: flex;
+	font-size: .9375em;
+	font-weight: bold;
+	color: white;
+	background: #4c9644;
+	text-shadow: 0 0 10px rgba(0,0,0,.1);
+	border: 1px solid  rgba(0,0,0,.025);
+	box-shadow: 0px 2px 1px rgba(0,0,0,0.15);
+	text-decoration: none;
+    border-radius: 10px;
+	justify-content: space-around;
+}
+.primaryNav li a:hover {
+	background-color: #337470;
+}
+/* -------- Second Level --------- */
+
+.primaryNav ul ul {
+	display: block;
+}
+.primaryNav ul ul li {
+	padding-top: .6875em;
+	padding-right: 0;
+}
+.primaryNav ul ul li a {
+	background-color: #28bf5e;
+}
+.primaryNav ul ul li a:hover {
+	background-color: #09a63e;
+}
+.primaryNav ul ul li:first-child {
+	padding-top: 2em;
+}
+
+
+/* ------------------------------------------------------------
+	Responsive Styles
+------------------------------------------------------------ */
+
+@media screen and (max-width: 30em) {
+	.primaryNav ul {
+		display: block;
+	}
+	.primaryNav li {
+		width: 100%;
+		padding-right: 0;
+	}
+	.primaryNav #home {
+		width: 100%;
+		position: relative;
+		margin-bottom: -1em;
+		margin-top: 0;
+	}
+	.utilityNav {
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: right;
+		margin-bottom: 2.5em;
+		max-width: 100%;
+	}
+}
+
+/* The media queries below keep the grid column widths intact when
+a column wraps. This prevents the wrapped column from displaying at
+100% width. These queries also make the homepage line item flex
+appropriately. When your sitemap is complete, remove the queries
+that you don't need, and your sitemap layout will work perfectly. */
+
+/* two column */
+@media screen and (min-width: 30em) {
+	.primaryNav > ul > li {	max-width: 50%;	}
+}
+/* three column */
+@media screen and (min-width: 38.5em) {
+	.primaryNav > ul > li {	max-width: 33%;	}
+}
+/* four column */
+@media screen and (min-width: 50em) {
+	.primaryNav > ul > li {	max-width: 25%;	}
+}
+/* five column */
+@media screen and (min-width: 61em) {
+	.primaryNav > ul > li {	max-width: 20%;	}
+}
+/* six column */
+@media screen and (min-width: 73em) {
+	.primaryNav > ul > li {	max-width: 16.66%;	}
+}
+/* seven column */
+@media screen and (min-width: 84.5em) {
+	.primaryNav > ul > li {	max-width: 14.285%;	}
+}
+/* eight column */
+@media screen and (min-width: 96em) {
+	.primaryNav > ul > li {	max-width: 12.5%; }
+}
+/* nine column */
+@media screen and (min-width: 107.5em) {
+	.primaryNav > ul > li {	max-width: 11.11%; }
+}
+/* ten column */
+@media screen and (min-width: 119em) {
+	.primaryNav > ul > li {	max-width: 10%; }
+}
