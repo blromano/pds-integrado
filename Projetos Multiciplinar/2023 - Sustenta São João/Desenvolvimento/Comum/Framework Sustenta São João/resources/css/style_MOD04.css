@@ -1,0 +1,273 @@
+/*João Vitor*/
+.alinhar {
+  padding-right: 15px;
+}
+
+.alinhar_j {
+  padding-right: 5px;
+}
+
+.thead th {
+  color: #18ce0f;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.226);
+}
+
+.thead2 {
+  color: #18ce0f;
+  border: none;
+  border-right: 2px solid rgba(0, 0, 0, 0.226);
+}
+
+.align_end {
+  margin-top: 25px;
+  height: 39px;
+  width: 100%;
+}
+
+.form_j label {
+  font-size: small;
+  font-weight: bold;
+  color: #18ce0f;
+}
+
+.form_j ::placeholder input.text_j,
+select.text_j {
+  appearance: none;
+  border: 1px solid rgba(0, 0, 0, 0.226);
+  color: rgba(0, 0, 0, 0.527);
+}
+
+select.filter {
+  background-color: #dbdfd7;
+  border-radius: 0.1875rem;
+}
+
+.u_j {
+  list-style-type: disc;
+  color: #458279;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.nowrap2 {
+  white-space: nowrap;
+  padding-left: 7px;
+}
+
+.espacar {
+  margin-left: 3px;
+}
+
+.popUp {
+  width: auto;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  border-radius: 0.1875rem;
+}
+
+.buscar {
+  height: 37px;
+}
+
+.t_a {
+  margin-left: 15px;
+}
+
+.header_pop {
+  background-color: #7bc36f;
+}
+
+.body_pop {
+  padding: 10px;
+}
+
+.p_j {
+  padding: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.p_a {
+  font-size: small;
+  font-weight: bold;
+  padding-left: 15px;
+  color: #333333b6;
+}
+
+.search_bar input[type=search] {
+  border-radius: 30px 0 0 30px;
+  border: 1px solid rgba(0, 0, 0, 0.226);
+  color: rgba(0, 0, 0, 0.527);
+  margin: 0;
+}
+
+.search_bar2 i.icon {
+  height: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.search_bar2 {
+  margin-left: -12px;
+
+}
+
+.a_j {
+  color: white;
+  padding: 0cqmax;
+}
+
+.a_j:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/*Amanda*/
+
+.bnt {
+  display: inline-block;
+  padding: 8px 35px;
+  background-color: #e64242;
+  color: #ffffff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  margin-top: 15px;
+  font-size: 15px;
+
+}
+
+.botao_enviar {
+  display: inline-block;
+  padding: 8px 35px;
+  background-color: #9be17f;
+  color: #ffffff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.botao_enviar_j {
+  display: inline-block;
+  padding: 8px 35px;
+  background-color: #9be17f;
+  color: #ffffff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  margin-top: 27px;
+  font-size: 15px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.popup {
+  width: 400px;
+  background: rgb(248, 246, 246);
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  z-index: 100000000;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.botao_dados {
+  display: inline-block;
+  padding: 8px 35px;
+  background-color: #3b5998;
+  color: #ffffff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.botao_avaliacao,
+.botao_feita_avaliacao {
+
+  display: inline-block;
+  padding: 8px 35px;
+  background-color: #ee9b00;
+  color: #ffffff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  margin-top: 15px;
+  font-size: 15px;
+
+}
+
+.botao_descarte {
+  display: inline-block;
+  padding: 8px 35px;
+  background-color: #0a9396;
+  color: #ffffff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
+  margin-top: 15px;
+  font-size: 15px;
+
+
+}
+
+.listagem {
+  color: #28a745;
+}
+
+iframe {
+
+  width: 700px;
+  height: 465px;
+}
+
+#divinfo {
+  width: 30px;
+  height: 43px;
+}

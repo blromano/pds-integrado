@@ -1,0 +1,37 @@
+.borda_textarea{
+    border: 1px 1px 1px 1px !important;
+    border-color: #000 !important;
+}
+.th-drop{
+    border: none;
+    color: #1BEB11;
+}
+button .resp{
+    color: white;
+}
+.btn-pendente{
+    color: red;
+    font-size: 20px;
+}
+.btn-andamento{
+    color: #FFBE55;
+    font-size: 20px;
+}
+.btn-resolvido{
+    color: #1BEB11;
+    font-size: 20px;
+}
+.btn-color{
+    background-color: #458279;
+    transition: ease-out 0.2s;
+}
+.btn-size{
+    font-size: 14px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+.btn-color:hover{
+    background-color: #264440;
+}
+thead{
+    border-bottom: solid 2px #88898A
+}

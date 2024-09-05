@@ -1,0 +1,486 @@
+/*Listagem - Elementos de Lista - Início*/
+.formularioPesquisaMOD5{
+    display:flex;
+    flex-direction:row;                        
+    justify-content:space-between;
+}
+
+.formularioPesquisaMOD5 p{
+    font-weight:700;                  
+}
+
+.formularioPesquisaMOD5 .botaoAdicionar{                
+    background-color: green;
+    border-color:null;
+    border-radius:5px;
+    cursor:pointer;
+    color:white;
+    border:transparent;
+    height:35px;
+}
+
+
+.container-MOD5{
+    background-color:#c8efbe;  
+    border-radius:5px;       
+    font-size: 15px;         
+    width: 100%;
+}
+.container-MOD5 ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    
+    list-style-type: none;
+    padding:0px;
+}
+
+.container-MOD5 .itemLista1{
+    flex: 1;
+    padding: 10px;
+    border-bottom: 2px solid grey;
+    color:black;
+    font-weight:700;
+    
+}
+
+.container-MOD5 .itemLista2 {
+    flex: 1;
+    padding: 10px;            
+    
+}
+
+ul li .botaoExcluir{
+    background-color: red;
+    border-color:null;
+    border-radius:5px;
+    cursor:pointer;
+    color:white;
+    border:transparent;
+    height:35px;
+
+}
+ul li .botaoEditar{
+    background-color: blue;
+    border-color:null;
+    border-radius:5px;
+    cursor:pointer;
+    color:white;
+    border:transparent;
+    height:35px;
+    list-style: none;
+}
+
+ul li .mod05_a{
+    list-style: none;
+    color:white;
+}
+.sweetEstilo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+.swal2-input, .sweetConteudo{
+    max-width:275px;
+    max-height:275px;
+    
+}
+
+.container-MOD5 .bnt-engrenagem, .bnt-excluir{
+    background-color: CCC;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.itemLista2 .btn-lupa {
+    background-color: #ccc;
+    color: black;
+    border: none;
+    border-radius: 50%;      
+    font-size: 20px;
+  }
+
+/*Listagem - Elementos de Lista - Fim*/
+
+/* Área de Listagem Nova 22/10//2023 Início*/
+
+.container-MOD5 .tabela-MOD5 {            
+    padding: 0px;
+    text-align: center;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-size:16px;
+    width: 100%; 
+    border-collapse: collapse;
+}
+
+.container-MOD5 .tabela-MOD5 .itemLista1 {
+    
+    flex: 1;
+    padding: 10px;
+    border-bottom: 2px solid grey;
+    color: black;
+    font-weight: 700;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    text-align:center;
+}
+
+.container-MOD5 .tabela-MOD5 .itemLista2 {
+    flex: 1;
+    padding: 17px;
+    text-align:center;
+    
+}
+
+.container-MOD5 .tabela-MOD5 .botaoExcluir {
+    background-color: red;
+    border-color: null;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: transparent;
+    height: 35px;
+}
+
+.container-MOD5 .tabela-MOD5 .botaoEditar {
+    background-color: blue;
+    border-color: null;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: transparent;
+    height: 35px;
+    list-style: none;
+} 
+
+.container-MOD5 .tabela-MOD5 .mod05_a{
+    list-style: none;
+    color:white;
+}
+
+/* Área de Listagem Nova - Fim*/
+
+/*Inserir Saneamentos / Editar Saneamento / Editar Responsável - Início*/
+.form-mod05{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-mod05 label{
+    display: block;
+    margin-bottom: 10px;
+    font-size:16px;
+    color:black
+}
+
+.form-mod05 input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.form-mod05 input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius:10px;
+}
+  
+.form-mod05  input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.container .form-mod05{
+    background-color:#f3f3f3;
+    width:50%;
+    padding:10px;
+    color:black;      
+    border-radius:10px;
+    
+}
+
+
+/*Inserir Saneamentos / Editar Saneamento / Editar Responsável- Fim*/
+
+
+/*Sweet Alert - Início*/
+.sweetAlertMOD05 .sweet-alert-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+  }
+  .sweetAlertMOD05 .sweet-alert {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }   
+
+  .sweetAlertMOD05 .formulario{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    color:black;
+  }
+
+  .sweetAlertMOD05 .formulario .elementosLabel{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    padding-bottom:30px;
+    font-size:20px;
+    
+  }
+
+  .sweetAlertMOD05  .elemntosLabel input[type="text"]{
+    width:100%;
+    height:100%;
+  }
+
+  .sweetAlertMOD05 .formulario input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius:10px;
+}
+  
+.sweetAlertMOD05 .formulario  input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.sweetAlertMOD05 .formulario2{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:black;
+  }
+
+  .sweetAlertMOD05 .formulario2 label{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  color:black;
+}
+
+/*Sweet Alert - Fim*/
+
+/* CSS - Glenda */
+/* Encaminhar E-mail Denúncia - Punição(Banimento)*/
+
+.form-mod05G{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-mod05G label{
+    display: block;
+    margin-bottom: 10px;
+    font-size:16px;
+    color:black
+}
+
+.form-mod05G input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.form-mod05G input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius:10px;
+}
+  
+.form-mod05G  input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.containerG .form-mod05G{
+    background-color:#b9e0c1;
+    width:50%;
+    padding:10px;
+    color:black;      
+    border-radius:10px;
+    
+}
+
+/* Listagem de Denúncias Violadas */
+.sweet-alert-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+.sweet-alert {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}   
+
+.formulario{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    color:black;
+}
+
+.formulario .elementosLabel{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    padding-bottom:30px;
+    font-size:20px;
+    
+}
+
+.elemntosLabel input[type="text"]{
+    width:100%;
+    height:100%;
+}
+
+.formulario input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius:10px;
+}
+
+.formulario  input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.formulario  input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.formulario2{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:black;
+}
+
+.formulario2 label{
+display:flex;
+flex-direction:row;
+justify-content:flex-start;
+align-items:center;
+color:black;
+}
+
+.formulario2 input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius:10px;
+}
+
+.formulario2  input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.formularioGVioladas {
+    background-color: #fffc50d7;
+    color: #000000;
+}
+
+.FormulariobVioladaBotao {
+    background-color: #ff5050d7;
+    color: #000000;
+}   
+
+/*Adicionar Setores, Editar Setores, Listar Setores - Glenda */ 
+
+.form-mod05G{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.form-mod05G label{
+    display: block;
+    margin-bottom: 10px;
+    font-size:16px;
+    color:black
+}
+
+.form-mod05G input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius:12px;
+}
+
+.form-mod05G input[type="submit"] {
+    background-color: #4CAF50;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius:20px;
+}
+  
+.form-mod05G  input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+.containerG .form-mod05G{
+    background-color:#b9e0c1;
+    width:100%;
+    padding:20px;
+    color:black;      
+    border-radius:10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adicione a propriedade box-shadow aqui */
+    
+}
+
+/* Detalhar e Localizar Denúncia no Mapa */ 
+/*botaoAdicionar*/
+
+.full {
+    height: 100%;
+}

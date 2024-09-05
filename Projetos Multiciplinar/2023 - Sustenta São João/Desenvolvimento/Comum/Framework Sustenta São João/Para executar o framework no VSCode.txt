@@ -1,0 +1,2 @@
+Executar o comando no terminal do VSCode: 
+C:\xampp\php\php.exe -S localhost:8000
