@@ -1,5 +1,5 @@
 # Repositório do projeto Sustenta São João
-Os arquivos gerados durante o desenvolvimento do projeto "Sustenta São João" estão disponíveis aqui.
+Neste repositório estão disponiveis todos os arquivos gerados durante o desenvolvimento do projeto "Sustenta São João" em 2023.
 
 Sobre o projeto:
 
