@@ -1,0 +1,589 @@
+/* Módulo 1 */
+
+.bg-login-image {
+  background: url("https://www.hospitalregional.ms.gov.br/wp-content/uploads/2020/06/medico-dia-2-1024x683-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-register-image {
+  background: url("https://source.unsplash.com/Mv9hjnEUHR4/600x800");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-password-image {
+  background: url("https://source.unsplash.com/oWTW-jNGl9I/600x800");
+  background-position: center;
+  background-size: cover;
+}
+
+/*--------------------------------------------------------------
+# F.A.Q
+--------------------------------------------------------------*/
+.faq .faq-item {
+  margin: 20px 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.faq .faq-item i {
+  color: #2BB8B1;
+  font-size: 24px;
+  float: left;
+  line-height: 0;
+  padding: 13px 0 0 0;
+  margin: 0;
+}
+.faq .faq-item h4 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  margin: 0 0 10px 32px;
+  font-family: "Poppins", sans-serif;
+}
+.faq .faq-item p {
+  font-size: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  color: #222222
+}
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .contact-about h3 {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #222222;
+}
+.contact .contact-about p {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "Raleway", sans-serif;
+  color: #888;
+}
+.contact .social-links {
+  padding-bottom: 20px;
+}
+.contact .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #fff;
+  color: #2BB8B1;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  border: 1px solid #2BB8B1;
+}
+.contact .social-links a:hover {
+  background: #2BB8B1;
+  color: #fff;
+}
+.contact .info {
+  color: #444444;
+}
+.contact .info i {
+  font-size: 32px;
+  color: #2BB8B1;
+  float: left;
+  line-height: 1;
+}
+.contact .info p {
+  padding: 0 0 10px 42px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+.contact .php-email-form .form-group {
+  margin-bottom: 20px;
+}
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  padding: 10px 15px;
+}
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  border-color: #2BB8B1;
+}
+.contact .php-email-form button[type=submit] {
+  background: #2BB8B1;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.contact .php-email-form button[type=submit]:hover {
+  background: #3A9C97;
+}
+
+
+
+/* Módulo 2 */
+
+.form-control-teste{
+  width: 25px;
+  height: 25px;
+  margin: 5px 0 0 5px;
+}
+
+/* Módulo 3 */
+
+/* 
+bg-gradient-info modificada com as cores do projeto 
+*/
+.bg-gradient-med {
+  background-color: #2BB8B1;
+  background-image: linear-gradient(180deg, #2BB8B1 10%, #3A9C97 100%);
+  background-size: cover;
+}
+
+/* 
+bg-primary modificada com as cores do projeto 
+*/
+.bg-med {
+  background-color: #2BB8B1;
+}
+
+/* 
+btn-info modificado com as cores do projeto 
+*/
+.btn-med {
+  color: #fff;
+  background-color: #2BB8B1;
+  border-color: #2BB8B1;
+}
+
+.btn-med:hover {
+  color: #fff;
+  background-color: #3A9C97;
+  border-color: #3A9C97;
+}
+
+.btn-med:focus, .btn-med.focus {
+  color: #fff;
+  background-color: #3A9C97;
+  border-color: #3A9C97;
+  box-shadow: 0 0 0 0.2rem #37938ecc
+}
+
+.btn-med.disabled, .btn-med:disabled {
+  color: #fff;
+  background-color: #2BB8B1;
+  border-color: #2BB8B1;
+}
+
+.btn-med:not(:disabled):not(.disabled):active, .btn-med:not(:disabled):not(.disabled).active,
+.show > .btn-med.dropdown-toggle {
+  color: #fff;
+  background-color: #2a96a5;
+  border-color: #278c9b;
+}
+
+.btn-med:not(:disabled):not(.disabled):active:focus, .btn-med:not(:disabled):not(.disabled).active:focus,
+.show > .btn-med.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(84, 196, 212, 0.5);
+}
+
+/* 
+text-primary modificado com as cores do projeto 
+*/
+.text-med {
+  color: #2BB8B1 !important;
+}
+
+/*
+modifica .page-link para que as cores do datatable fiquem com as cores do projeto
+*/
+.page-item.active .page-link {
+  background-color: #2BB8B1;
+  border-color: #2BB8B1;
+}
+
+
+
+
+/* Módulo 4 */
+#SintomasConsulta{
+  min-height: 139px;
+  min-width: 400.8px;
+  max-height: 400px;
+}
+
+#Sintomas {
+  height: 75px;
+  max-height: 300px;
+}
+
+.tarea {
+  height: 75px;
+  max-height: 170px;
+}
+
+.radios {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.p1 {
+  margin-top: 3px;
+}
+
+.switch {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  margin: -50px 0 0 90px;
+  background: #2BB8B1;
+  transition: all 0.2s ease;
+  border-radius: 25px;
+}
+.switch-button{
+  margin: -4px -3px 0 -1px;
+}
+.switch span {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  top: 50%;
+  left: 50%;
+  margin: -1px 0px 0px -4px;
+  background: #fff;
+  display: block;
+  transform: rotate(-45deg);
+  transition: all 0.2s ease;
+}
+.switch span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 12px;
+  margin-top: -8px;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+.switch label {
+  cursor: pointer;
+  color: rgba(0,0,0,0.2);
+  width: 60px;
+  line-height: 50px;
+  transition: all 0.2s ease;
+}
+
+.switch1 {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  margin: -4px -1px 0px 0px;
+  background: #2BB8B1;
+  transition: all 0.2s ease;
+  border-radius: 25px;
+}
+
+  @media only screen and (max-width: 500px) {
+    .switch1 {
+      position: absolute;
+      width: 90px;
+      height: 30px;
+      text-align: center;
+      margin: -1px 0px 100px -97px;
+      background: #2BB8B1;
+      transition: all 0.2s ease;
+      border-radius: 25px;
+    }
+  }
+
+  @media only screen and (max-width: 730px) {
+    .switch1 {
+      position: absolute;
+      width: 90px;
+      height: 30px;
+      text-align: center;
+      margin: -1px 0px 100px -120px;
+      background: #2BB8B1;
+      transition: all 0.2s ease;
+      border-radius: 25px;
+    }
+  }
+
+.switch1-button{
+  margin: -4px -3px 0 -1px;
+}
+.switch1 span {
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  top: 50%;
+  left: 50%;
+  margin: -1px 0px 0px -4px;
+  background: #fff;
+  display: block;
+  transform: rotate(-45deg);
+  transition: all 0.2s ease;
+}
+.switch1 span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 4px;
+  height: 12px;
+  margin-top: -8px;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+.switch1 label {
+  cursor: pointer;
+  color: rgba(0,0,0,0.2);
+  width: 60px;
+  line-height: 40px;
+  transition: all 0.2s ease;
+}
+label[for=yes] {
+  position: absolute;
+  left: 0px;
+  height: 20px;
+}
+label[for=no] {
+  position: absolute;
+  right: 0px;
+}
+#no:checked ~ .switch {
+  background: #eb4f37;
+}
+#no:checked ~ .switch span {
+  background: #fff;
+  margin-left: -8px;
+}
+#no:checked ~ .switch span:after {
+  background: #fff;
+  height: 20px;
+  margin-top: -8px;
+  margin-left: 8px;
+}
+#yes:checked ~ .switch label[for=yes] {
+  color: #fff;
+}
+#no:checked ~ .switch label[for=no] {
+  color: #fff;
+}
+
+#no:checked ~ .switch1 {
+  background: #eb4f37;
+}
+#no:checked ~ .switch1 span {
+  background: #fff;
+  margin-left: -8px;
+}
+#no:checked ~ .switch1 span:after {
+  background: #fff;
+  height: 20px;
+  margin-top: -8px;
+  margin-left: 8px;
+}
+#yes:checked ~ .switch1 label[for=yes] {
+  color: #fff;
+}
+#no:checked ~ .switch1 label[for=no] {
+  color: #fff;
+}
+
+.container {
+  margin-top: 100px;
+  padding: 32px;
+}
+
+.select-box {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+}
+
+.select-box .options-container {
+  background: #2f3640;
+  color: #f5f6fa;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 8px;
+  overflow: hidden;
+
+  order: 1;
+}
+
+.selected {
+  background: #2f3640;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #f5f6fa;
+  position: relative;
+
+  order: 0;
+}
+
+.selected::after {
+  content: "";
+  background: url("https://raw.githubusercontent.com/Godsont/Custom-Select-Box/3aff3bdcd46e450b9291e017df8ac80bcd2a5169/img/arrow-down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  right: 10px;
+  top: 5px;
+
+  transition: all 0.4s;
+}
+
+.select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.select-box .options-container.active + .selected::after {
+  transform: rotateX(180deg);
+  top: -6px;
+}
+
+.select-box .options-container::-webkit-scrollbar {
+  width: 8px;
+  background: #0d141f;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+  background: #525861;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .option,
+.selected {
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.select-box .option:hover {
+  background: #414b57;
+}
+
+.select-box label {
+  cursor: pointer;
+}
+
+.select-box .option .radio {
+  display: none;
+}
+
+/* Módulo 5 */
+.btn_redondo{
+    border-radius: 15px;
+} 
+.posbotao {
+  float: right;
+  margin: 0.3%;
+}
+.EPM_Nome_W{
+  width: 70%;
+}
+.TPR_obesrev_W{
+  width: 50%;
+}
+/* body {
+  height: 100vh;
+  background: #88DCD5;
+  display: grid;
+font-family: 'Roboto Condensed', sans-serif;
+} */
+.container_error {
+  position: relative;
+  height: 600px;
+  width: 750px;
+  margin: auto;
+  font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .container_error svg {
+  height: 100%;
+  }
+  p.textA, a.textA,p.textB, a.textB, p.textC, a.textC{
+    margin: 0;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #032C3F;
+    /* font-size: 24px; */
+  }
+  .textA {
+    top: 169px;
+    left: 265px;
+    transform: rotate(-3deg);
+    
+  }
+  .textB {
+    font-weight: 700;
+    font-size: 135px;
+    top: 190px;
+    left: 273px;
+    transform: rotate(-2deg);
+  }
+  .textC {
+    top: 370px;
+    left: 430px;
+    font-size: 25px;
+    transform: rotate(1deg);
+  }
+  #content_erro{
+    background: #88DCD5;
+    flex: auto;
+  }
