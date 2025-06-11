@@ -1,0 +1,184 @@
+body {
+    background-color: #f5f7ff !important;
+    font-family: "Nunito", sans-serif !important;
+    font-weight: initial !important;
+    line-height: normal !important;
+    -webkit-font-smoothing: antialiased !important;
+    font-size: 1rem !important;
+}
+
+.card-body1 {
+    background-color: #ffffff !important;
+    border: 0px solid  !important;
+    padding: 1.25rem !important;
+    max-width: 1200px !important;
+    margin: auto !important;
+}
+
+h1 {
+    text-align: center !important;
+    font-weight: bold !important;
+    font-family: "Nunito", sans-serif !important;
+    font-size: 2rem !important; /* Aumenta o tamanho da frase "Cadastrar-se" */
+    color: #3ABFC3 !important;
+}
+
+.text-sm {
+    font-size: 1.0rem !important;
+    color: #000000 !important;
+    margin-bottom: 1rem !important;
+    font-weight: 500 !important;
+}
+
+.cadastrar-se {
+    margin-top:30px;
+    font-size: 2.5rem !important;
+}
+
+
+.col-md-4 {
+    flex: 0 0 33.3333% !important;
+    max-width: 33.3333% !important;
+}
+
+.col-md-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+}
+
+.row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.col-fields .form-group {
+    margin-bottom: 1rem !important;
+}
+
+
+.button-group {
+    display: flex; /* Alinha os botões horizontalmente */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    align-items: center; /* Alinha os botões verticalmente no centro */
+    margin-top: 20px; /* Espaçamento acima dos botões */
+}
+
+.radio-group {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important; /* Centraliza os elementos dentro do grupo */
+    width: 100% !important;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    padding-left: 20px; /* Reduzido o padding para evitar espaço extra */
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
+    color: black !important; /* Mesma cor dos textos dos outros campos */
+}
+
+.radio-group label::before {
+    content: "";
+    display: inline-block;
+    width: 15px; /* Ajuste do tamanho */
+    height: 15px; /* Ajuste do tamanho */
+    margin-right: 6px;
+    border-radius: 50%;
+    border: 2px solid black !important; /* Mantém a cor da borda consistente */
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.radio-group input[type="radio"]:checked + label::before {
+    background-color: #3ABFC3 !important; /* Cor de seleção consistente */
+    border: 2px solid black !important; /* Cor da borda consistente */
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.file-upload {
+    border: 1px solid #ccc !important;
+    padding: 10px !important;
+    font-size: 1rem !important;
+    border-radius: 5px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    background-color: #ffffff !important; /* Alterado para branco */
+    cursor: pointer !important;
+    color: black !important; /* Mesma cor dos textos dos outros campos */
+}
+
+.file-upload:hover {
+    background-color: #f1f1f1 !important;
+}
+
+.required {
+    color: red;
+}
+
+.btn-primary1 {
+    color: #fff !important;
+    background-color: #3ABFC3 !important;
+    border-color: #3ABFC3 !important;
+    width: 200px !important; /* Ajusta a largura ao conteúdo */
+    height: 50px !important; /* Altura dos botões */
+    font-size: 1rem !important; /* Tamanho da fonte dos botões */
+    text-align: center !important; /* Alinha o texto no centro */
+    font-weight: bold !important; /* Fonte em negrito */
+    padding: 0 20px !important; /* Espaçamento interno dos botões */
+    border-radius: 5px !important; /* Bordas arredondadas */
+    border: none !important; /* Remove a borda padrão */
+    margin-right: 20px;
+}
+
+.btn-primary1:hover {
+    background-color: #0098b3 !important;
+    border-color: #0098b3 !important;
+}
+
+.btn-cancel {
+    color: #fff !important;
+    background-color: #f44336 !important; /* Vermelho */
+    border-color: #f44336 !important; /* Vermelho */
+    width: 200px !important; /* Ajusta a largura ao conteúdo */
+    height: 50px !important; /* Altura dos botões */
+    font-size: 1rem !important; /* Tamanho da fonte dos botões */
+    text-align: center !important; /* Alinha o texto no centro */
+    font-weight: bold !important; /* Fonte em negrito */
+    padding: 0 20px !important; /* Espaçamento interno dos botões */
+    border-radius: 5px !important; /* Bordas arredondadas */
+    border: none !important; /* Remove a borda padrão */
+    margin-left: 20px;
+}
+
+.btn-cancel:hover {
+    background-color: #c62828 !important; /* Vermelho mais escuro */
+    border-color: #c62828 !important; /* Vermelho mais escuro */
+}
+
+.is-invalid {
+    border: 2px solid red; /* Aumenta a espessura da borda */
+    background-color: #ffe6e6; /* Adiciona um fundo vermelho claro */
+    animation: shake 0.3s; /* Adiciona uma animação de tremor */
+}
+
+/* Animação de tremor */
+@keyframes shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-2px); }
+    50% { transform: translate(2px); }
+    75% { transform: translate(-2px); }
+    100% { transform: translate(0); }
+}
+
+/* Estilo para o rótulo de erro */
+label.is-invalid {
+    color: red; /* Torna o texto do rótulo vermelho */
+    font-weight: bold; /* Deixa o texto em negrito */
+}

@@ -1,0 +1,348 @@
+/* Section: Organizers */
+#organizers-section .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  #organizers-section .col-lg-4, #organizers-section .col-md-6 {
+    flex: 1 1 30%; /* Ajusta a largura para que todos fiquem do mesmo tamanho */
+    max-width: 30%; /* Garante que o máximo seja 30% */
+    margin: 10px; /* Espaçamento entre os elementos */
+  }
+  
+  #organizers-section .organizer {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px; /* Define uma altura fixa para todos os organizadores */
+  }
+  
+  #organizers-section .organizer img {
+    width: 200px; /* Define uma largura fixa */
+    height: 200px; /* Define uma altura fixa igual à largura */
+    border-radius: 50%; /* Faz a imagem ser perfeitamente redonda */
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #ddd;
+    object-fit: cover; /* Garante que a imagem preencha o contêiner mantendo a proporção */
+  }
+  
+  #organizers-section .organizer:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #organizers-section .organizer h3, 
+  #organizers-section .organizer p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #organizers-section .organizer h3 {
+    font-size: 1.2em;
+    color: #248FAA; /* Cor do texto */
+  }
+  
+  #organizers-section .organizer p {
+    color: black;
+    font-size: 1.2em;
+  }
+  
+  /* Owl Carousel Customization */
+  .owl-carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .owl-carousel .slide .organizer {
+    margin: 0 10px; /* Reduzindo o espaçamento entre as imagens */
+  }
+  
+  /* Section: About */
+  #about-section .about-card {
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  
+  #about-section .about-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #about-section .icon-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 120px; /* Define uma altura mínima para alinhar os textos */
+  }
+  
+  #about-section .icon-title-container .fas {
+    font-size: 3em !important; /* Tamanho dos ícones */
+    color: #248FAA !important; /* Cor dos ícones */
+  }
+  
+  #about-section .icon-title-container .fa-info-circle {
+    font-size: 2em !important; /* Tamanho específico do ícone info-circle */
+    color: #248FAA !important; /* Cor do ícone info-circle */
+  }
+  
+  #about-section .about-card h2 {
+    font-size: 1.5em;
+    color: #000; /* Cor do título */
+    margin-top: 10px;
+  }
+  
+  #about-section .about-card-text {
+    text-align: justify;
+    width: 90%;
+    flex-grow: 1; /* Faz o texto ocupar o espaço restante e alinhar ao topo */
+  }
+  
+  #about-section .about-card p {
+    color: black;
+    text-align: justify;
+  }
+  
+  #about-section .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #about-section .col-lg-6 {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+  
+  /* Select Styling */
+  select {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 50px;
+    border-radius: 0px;
+    background: none;
+    border-width: 2px;
+    font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  }
+  
+  /* Container for Events */
+  .container-eventos {
+    width: 90%;
+    max-width: 1100px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Permite que a aba de filtros seja posicionada corretamente */
+    margin: 50px auto; /* Centraliza o conteúdo horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  .search-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #248FAA;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #1d6a8f;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50px; /* Ajuste a altura conforme necessário */
+    right: 0;
+    width: 80%;
+    max-width: 500px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10; /* Garante que a aba de filtros fique sobreposta aos eventos */
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .filters input {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 150px;
+  }
+  
+  /* Event Cards */
+  .events { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 5fr));
+    grid-gap: 30px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.event {
+    background: linear-gradient(to right, #36A9B3, #2C8F92 );
+    transition: transform 0.2s, padding 0.2s;
+    max-width: 300px;
+    position: relative;
+    cursor: pointer;
+    width: 250px;
+    height: 250px; 
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px; /* Diminui o padding para aproximar o conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.6s ease;
+}
+
+.event h3 {
+    margin: 0 0 5px; /* Diminui a margem inferior para aproximar o título */
+    font-size: 20px;
+    color: #fff;
+}
+
+.event p {
+    margin: 0; /* Remove a margem inferior do parágrafo */
+    color: #e6eef7;
+}
+
+.event.expanded {
+    transform: scale(1.05);
+}
+
+.event-details {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.event.expanded .event-details {
+    display: flex;
+}
+
+.event-details button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #248FAA;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.event-details button:hover {
+    background-color: #034b6d;
+}
+
+.results-button,
+.photos-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    color: #086e8d;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.results-button:hover,
+.photos-button:hover {
+    background-color: #0c8ba1;
+    color: #fff;
+}
+
+.results-button,
+.photos-button {
+    margin: 5px;
+}
+
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    #organizers-section .col-lg-4, #organizers-section .col-md-6 {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+    
+    #organizers-section .row {
+      flex-direction: column;
+    }
+  }

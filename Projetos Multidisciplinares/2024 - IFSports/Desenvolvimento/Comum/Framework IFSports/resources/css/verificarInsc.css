@@ -1,0 +1,123 @@
+.botaopesquisa{
+    color:black; 
+    text-align: left;
+}
+.esc{
+ margin-left: 4%;   
+}
+.input{
+    margin: 15px 0;
+    margin-left: 2%;
+    height: 100px;
+    border: lightgray solid 1px;
+}
+.arroba{
+    width:120px; 
+    height:40px; 
+}
+.arrobaa{
+    font-size: 15px;
+    color: white;
+    border-radius: 10px;
+    border: solid 2px #3BBFC3;
+    background-color: #3BBFC3;
+    margin-left: 120px;
+    width:115px; 
+    height:40px; 
+}
+.arrobaa:hover{
+    border: solid 2px #0056b3;
+    background-color: #0056b3;
+}
+.arrobaa1{
+    color: white;
+    border-radius: 10px;
+    border: solid 2px #3BBFC3;
+    background-color: #3BBFC3;
+    margin-left: 120px;
+    width:120px; 
+    height:40px; 
+}
+.arrobaa1:hover{
+    border: solid 2px #0056b3;
+    background-color: #0056b3;
+}
+.encan{
+    margin-left: 42%;
+}
+.area{
+ margin-left: -3.5%;   
+}
+textarea{
+    margin: 15px 0;
+    width: 550px;
+    height: 300px;
+    border: lightgray solid 1px;
+  }
+.botao{
+    border: solid 2px #3BBFC3;
+    background-color: #3BBFC3;
+    border-radius: 10px;
+    width:200px; 
+    height:40px; 
+    color: white;
+}
+.botao1{
+    border: solid 2px #3BBFC3;
+    background-color: #3BBFC3;
+    border-radius: 10px;
+    width:200px; 
+    height:40px; 
+    color: white;
+}
+.botao2{
+    border: solid 2px #3BBFC3;
+    background-color: #3BBFC3;
+    border-radius: 10px;
+    width:200px; 
+    height:40px; 
+    color: white;
+}
+.botao3{
+    border: solid 2px #3BBFC3;
+    background-color: #3BBFC3;
+    border-radius: 10px;
+    width:200px; 
+    height:40px; 
+    color: white;
+}
+.botao4{
+    border: solid 2px #3BBFC3;
+    background-color: #3BBFC3;
+    border-radius: 10px;
+    width:200px; 
+    height:40px; 
+    color: white;
+}
+.botao5{
+    border: solid 2px #3BBFC3;
+    background-color: #3BBFC3;
+    border-radius: 10px;
+    width:200px; 
+    height:40px; 
+    color: white;
+}
+.botao6{
+    border: solid 2px #3BBFC3;
+    background-color: #3BBFC3;
+    border-radius: 10px;
+    width:200px; 
+    height:40px; 
+    color: white;
+}
+.h1{
+    margin-left: 31%;
+    width:555px; 
+    height:40px; 
+    float: left;
+}
+.pesquiss{
+    float: right;
+    width:350px; 
+    height:40px; 
+}

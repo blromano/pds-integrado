@@ -1,0 +1,93 @@
+.containerzao {
+    background: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 40px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-info-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Três colunas */
+    gap: 20px; 
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: transparent; /* Removi o fundo cinza mais escuro */
+    border-radius: 16px;
+}
+
+.event-info-container h2 {
+    grid-column: span 3;
+    margin-top: 0;
+    color: #2C8F92;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.photo-container {
+    grid-row: span 3; /* A imagem ocupa três linhas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff; /* Para combinar com os outros campos */
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Largura ajustada para ser igual à altura */
+    height: 300px; /* Altura igual à largura para garantir que a imagem seja redonda */
+    padding: 10px; /* Pequeno padding interno */
+}
+
+.profile-image {
+    width: 100%;  /* A imagem ocupa toda a largura do contêiner */
+    height: 100%; /* A imagem ocupa toda a altura do contêiner */
+    border-radius: 5%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-info-container div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #fff; /* Fundo branco para os campos */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-info-label {
+    font-weight: bold;
+    color: #333; 
+    font-size: 18px;
+}
+
+.event-info-value {
+    color: #555;
+    font-size: 16px;
+}
+
+.edit-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    color: #3ABFC3;
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.edit-button i {
+    margin-right: 5px;
+}
+
+.edit-button:hover {
+    color: #2C8F92;
+}

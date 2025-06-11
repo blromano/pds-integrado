@@ -1,0 +1,44 @@
+.text-center {
+    text-align: center;
+}
+
+.container {
+    width: 60%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.form-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border-left: -50px;
+}
+
+.justificativa-label {
+    margin-left: 5%;
+}
+
+.textarea {
+    width: 90%;
+    height: 90%;
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left:auto
+}
+
+.link-btn {
+    margin-left: auto;
+}
+
+.btn-enviar {
+    width: 150px;
+    height: 50px;
+    margin-left: 36.7%;
+    background-color: #3BBFC3;
+    border-color: #3BBFC3;
+}

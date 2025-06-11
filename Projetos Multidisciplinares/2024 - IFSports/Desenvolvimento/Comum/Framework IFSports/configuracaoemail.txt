@@ -1,0 +1,52 @@
+if (!empty($primeiro_nome) && !empty($sobrenome) && !empty($email) && !empty($mensagem)) {
+    
+                $to = "ifsportssjbv@gmail.com";
+                $subject = "Nova mensagem de contato: $motivo";
+                $body = "Nome: $primeiro_nome $sobrenome\nEmail: $email\nMotivo: $motivo\nMensagem: $mensagem";
+    
+                // Configurações do OAuth2
+                $clientId = '787182602441-phc8fpnk9ck0ni95odq3kaqda4b7ftuh.apps.googleusercontent.com';
+                $clientSecret = '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';
+                $refreshToken = 'ya29.a0AcM612xICEQK7GPnCfOgnileNx30dupFj_ZlFrrPbjYwT7ff246tz5LwbZj5dgOgHLB5VDNjSfPjamMFQ7I1vD8wdzL3URUp86YZ3S98JsCySlR08eeOdKu2bDSGtubGPYfzROrQ-uQgScgyNlJgRIpwyHgLDScZ4sbZ4lDhaCgYKAR4SARMSFQHGX2Mik7haSbCAogh9aGQssgoUZA0175'; 
+                
+                // PHPMailer com OAuth2
+                $mail = new PHPMailer(true);
+    
+                try {
+                    $mail->isSMTP();
+                    $mail->Host = 'smtp.gmail.com';
+                    $mail->SMTPAuth = true;
+                    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+                    $mail->Port = 465;
+    
+                    // OAuth2 Configuration
+                    $provider = new Google([
+                        'clientId' => $clientId,
+                        'clientSecret' => $clientSecret
+                    ]);
+    
+                    $mail->setOAuth(new \PHPMailer\PHPMailer\OAuth([
+                        'provider' => $provider,
+                        'clientId' => $clientId,
+                        'clientSecret' => $clientSecret,
+                        'refreshToken' => $refreshToken,
+                        'userName' => 'ifsportssjbv@gmail.com'
+                    ]));
+    
+                    $mail->setFrom('ifsportssjbv@gmail.com', 'IFS Sports');
+                    $mail->addAddress($to);
+    
+                    $mail->isHTML(false);
+                    $mail->Subject = $subject; 
+                    $mail->Body = $body;
+    
+                    $mail->send();
+                    echo "Sua mensagem foi enviada com sucesso!";
+                } catch (Exception $e) {
+                    echo "Erro ao enviar a mensagem: {$mail->ErrorInfo}";
+                }
+    
+            } else {
+                echo "Por favor, preencha todos os campos obrigatórios.";
+            }
+        

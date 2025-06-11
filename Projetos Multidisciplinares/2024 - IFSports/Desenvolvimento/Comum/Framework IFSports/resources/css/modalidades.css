@@ -1,0 +1,33 @@
+.centralize{
+    text-align: center;
+}
+
+.btn_add{
+    float: right;
+}
+
+.formpesquisa{
+    float: right;
+}
+
+.title_evento{
+    float:left;
+    font-size: 35px;
+}
+
+.file-upload {
+    border: 1px solid #ccc !important;
+    padding: 10px !important;
+    font-size: 1rem !important;
+    border-radius: 5px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    background-color: #ffffff !important; /* Alterado para branco */
+    cursor: pointer !important;
+    color: black !important; /* Mesma cor dos textos dos outros campos */
+}
+
+.col-md-6 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+}

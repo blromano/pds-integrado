@@ -1,0 +1,11 @@
+Para configurar o banco de dados acesse a pasta vendor/FW/DB/Connection.php e insira as informações do seu DB
+
+Para executar o projeto pelo VSCode, clique em Terminal e digite o comando:
+    php -S localhost:8000
+
+OBS: se seu php não estiver configurado nas variáveis de ambiente do seu Sistema Operacional você deverá digitar o endereço absoluto do php
+EX: c:\xampp\php\php.exe -S localhost:8000
+
+OU
+C:\wamp64\bin\php\php8.0.26\php.exe -S localhost:8000
+

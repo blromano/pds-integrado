@@ -1,0 +1,132 @@
+.square-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.square {
+    width: 200px;
+    height: 200px; 
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    flex-direction: column;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.6s ease;
+}
+
+.square i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.edit {
+    background-color: #3ABFC3;
+}
+
+.cancel {
+    background: linear-gradient(to right, #3ABFC3, #36A9B3);
+}
+
+.subscribe {
+    background-color: #36A9B3;
+}
+
+.verify {
+    background: linear-gradient(to right, #36A9B3, #2C8F92 );
+}
+
+.feedback {
+    background-color: #2C8F92; 
+}
+
+.photos {
+    background-color: #3ABFC3; 
+}
+
+.reports {
+    background: linear-gradient(to right, #3ABFC3, #36A9B3);
+}
+
+.certificate {
+    background-color: #36A9B3;
+}
+
+.badge {
+    background: linear-gradient(to right, #36A9B3, #2C8F92 );
+}
+
+.choose-event {
+    background-color: #2C8F92;
+}
+
+.square:hover {
+    transform: scale(1.05);
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color:white;
+}
+
+.square:hover i {
+    transform: scale(1.2);
+}
+
+.event-info-container {
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+
+.event-info-container div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-info-container h2 {
+    grid-column: span 4;
+    margin-top: 0;
+    color: #2C8F92;
+    font-size: 18px;
+    text-align: center;
+    font-weight:bold;
+}
+
+.event-info-label {
+    font-weight: bold;
+    color: #333; 
+}
+
+.event-info-value {
+    color: #555;
+}
+
+.containerzao {
+    background: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    height: 100%;
+}

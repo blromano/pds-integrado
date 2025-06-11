@@ -1,0 +1,83 @@
+.brand-logo img {
+    width: 150px !important;
+}
+
+.btn-primary:hover {
+    background-color: #1D8AA7 !important;
+    border-color: #1D8AA7 !important;
+    font-weight: bold !important;
+    box-shadow: none !important;
+}
+
+.btn-primary {
+    font-weight: bold !important;
+    box-shadow: none !important;
+}
+
+a.text-primary:hover {
+    color: #1D8AA7 !important; 
+}
+
+.form-control:focus {
+    border-color: black !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #1D8AA7 !important;
+    border-color: #1D8AA7 !important;
+    font-weight: bold !important;
+    box-shadow: none !important;
+}
+    
+.btn-primary:not(:disabled):not(.disabled):focus {
+    background-color: #1D8AA7 !important;
+    border-color: #1D8AA7 !important;
+    font-weight: bold !important;
+    box-shadow: none !important;
+}
+.content-wrapper {
+    margin-top:-100px !important;
+    padding-top:0px !important;
+}
+
+/* Personalização do popup */
+.swal-custom-popup {
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 30px; /* Ajuste de espaçamento interno */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Sombra elegante */
+    font-family: 'Arial', sans-serif; /* Fonte mais moderna */
+}
+
+/* Personalização do ícone */
+.swal-custom-icon {
+    margin-top: 20px; /* Faz o ícone descer */
+    margin-bottom: 20px; /* Espaço extra entre o ícone e o título */
+    padding: 15px; /* Adiciona espaçamento interno ao ícone */
+    border-radius: 50%; /* Deixa o fundo do ícone circular */
+    background-color: white; /* Fundo do ícone */
+    color: #ff1900; /* Cor do ícone */
+}
+
+/* Personalização do título */
+.swal-custom-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 15px; /* Espaço entre o título e o texto */
+}
+
+/* Personalização do botão */
+.swal-custom-button {
+    background-color: #1D8AA7; /* Cor do botão */
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 15px; /* Botão arredondado */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.swal-custom-button:hover {
+    background-color: #1D8AA7; /* Cor ao passar o mouse */
+}
