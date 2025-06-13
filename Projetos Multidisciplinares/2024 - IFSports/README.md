@@ -1,4 +1,4 @@
-# Repositório do projeto Sustenta IFSports
+# Repositório do projeto IFSports
 Neste repositório estão disponiveis todos os arquivos gerados durante o desenvolvimento do projeto "IFSports" em 2024.
 
 Sobre o projeto:
