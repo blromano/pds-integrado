@@ -1,4 +1,4 @@
-# Repositório do projeto Sustenta São João
+# Repositório do projeto Sustenta IFSports
 Neste repositório estão disponiveis todos os arquivos gerados durante o desenvolvimento do projeto "IFSports" em 2024.
 
 Sobre o projeto:
